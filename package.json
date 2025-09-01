@@ -6,7 +6,8 @@
     "build": "react-router build",
     "dev": "react-router dev",
     "start": "react-router-serve ./build/server/index.js",
-    "typecheck": "react-router typegen && tsc"
+    "typecheck": "react-router typegen && tsc",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@react-router/node": "^7.7.1",
@@ -27,10 +28,16 @@
     "eslint-config-prettier": "10.1.8",
     "eslint-plugin-react": "^7.37.5",
     "globals": "^16.3.0",
+    "husky": ">=6",
+    "lint-staged": ">=10",
     "prettier": "3.6.2",
     "tailwindcss": "^4.1.4",
     "typescript": "^5.8.3",
     "vite": "^6.3.3",
     "vite-tsconfig-paths": "^5.1.4"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix",
+    "*.{js,css,md}": "prettier --write"
   }
 }
