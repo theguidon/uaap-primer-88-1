@@ -44,7 +44,7 @@ export function TeamSection({
           href=""
           className={`self-center mt-4 cursor-pointer lg:mt-6 ${alignment == "right" ? "lg:self-end" : "lg:self-start"}`}
         >
-          <button className="flex gap-1 py-2 px-3.5 upppercase bg-uaap-dark-blue text-white font-body font-bold lg:text-2xl">
+          <button className="flex gap-1 p-2.5 upppercase bg-uaap-dark-blue text-white font-body font-bold lg:text-2xl lg:p-6">
             READ MORE
             <div>{">"}</div>
           </button>
