@@ -11,85 +11,85 @@
 /* IBM Plex Sans Condesed */
 @font-face {
   font-family: "IBM Plex Sans Condensed";
-  src: url("./fonts/IBM_Plex_Sans_Condensed/IBMPlexSansCondensed-Bold.ttf");
+  src: url("./assets/fonts/IBM_Plex_Sans_Condensed/IBMPlexSansCondensed-Bold.ttf");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "IBM Plex Sans Condensed";
-  src: url("./fonts/IBM_Plex_Sans_Condensed/IBMPlexSansCondensed-BoldItalic.ttf");
+  src: url("./assets/fonts/IBM_Plex_Sans_Condensed/IBMPlexSansCondensed-BoldItalic.ttf");
   font-weight: 700;
   font-style: italic;
 }
 @font-face {
   font-family: "IBM Plex Sans Condensed";
-  src: url("./fonts/IBM_Plex_Sans_Condensed/IBMPlexSansCondensed-SemiBold.ttf");
+  src: url("./assets/fonts/IBM_Plex_Sans_Condensed/IBMPlexSansCondensed-SemiBold.ttf");
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: "IBM Plex Sans Condensed";
-  src: url("./fonts/IBM_Plex_Sans_Condensed/IBMPlexSansCondensed-SemiBoldItalic.ttf");
+  src: url("./assets/fonts/IBM_Plex_Sans_Condensed/IBMPlexSansCondensed-SemiBoldItalic.ttf");
   font-weight: 600;
   font-style: italic;
 }
 @font-face {
   font-family: "IBM Plex Sans Condensed";
-  src: url("./fonts/IBM_Plex_Sans_Condensed/IBMPlexSansCondensed-Medium.ttf");
+  src: url("./assets/fonts/IBM_Plex_Sans_Condensed/IBMPlexSansCondensed-Medium.ttf");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "IBM Plex Sans Condensed";
-  src: url("./fonts/IBM_Plex_Sans_Condensed/IBMPlexSansCondensed-MediumItalic.ttf");
+  src: url("./assets/fonts/IBM_Plex_Sans_Condensed/IBMPlexSansCondensed-MediumItalic.ttf");
   font-weight: 500;
   font-style: italic;
 }
 @font-face {
   font-family: "IBM Plex Sans Condensed";
-  src: url("./fonts/IBM_Plex_Sans_Condensed/IBMPlexSansCondensed-Regular.ttf");
+  src: url("./assets/fonts/IBM_Plex_Sans_Condensed/IBMPlexSansCondensed-Regular.ttf");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "IBM Plex Sans Condensed";
-  src: url("./fonts/IBM_Plex_Sans_Condensed/IBMPlexSansCondensed-Italic.ttf");
+  src: url("./assets/fonts/IBM_Plex_Sans_Condensed/IBMPlexSansCondensed-Italic.ttf");
   font-weight: 400;
   font-style: italic;
 }
 @font-face {
   font-family: "IBM Plex Sans Condensed";
-  src: url("./fonts/IBM_Plex_Sans_Condensed/IBMPlexSansCondensed-Light.ttf");
+  src: url("./assets/fonts/IBM_Plex_Sans_Condensed/IBMPlexSansCondensed-Light.ttf");
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
   font-family: "IBM Plex Sans Condensed";
-  src: url("./fonts/IBM_Plex_Sans_Condensed/IBMPlexSansCondensed-LightItalic.ttf");
+  src: url("./assets/fonts/IBM_Plex_Sans_Condensed/IBMPlexSansCondensed-LightItalic.ttf");
   font-weight: 300;
   font-style: italic;
 }
 @font-face {
   font-family: "IBM Plex Sans Condensed";
-  src: url("./fonts/IBM_Plex_Sans_Condensed/IBMPlexSansCondensed-ExtraLight.ttf");
+  src: url("./assets/fonts/IBM_Plex_Sans_Condensed/IBMPlexSansCondensed-ExtraLight.ttf");
   font-weight: 200;
   font-style: normal;
 }
 @font-face {
   font-family: "IBM Plex Sans Condensed";
-  src: url("./fonts/IBM_Plex_Sans_Condensed/IBMPlexSansCondensed-ExtraLight.ttf");
+  src: url("./assets/fonts/IBM_Plex_Sans_Condensed/IBMPlexSansCondensed-ExtraLight.ttf");
   font-weight: 200;
   font-style: italic;
 }
 @font-face {
   font-family: "IBM Plex Sans Condensed";
-  src: url("./fonts/IBM_Plex_Sans_Condensed/IBMPlexSansCondensed-Thin.ttf");
+  src: url("./assets/fonts/IBM_Plex_Sans_Condensed/IBMPlexSansCondensed-Thin.ttf");
   font-weight: 100;
   font-style: normal;
 }
 @font-face {
   font-family: "IBM Plex Sans Condensed";
-  src: url("./fonts/IBM_Plex_Sans_Condensed/IBMPlexSansCondensed-ThinItalic.ttf");
+  src: url("./assets/fonts/IBM_Plex_Sans_Condensed/IBMPlexSansCondensed-ThinItalic.ttf");
   font-weight: 100;
   font-style: italic;
 }
@@ -97,109 +97,109 @@
 /* Gotham Condensed */
 @font-face {
   font-family: "GothamCond";
-  src: url("./fonts/GothamCondensed/GothamCond-XBlack.otf");
+  src: url("./assets/fonts/GothamCondensed/GothamCond-XBlack.otf");
   font-weight: 950;
   font-style: normal;
 }
 @font-face {
   font-family: "GothamCond";
-  src: url("./fonts/GothamCondensed/GothamCond-XBlackItalic.otf");
+  src: url("./assets/fonts/GothamCondensed/GothamCond-XBlackItalic.otf");
   font-weight: 950;
   font-style: italic;
 }
 @font-face {
   font-family: "GothamCond";
-  src: url("./fonts/GothamCondensed/GothamCond-Black.otf");
+  src: url("./assets/fonts/GothamCondensed/GothamCond-Black.otf");
   font-weight: 900;
   font-style: normal;
 }
 @font-face {
   font-family: "GothamCond";
-  src: url("./fonts/GothamCondensed/GothamCond-BlackItalic.otf");
+  src: url("./assets/fonts/GothamCondensed/GothamCond-BlackItalic.otf");
   font-weight: 900;
   font-style: italic;
 }
 @font-face {
   font-family: "GothamCond";
-  src: url("./fonts/GothamCondensed/GothamCond-Ultra.otf");
+  src: url("./assets/fonts/GothamCondensed/GothamCond-Ultra.otf");
   font-weight: 800;
   font-style: normal;
 }
 @font-face {
   font-family: "GothamCond";
-  src: url("./fonts/GothamCondensed/GothamCond-UltraItalic.otf");
+  src: url("./assets/fonts/GothamCondensed/GothamCond-UltraItalic.otf");
   font-weight: 800;
   font-style: italic;
 }
 @font-face {
   font-family: "GothamCond";
-  src: url("./fonts/GothamCondensed/GothamCond-Bold.otf");
+  src: url("./assets/fonts/GothamCondensed/GothamCond-Bold.otf");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "GothamCond";
-  src: url("./fonts/GothamCondensed/GothamCond-BoldItalic.otf");
+  src: url("./assets/fonts/GothamCondensed/GothamCond-BoldItalic.otf");
   font-weight: 700;
   font-style: italic;
 }
 @font-face {
   font-family: "GothamCond";
-  src: url("./fonts/GothamCondensed/GothamCond-Medium.otf");
+  src: url("./assets/fonts/GothamCondensed/GothamCond-Medium.otf");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "GothamCond";
-  src: url("./fonts/GothamCondensed/GothamCond-MediumItalic.otf");
+  src: url("./assets/fonts/GothamCondensed/GothamCond-MediumItalic.otf");
   font-weight: 500;
   font-style: italic;
 }
 @font-face {
   font-family: "GothamCond";
-  src: url("./fonts/GothamCondensed/GothamCond-Book.otf");
+  src: url("./assets/fonts/GothamCondensed/GothamCond-Book.otf");
   font-weight: 350;
   font-style: normal;
 }
 @font-face {
   font-family: "GothamCond";
-  src: url("./fonts/GothamCondensed/GothamCond-BookItalic.otf");
+  src: url("./assets/fonts/GothamCondensed/GothamCond-BookItalic.otf");
   font-weight: 350;
   font-style: italic;
 }
 @font-face {
   font-family: "GothamCond";
-  src: url("./fonts/GothamCondensed/GothamCond-Light.otf");
+  src: url("./assets/fonts/GothamCondensed/GothamCond-Light.otf");
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
   font-family: "GothamCond";
-  src: url("./fonts/GothamCondensed/GothamCond-LightItalic.otf");
+  src: url("./assets/fonts/GothamCondensed/GothamCond-LightItalic.otf");
   font-weight: 300;
   font-style: italic;
 }
 @font-face {
   font-family: "GothamCond";
-  src: url("./fonts/GothamCondensed/GothamCond-XLight.otf");
+  src: url("./assets/fonts/GothamCondensed/GothamCond-XLight.otf");
   font-weight: 200;
   font-style: normal;
 }
 @font-face {
   font-family: "GothamCond";
-  src: url("./fonts/GothamCondensed/GothamCond-XLightItalic.otf");
+  src: url("./assets/fonts/GothamCondensed/GothamCond-XLightItalic.otf");
   font-weight: 200;
   font-style: italic;
 }
 @font-face {
   font-family: "GothamCond";
-  src: url("./fonts/GothamCondensed/GothamCond-Thin.otf");
+  src: url("./assets/fonts/GothamCondensed/GothamCond-Thin.otf");
   font-weight: 100;
   font-style: normal;
 }
 @font-face {
   font-family: "GothamCond";
-  src: url("./fonts/GothamCondensed/GothamCond-ThinItalic.otf");
+  src: url("./assets/fonts/GothamCondensed/GothamCond-ThinItalic.otf");
   font-weight: 100;
   font-style: italic;
 }
