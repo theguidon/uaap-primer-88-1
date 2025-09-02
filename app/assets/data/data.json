@@ -1,10 +1,114 @@
 [
   {
     "team": "Men’s Basketball",
-    "title": "RESTORING ORDER",
+    "title": "Restoring Order",
     "byline": "Ravi G. Tan",
     "article": "BUILT ON years of excellence, the Ateneo Men’s Basketball Team has long operated under a standard of winning. Despite the roadblock of missing the Final Four for the first time in 11 years, the Blue Eagles return with the same mission: to assert their place among the UAAP’s elite.\n\nKey holdovers Jared Bahay, Andrew Bongo, Ian Espinosa, Kyle Gamber, Josh Lazaro, and Shawn Tuano anchor a hungry squad that is determined to restore Ateneo’s winning tradition. Supporting the Blue and White’s bid for glory will be recruits Divine Adili, Kymani Ladi, Jaden Lazo, and Dominic Escobar—bolstering both the frontcourt and backcourt rotations with invaluable depth.\n\nWith a mix of motivated veterans and standout acquisitions, Espinosa believes uniting under Head Coach Tab Baldwin’s championship-proven system will unlock the team’s full potential. Fueled by the same culture and camaraderie that powered the dynasties of the past, the Blue Eagle Band of Brothers are primed to once again emerge as threats in the UAAP.",
-    "articleLink": "https://theguidon.com",
-    "anchor": "mbasketball"
+    "slug": "mens-basketball"
+  },
+  {
+    "team": "Women’s Basketball",
+    "title": "Talons Sharpened",
+    "byline": "Edge Torres",
+    "article": "WITH THREE straight years of securing a spot in the Final Four, the veteran-studded Ateneo Women’s Basketball Team (AWBT) is ready to fight at full tilt for their crowning moment in UAAP Season 88. Looking to end an 18-year title drought, the Katipunan-based squad seeks blood and vengeance, ready to soar above the rivals that stand in front of them.\n\nWith their poised leadership and command in the squad, Co-captains Sandra Villacruz and Gracie Batongbakal will steer Ateneo’s ship for another deep run. Alongside the leaders of the pack, back-to-back MVP Kacey Dela Rosa and center Sarah Makanjuola are expected to rigidly hold down Ateneo’s fort. Meanwhile, highly touted new recruits Erica de Luna and Candice Udal will also don the Blue and White as they take flight for greater heights.\n\nDespite Ateneo’s consecutive playoff heartbreaks and the supremacy of women’s basketball programs from University of Santo Tomas and National University, the Blue Eagles fearlessly sharpen their talons, primed to snatch a long-awaited trophy.",
+    "slug": "womens-basketball"
+  },
+  {
+    "team": "Men’s Football",
+    "title": "Road to Redemption",
+    "byline": "Luis Antonio Licas",
+    "article": "A NEW era dawns in Loyola Heights as the Ateneo Men’s Football Team (AMFT) begins their quest for greatness in UAAP Season 88.\n\nAfter falling mere penalties short of the crown, the Blue Eagles are eager to shake off the ghosts of the past under the brilliance of long-time tactician Head Coach JP Merida.\n\nDespite losing core veterans, the squad’s legacy continues through a four-man captaincy spearheaded by Season 87 Best Midfielder Dov Cariño.\n\nAlongside him are co-captains Andy Roxas, Jethro Flores, and Marco Salud, who look to lead the Blue and White with relentless drive. Though Roxas will be sidelined after suffering an untimely injury during the offseason, he emphasized, “We have to be fighting with all our heart, every game.”\n\nReigning Season 87 Golden Boot awardee Cariño, now donning the captain’s armband, will reunite with Season 86’s recipient Kofi Agyei, who makes his highly anticipated return, forming a formidable frontline duo for the AMFT.\n\nGoalkeeper Alfonso Loja, Javier Bengson, and Marcus Arias bring forth veteran savvy, while rookies Caleb Santos and Andrei Gonzales of the national youth teams, along with masteral recruit Kendryx Soriano, hope to make an immediate impact.\n\nWith a deep-rooted culture of excellence and title aspirations, Roxas sums up their mission in one word: “Redemption.”",
+    "slug": "mens-football"
+  },
+  {
+    "team": "Women’s Football",
+    "title": "Breaking Shackles",
+    "byline": "Laurence L. Fernando",
+    "article": "ONCE THE dust settled in Season 87, the Ateneo Women’s Football Team (AWFT) was eager to turn the page and start anew. While the sting of a last-place finish still lingers, Head Coach Robert Manlulo looks to transform last year’s setbacks into a new culture—one of winning.\n\nContinuing her graduate studies, skipper KC Zalamea plans to give her all on the pitch while serving as a mentor for the young Blue Eagles. Under the captain’s wing is national team forward recruit Sophia Lyttle, who plans to give rival defenders a run for their money and provide fans a glimpse of a formidable future developing in Loyola Heights.\n\nJunior Raya Tolentino will continue to marshal the backline for the Blue and White, wreaking havoc on the opposing team’s attempts to press forward. Behind her is senior goalkeeper Chelssy Casals, who remains as the ultimate backstop for the Blue Eagles.\n\nWith improved team chemistry, the AWFT is looking to break the shackles of past failures. Backed by a promising set of recruits and emboldened by persevering veterans, the Blue Eagles aim to blaze a new path going forward.",
+    "slug": "womens-football"
+  },
+  {
+    "team": "Cheerdance",
+    "title": "Progress over Perfection",
+    "byline": "David Enrico Galvez",
+    "article": "AFTER CONCLUDING the previous season’s UAAP Cheerdance Competition at eighth place, the Blue Babble Battalion is ravenous to rise and prevail in their next major showcase. Spearheaded by Team Captains Victor Medina, Gabrielle Santiago, and Geryna Abarcar, Ateneo remains dedicated to building progress with stronger foundations and louder chants for the upcoming Season 88.\n\nThe Blue Eagles return with sharpened wings—recalibrating routines and resetting mindsets as a wide set of fresh talents enter the promising roster. At Head Coach JP Santiago’s helm, Gabby Calilung, Maxine Vela, and Luis Arroyo lead their fellow rookies in cementing fresh discipline with fierce passion into their groundwork.\n\nMore than just being the underdogs, the Katipunan-based squad aims to introduce their young unit as a family that stewards and shepherds each other. Strengthening synergy is Ateneo’s top priority, as they look forward to orchestrating a stellar performance on the UAAP dancefloor.",
+    "slug": "cheerdance"
+  },
+  {
+    "team": "Men’s Chess",
+    "title": "Finding Consistency",
+    "byline": "Ino Maderazo",
+    "article": "AFTER A stellar podium finish two seasons ago, the Ateneo Men’s Chess Team’s (AMCT) Season 87 campaign was met with growing pains, falling just short of the podium in the Classical, Rapid, and Blitz Tournaments.\n\nDespite these setbacks, the retooled batch of Blue Eagles still showed flashes of their prowess as they head into the new year. Manuel Maglunog returns to the team after his trifecta of medal finishes last season, as well as Knarf Batislaong, who secured a bronze medal of his own in the Blitz tournament.\n\nRetaining a highly intact core led by Team Captain Khalil Kis-ing and veterans like Batislaong and Maglunog, the Blue and White aims to translate their individual prowess into sustained team success. Furthermore, the team’s ranks are bolstered by promising recruits Ritchie James Abeleda, Cedric Abris, and Eowyn Jullado.\n\nWith Season 88 on the horizon, the Blue Eagles set their sights on rising to the occasion and asserting themselves as a dominant force in UAAP chess.",
+    "slug": "mens-chess"
+  },
+  {
+    "team": "Women’s Chess",
+    "title": "Momentum in Motion",
+    "byline": "RV Quinto",
+    "article": "FRESH OFF their historic championship in the inaugural UAAP Blitz Chess tournament, the Ateneo Women’s Chess Team (AWCT) returns to the board with sharpened focus and renewed determination.\n\nWith redemption in mind after missing the podium in last season’s Classical Chess, the Blue Eagles aim to carry their momentum into a stronger showing across all formats this season.\n\nLeading the charge is team captain and reigning Blitz Chess MVP Elayza Villa, who is now tasked with steering the team to victory. Joining her on the board are veterans Alphecca Gonzales, Jiessel Marino, Glesit Tatoy, former captain Kristine Mae Flores, and rookie Francine Elaine Magpily. Together, this group awaits the new season with checkmates in sight and a shared determination to bring the Blue and White to the summit of competition.\n\nBuilding on their breakthrough performances last season, the AWCT enters Season 88 with a chance to transform flashes of brilliance into sustained dominance—laying the groundwork for a lasting legacy on the 64-square battlefield.",
+    "slug": "womens-chess"
+  },
+  {
+    "team": "Men’s Beach Volleyball",
+    "title": "Dynamic Resurgence",
+    "byline": "Jules Aranjuez",
+    "article": "MISSING THE podium since Season 86, the Ateneo Men’s Beach Volleyball Team (AMBVT) seeks to reinstate glory in the outdoor scene with iron-clad chemistry.\n\nWhile the AMBVT struggled to amass victories last season, nabbing only one win against the University of the East, the sun shines again on the Blue and White as former Rookie of the Year Jian Salarzon returns to the sands.\n\nHaving clinched bronze in Season 85, the dynamic duo of Team Captains Amil Pacinio and Salarzon aim to spearhead the Blue Eagles’ success and revive their diagonal brilliance. With experience in both indoor and outdoor volleyball, their capabilities shall aid the AMBVT’s campaign towards attaining a podium finish.\n\nVeterans Miguel Yu, Karl Corrigedor, and Anjo Almadro also bring sheer will and talent to the composition, with familiarity being the Blue Eagles’ foremost strength towards greatness. Mentoring them is Coach Henry James Pecaña, who has guided the AMBVT since 2022.\n\nIn his final year as a Blue Eagle, Pacinio hopes to secure a final four resurgence for the Ateneo and reclaim the AMBVT’s excellence on the sands.",
+    "slug": "mens-beach-volleyball"
+  },
+  {
+    "team": "Women’s Beach Volleyball",
+    "title": "Purpose in Play",
+    "byline": "Carmela Therese Papa",
+    "article": "HONOR AND dedication—bearing the Blue and White banner is what keeps the Ateneo Women’s Beach Volleyball Team driven and able to power through past obstacles.\n\nLast Season 87, the Blue Eagles struggled to find their footing in the sands, landing at a sixth-place finish. Despite this adversity, Katipunan’s unyielding beach volleyball tandems remain crowned in courage as they head into a new season. Hungry to rebound with resilience, Ateneo introduces a reinforced system—one that is primed for a Final Four return after six years.\n\nAt the core of this new system are battle-tested frontrunners Grydelle Matibag, Liz Lomocso, and Christen Quimpo. Conditioned to embody discipline each day, they are now set to return under the heat, hell-bent on steering their stint towards a well-earned comeback. The lineup draws strength from one another, highlighting the importance of communication and support. Still shaped by the expertise of Head Coach Henry James Pecaña, the roster aims to return to the league with pride for their team, for the school, and for the people who believe in their revival.",
+    "slug": "womens-beach-volleyball"
+  },
+  {
+    "team": "Men’s Swimming",
+    "title": "Bloodline of Brilliance",
+    "byline": "Carmela Therese Papa",
+    "article": "FAST AND fearless—the Ateneo Men’s Swimming Team has long been the kings of the UAAP waters.\n\nThe Blue Eagles are no stranger to domination, as their nine years of command demonstrate an unwavering drive to prolong their reign. With a double-digit dynasty in sight, this lineup under Coach Archie Lim is committed to adding another jewel to their crown.\n\nWith veterans Rian Tirol, Rafael Barreto, and Charles Ticbaen returning for the last time, the perennial titleholders intend to maintain a tightly run fleet. Alongside them are rookies National Collegiate Athletic Association Season 100 Juniors Championship team members TJ Amaro and Rune Tan, as well as Palarong Pambansa multi-medalists Paolo Labanan and Juan Suarez. As they debut in college, the inheritors of the Ateneo banner will carry the team’s spirit, ensuring the squad’s continued dominance. Rounding out the star-studded line-up is Season 87 Rookie of the Year and Most Valuable Player Miguel Barreto, who is hungry to return to the competition and collect more hardware for Loyola Heights.\n\nEven as undisputed leaders of the collegiate sport, Team Captains Ticbaen and Joshua Del Rio refuse to get comfortable, sustaining the same hunger and hustle from the very start. With a gold-medal glory in their veins, the unshakeable Ateneo swimming empire is on track for a ten-year uninterrupted surge.",
+    "slug": "mens-swimming"
+  },
+  {
+    "team": "Women’s Swimming",
+    "title": "Champions of the Current",
+    "byline": "Gabrielle Binguan",
+    "article": "SEEKING TO forge their championship glory into a dynasty, the Ateneo Women’s Swimming Team is determined to relive their dominant run in UAAP Season 88.\n\nAfter clinching their first gold finish since Season 82, the Blue Eagles set their sights on securing back-to-back titles in this year’s ultimate race. Joining the flock are standout rookies—former Palarong Pambansa prodigy Mia Barretto, regional gold medalist Rissa Sahagun, and returning Season 87 Most Valuable Player Mishka Sy, among others. Bolstered by the promising selection of swimmers, Ateneo mainstay Team Captain Kirsten Manuel asserts that the Blue and White are geared up for another golden finish.\n\nManuel and the team welcome rising expectations as challenges, so long as they remain grounded in their winning synergy. “As long as we stay committed and work together as a team, we like where we’re headed,” says the veteran swimmer.\n\nAnchoring poise under pressure, the Blue Eagles look to intensify the waves of Season 88 with a myriad of podium finishes and a titanic medal haul.",
+    "slug": "womens-swimming"
+  },
+  {
+    "team": "Men’s Badminton",
+    "title": "Drive to the Top",
+    "byline": "Diego Rafael C. Josue",
+    "article": "GROUNDED IN grit, the Ateneo Men’s Badminton Team (AMBT) enters UAAP Season 88 with one mission: to reclaim the crown.\n\nAfter bowing to the National University Bulldogs in the finals last season, the Blue Eagles are banking on a battle-tested veteran core and a wave of fresh talent to mount another serious title bid.\n\nStepping into the role of Team Captain is seasoned stalwart Lyrden Laborte. He is set to reprise the role he shared last season with Arthur ‘Pingkoy’ Salvado, who will be entering his final year of eligibility. Joining Laborte as Co-Captain is fellow veteran Lance Vargas, who is eager to make a statement in his third year of competition.\n\nIn addition, the Blue Eagles welcome NCAA Season 100 Juniors Division MVP Zeth Quiambao and 2024 Palarong Pambansa gold medalist Jamal Rahmat Pandi—two young guns looking to make their mark in the collegiate scene.\n\nLed by acclaimed Head Coach Kennie Asuncion-Robles, the Blue and White are primed to be a formidable force. With rackets in hand, the Katipunan-based squad now sets its sights on smashing through the competition once again.",
+    "slug": "mens-badminton"
+  },
+  {
+    "team": "Women’s Badminton",
+    "title": "Reclaiming the Throne",
+    "byline": "Ani Santos",
+    "article": "LOOKING TO restore their place on top, the Ateneo Women’s Badminton Team (AWBT) is determined to reclaim the UAAP crown after their seven year reign ended in Season 87.\n\nLeading the charge in their quest for greatness are Team Captains Mika De Guzman and Jochelle Alvarez. Making her highly anticipated return this season, Alvarez will provide much-needed experience alongside De Guzman, as the former Co-Most Valuable Players aim to fuel their squad with an unwavering determination and a shared hunger for Blue and White excellence.\n\nReinforcing the roster is reigning Rookie of the Year, Althea Ocampo, who looks to amplify the roster’s firepower and further elevate her game. Together with new recruits Daena Louise Castro and Althea Princess Hernandez, the Blue Eagles are more than ready for the challenges that lie ahead next season.\n\nWith a more seasoned roster bolstering a mix of youth and experience, the AWBT have their eyes set on redemption as they storm the court with a renewed drive to reclaim their spot at the top.",
+    "slug": "womens-badminton"
+  },
+  {
+    "team": "Men’s Track and Field",
+    "title": "Pushing Past Limits",
+    "byline": "Caleb Oximas",
+    "article": "AFTER A promising two-gold medal haul last year, the Ateneo Men’s Track and Field Team (AMTF) is determined to solidify its status as bona fide contenders this UAAP Season 88. Fueled by their nascent squad’s emerging brilliance, the Blue Eagles are dead set on disrupting the league status quo.\n\nCaptaining Ateneo’s pursuit for excellence this season is reigning UAAP and Philippine discus throw record holder Russel Ricaforte. Alongside him are 800-meter gold medalist Hassan Loraña and veteran thrower Emilio Perez, who aim to carry last year’s momentum for more podium finishes in the oval. Meanwhile, touted rookies like middle-distance runner Hussein Loraña and sprinter Matthew Luis Angeles seek to make their mark in the collegiate scene and inject firepower into the Blue Eagles’ budding unit.\n\nUnder the guidance of Head Coach Sean Guevara, the Katipunan-based squad is primed to ascend into the UAAP’s zenith. With their eyes fixed on glory, the AMTF gears up to challenge for the crown and redefine the odds this season.",
+    "slug": "mens-track-and-field"
+  },
+  {
+    "team": "Women’s Track and Field",
+    "title": "Full Throttle",
+    "byline": "Matthea P. Lazo",
+    "article": "YOUNG AND fearless, the Ateneo Women’s Track and Field Team aims to be a force to be reckoned with this UAAP Season 88. Led by Head Coach Sean Guevara, the eight-eagle lineup is poised to take on the juggernauts of the league with grit, determination, and undying perseverance.\n\nVeterans Krisha Aguillon and Kat Duavit look to spread their wings for the Blue and White with renewed experience. In addition, rookies Rhea Lego, Jonalyn Halasan, and Shanenn Guevarra charge onto the track as versatile neophytes, and thrower Yden Candelario brings power to the field. Together, they round out a squad hungry for a race nothing short of electric.\n\nWith Team Captain Francesca Cheng setting the tone alongside fellow sprint specialist Sammie Souza, the Blue Eagles are racing toward personal bests, stronger bonds, and a season full of bold, unrelenting strides.",
+    "slug": "womens-track-and-field"
+  },
+  {
+    "team": "Women’s Table Tennis",
+    "title": "Rally to Glory",
+    "byline": "Mario Quirino Manlutac",
+    "article": "SOARING TO new heights following a second-place finish in Season 86 and a bronze medal in Season 87, the Ateneo Women’s Table Tennis Team (AWTTT) aims to capture the ever-elusive gold in Season 88. The Blue Eagles enter the season hungry as ever, blending experience with youth on their way to the top.\n\nKeen on turning individual weaknesses into collective strengths, returning Team Captain Celeen Docto, along with Co-captain and Season 86 Rookie of the Year Jelaine Monteclaro, look to spearhead the Blue Eagles atop the podium. With returning veteran Pia Fabregar back in tow, the Blue Eagles add another veteran to their already stacked core, including Gredel De Guzman and Aubrey Solis.\n\nBolstering the team’s campaign are Palarong Pambansa Secondary Girls Doubles Gold medalist Andrea Deondo, along with fellow rookies Nicole Alemania and Trisha Pachica. All eager to join in the team’s culture built on trust, resilience, and shared determination for growth, the sought-after recruits look to make an impact in Season 88.\n\nWith the new season on the horizon, the Blue Eagles are looking primed and ready to rise above previous challenges and finally reach the pinnacle of UAAP glory.",
+    "slug": "womens-table-tennis"
   }
 ]
