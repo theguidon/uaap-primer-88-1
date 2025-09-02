@@ -4,7 +4,7 @@ export function TeamSection() {
       <div className="bg-black h-[60dvh]">image</div>
       <div className="text-center p-8 lg:text-right">
         <h2 className="capitalize font-display">Men's Basketball</h2>
-        <h2 className="uppercase text-[3.25rem] font-display">
+        <h2 className="uppercase text-[3.25rem] font-display leading-[85%] my-2">
           RESTORING ORDER
         </h2>
         <div className="text-sm font-body">
