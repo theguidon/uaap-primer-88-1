@@ -4,14 +4,15 @@ import data from "../assets/data/data.json";
 export function Welcome() {
   return (
     <>
-      {data.map((team) => (
+      {data.map(({ team, title, article, articleLink, anchor }) => (
         <TeamSection
-          team={team.team}
-          title={team.title}
-          blurb={team.blurb}
-          articleLink={team.articleLink}
+          key={anchor}
+          team={team}
+          title={title}
+          blurb={article.split("\n\n")[0]} // get first paragraph of article
+          articleLink={articleLink}
           alignment="right"
-          anchor={team.anchor}
+          anchor={anchor}
         />
       ))}
     </>
