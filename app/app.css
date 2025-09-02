@@ -4,8 +4,8 @@
 @theme {
   --font-display: "GothamCond", "sans-serif";
   --font-body: "IBM Plex Sans Condensed", "sans-serif";
-  --color-uaap-blue: "#1C41D5";
-  --color-uaap-dark-blue: "#002581";
+  --color-uaap-blue: #1c41d5;
+  --color-uaap-dark-blue: #002581;
 }
 
 /* FONTS */
