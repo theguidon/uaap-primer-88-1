@@ -137,6 +137,27 @@ export function Welcome() {
           transition={{ duration: 0.5, ease: "easeInOut", delay: 0 }}
           style={{ width: "100%", zIndex: 50, position: "absolute" }}
         />
+        <motion.div className="under-ribbon"
+          initial={{ width: 0 }}
+          animate={{ width: "100%" }}
+          style={{ overflowX: "clip", height: "100%", position: "absolute", zIndex: 25, right: 0 }}
+        >
+          <img
+            src="/underphoto_mobile.svg"
+            style={{ width: 400, height: "100%", objectFit: "cover", objectPosition: "right center" }}
+          />
+        </motion.div>
+        <motion.div className="over-ribbon"
+          initial={{ width: 0 }}
+          animate={{ width: "100%" }}
+          transition={{ delay: 0.65 }}
+          style={{ overflowX: "clip", height: 450, position: "absolute", zIndex: 75, right: 0 }}
+        >
+          <img
+            src="/overphoto_mobile.svg"
+            style={{ width: 400, height: 450, objectFit: "cover", objectPosition: "right center" }}
+          />
+        </motion.div>
       </section>
     </main>
   );
