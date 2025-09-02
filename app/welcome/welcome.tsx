@@ -75,17 +75,17 @@ export function Welcome() {
         <div
           className={styles.bloom}
           style={{
-            width: '450px',
-            height: '450px',
+            width: '550px',
+            height: '550px',
             position: 'absolute',
-            left: 100,
+            right: 200,
             top: -30,
             zIndex: 5
           }}
         >
           <BloomingCircles
-            outerSize="450px"
-            radiiGap="30px"
+            outerSize="550px"
+            radiiGap="55px"
             colors={['rgba(143, 39, 134, 0.3)', 'rgba(143, 39, 134, 0.7)', '#8f2786']}
             animStagger={25}
             animSpeed="500ms"
