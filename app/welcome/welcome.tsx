@@ -1,8 +1,7 @@
-import logoDark from "./logo-dark.svg";
-import logoLight from "./logo-light.svg";
 import { useMediaQuery } from "react-responsive";
 import "./anims.css";
 import styles from "./home.module.css";
+import { motion, MotionConfig } from "motion/react";
 
 function BloomingCircles({ outerSize, radiiGap, colors, animStagger, animSpeed, delay }: { outerSize: string, radiiGap: string, colors: string[], animStagger: number, animSpeed: string, delay: number }) {
   // note that outerSize must be divisible by radiiGap...
@@ -53,16 +52,39 @@ export function Welcome() {
     <main>
       <section className={styles.title}>
         <div>
-          <img src="/Long_Logo.svg" />
+          <motion.img
+            src="/Long_Logo.svg"
+            initial={{ y: 100 }}
+            animate={{ y: 0 }}
+            transition={{ duration: 1, ease: "easeInOut" }}
+          />
         </div>
         <div className={styles.titleUAAP}>
-          <h1>UAAP</h1>
+          <motion.h1
+            initial={{ x: -100 }}
+            animate={{ x: 0 }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+          >
+            UAAP
+          </motion.h1>
         </div>
         <div className={styles.titleSeason}>
-          <h1>SEASON 88</h1>
+          <motion.h1
+            initial={{ x: -200 }}
+            animate={{ x: 0 }}
+            transition={{ duration: 0.5, ease: "easeInOut", delay: 0.1 }}
+          >
+            SEASON 88
+          </motion.h1>
         </div>
         <div className={styles.titleSemester}>
-          <h1>First Semester Primer</h1>
+          <motion.h1
+            initial={{ x: -200 }}
+            animate={{ x: 0 }}
+            transition={{ duration: 0.5, ease: "easeInOut", delay: 0.2 }}
+          >
+            First Semester Primer
+          </motion.h1>
         </div>
       </section>
     </main>
