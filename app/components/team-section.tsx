@@ -30,7 +30,7 @@ export function TeamSection({
         </h2>
       </div>
       <div
-        className={`text-center p-8 text-uaap-blue flex-4 flex flex-col ${alignment == "right" ? "lg:text-right" : "lg:text-left"} lg:px-20 lg:py-10`}
+        className={`text-center p-8 text-uaap-blue flex-4 flex flex-col ${alignment == "right" ? "lg:text-right" : "lg:text-left"} lg:px-20 lg:py-0 lg:self-center`}
       >
         <h2 className="capitalize font-display font-bold text-[2rem] lg:hidden">
           {team}
@@ -46,7 +46,7 @@ export function TeamSection({
           href={articleLink}
           className={`self-center mt-4 lg:mt-6 ${alignment == "right" ? "lg:self-end" : "lg:self-start"}`}
         >
-          <button className="flex gap-1 p-2.5 cursor-pointer upppercase bg-uaap-dark-blue text-white font-body font-bold lg:text-2xl lg:p-6">
+          <button className="flex gap-1 p-2.5 cursor-pointer upppercase bg-uaap-dark-blue text-white font-body font-bold lg:text-2xl lg:p-4">
             READ MORE
             <div>{">"}</div>
           </button>
