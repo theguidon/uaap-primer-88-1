@@ -16,7 +16,7 @@ export function TeamSection({
   const restBlurb = splitBlurb.slice(2).join(" ");
   return (
     <section
-      id={slug}
+      id={slug} // use this as anchor for navigation sidebar
       className={`flex flex-col h-dvh ${alignment == "right" ? "lg:flex-row" : "lg:flex-row-reverse"} lg:h-[50dvh]`}
     >
       <div className="bg-black flex-6 relative">
