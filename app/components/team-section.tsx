@@ -3,17 +3,20 @@ export function TeamSection({
   title,
   blurb,
   alignment,
+  anchor,
 }: {
   team: string;
   title: string;
   blurb: string;
   alignment: "left" | "right";
+  anchor: string;
 }) {
   const splitBlurb = blurb.split(" ");
   const firstTwoBlurb = splitBlurb.slice(0, 2).join(" ");
   const restBlurb = splitBlurb.slice(2).join(" ");
   return (
     <section
+      id={anchor}
       className={`flex flex-col h-dvh ${alignment == "right" ? "lg:flex-row" : "lg:flex-row-reverse"} lg:h-[50dvh] border-red-500 border-2`}
     >
       <div className="bg-black flex-6 relative">
