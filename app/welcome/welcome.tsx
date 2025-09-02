@@ -40,7 +40,7 @@ function BloomingCircles({ outerSize, radiiGap, colors, animStagger, animSpeed, 
           ></div>
         )
       })}
-    </div >
+    </div>
   );
 }
 
@@ -50,6 +50,8 @@ export function Welcome() {
 
   return (
     <main>
+      <section className={styles.menu}>
+      </section>
       <section className={styles.title}>
         <div>
           <motion.img
@@ -88,12 +90,52 @@ export function Welcome() {
         </div>
       </section>
       <section className={styles.graphic}>
+        <div
+          className={styles.bloom}
+          style={{
+            width: '500px',
+            height: '500px',
+            position: 'absolute',
+            left: -200,
+            top: 50,
+            zIndex: 20
+          }}
+        >
+          <BloomingCircles
+            outerSize="500px"
+            radiiGap="50px"
+            colors={['#b7e1f2', '#56b8e1', '#0e9ad4']}
+            animStagger={25}
+            animSpeed="500ms"
+            delay={0}
+          />
+        </div>
+        <div
+          className={styles.bloom}
+          style={{
+            width: '300px',
+            height: '300px',
+            position: 'absolute',
+            right: -120,
+            top: 300,
+            zIndex: 10
+          }}
+        >
+          <BloomingCircles
+            outerSize="300px"
+            radiiGap="30px"
+            colors={['rgba(249, 218, 44, 0.3)', 'rgba(249, 218, 44, 0.7)', 'rgba(249, 218, 44, 1)']}
+            animStagger={25}
+            animSpeed="500ms"
+            delay={15}
+          />
+        </div>
         <motion.img
           src="/homepage_player_mobile.png"
           initial={{ y: 500 }}
           animate={{ y: 0 }}
           transition={{ duration: 0.5, ease: "easeInOut", delay: 0 }}
-          style={{ width: "100%" }}
+          style={{ width: "100%", zIndex: 50, position: "absolute" }}
         />
       </section>
     </main>
