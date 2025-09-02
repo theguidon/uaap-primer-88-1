@@ -75,17 +75,17 @@ export function Welcome() {
         <div
           className={styles.bloom}
           style={{
-            width: '550px',
-            height: '550px',
+            width: '40vw',
+            height: '40vw',
             position: 'absolute',
-            right: 200,
+            right: "10%",
             top: -30,
             zIndex: 5
           }}
         >
           <BloomingCircles
-            outerSize="550px"
-            radiiGap="55px"
+            outerSize="40vw"
+            radiiGap="calc(40vw / 10)"
             colors={['rgba(143, 39, 134, 0.3)', 'rgba(143, 39, 134, 0.7)', '#8f2786']}
             animStagger={25}
             animSpeed="500ms"
@@ -95,17 +95,17 @@ export function Welcome() {
         <div
           className={styles.bloom}
           style={{
-            width: '600px',
-            height: '600px',
+            width: '50vw',
+            height: '50vw',
             position: 'absolute',
-            right: -120,
+            right: "-20%",
             top: 120,
             zIndex: 10
           }}
         >
           <BloomingCircles
-            outerSize="600px"
-            radiiGap="40px"
+            outerSize="50vw"
+            radiiGap="calc(50vw / 15)"
             colors={['#b7e1f2', '#56b8e1', '#0e9ad4']}
             animStagger={25}
             animSpeed="750ms"
