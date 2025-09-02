@@ -22,7 +22,7 @@ export function TeamSection({
       <div className="bg-black flex-6">
         image
         <h2
-          className={`text-white hidden font-display font-bold text-4xl absolute w-min ${alignment == "right" ? "text-right" : "text-left"} top-0 ${alignment == "right" ? "right-0" : "left-0"} p-8 md:block md:px-[calc(60dvw-2rem)] lg:py-15 xl:py-10 xl:px-[calc(60dvw-6rem)]`}
+          className={`text-white hidden font-display font-bold text-4xl absolute w-min ${alignment == "right" ? "text-right" : "text-left"} top-0 ${alignment == "right" ? "right-0" : "left-0"} p-8 md:block md:px-[calc(60dvw-2rem)] lg:py-15 xl:py-10 xl:px-[calc(60dvw-6rem)] 2xl:py-14`}
         >
           {team.split(" ").length > 2 ? (
             <>
@@ -36,7 +36,7 @@ export function TeamSection({
         </h2>
       </div>
       <div
-        className={`text-center p-8 text-uaap-blue flex-4 flex flex-col justify-between h-full sm:p-15 md:p-8 ${alignment == "right" ? "md:text-right" : "md:text-left"} lg:py-15 xl:px-20 xl:py-10 xl:self-center`}
+        className={`text-center p-8 text-uaap-blue flex-4 flex flex-col justify-between h-full sm:p-15 md:p-8 ${alignment == "right" ? "md:text-right" : "md:text-left"} lg:py-15 xl:px-20 xl:py-10 xl:self-center 2xl:py-14`}
       >
         <div>
           <h2 className="capitalize font-display font-bold text-[2rem] mb-2 md:hidden">
@@ -52,7 +52,7 @@ export function TeamSection({
         </div>
         <a
           href={`/${slug}`}
-          className={`self-center mt-4 ${alignment == "right" ? "md:self-end" : "md:self-start"} xl:mt-6`}
+          className={`self-center mt-4 ${alignment == "right" ? "md:self-end" : "md:self-start"}`}
         >
           <button className="flex gap-1 p-2.5 cursor-pointer upppercase bg-uaap-dark-blue text-white font-body font-bold xl:text-2xl xl:p-4">
             READ MORE
