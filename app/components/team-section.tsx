@@ -2,24 +2,22 @@ export function TeamSection({
   team,
   title,
   blurb,
-  articleLink,
   alignment,
-  anchor,
+  slug,
 }: {
   team: string;
   title: string;
   blurb: string;
-  articleLink: string;
   alignment: "left" | "right";
-  anchor: string;
+  slug: string;
 }) {
   const splitBlurb = blurb.split(" ");
   const firstTwoBlurb = splitBlurb.slice(0, 2).join(" ");
   const restBlurb = splitBlurb.slice(2).join(" ");
   return (
     <section
-      id={anchor}
-      className={`flex flex-col h-dvh ${alignment == "right" ? "lg:flex-row" : "lg:flex-row-reverse"} lg:h-[50dvh] border-red-500 border-2`}
+      id={slug}
+      className={`flex flex-col h-dvh ${alignment == "right" ? "lg:flex-row" : "lg:flex-row-reverse"} lg:h-[50dvh]`}
     >
       <div className="bg-black flex-6 relative">
         image
@@ -43,7 +41,7 @@ export function TeamSection({
           {restBlurb}
         </div>
         <a
-          href={articleLink}
+          href={`/${slug}`}
           className={`self-center mt-4 lg:mt-6 ${alignment == "right" ? "lg:self-end" : "lg:self-start"}`}
         >
           <button className="flex gap-1 p-2.5 cursor-pointer upppercase bg-uaap-dark-blue text-white font-body font-bold lg:text-2xl lg:p-4">
