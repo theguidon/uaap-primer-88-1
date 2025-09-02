@@ -52,8 +52,6 @@ section.title > div > h1 {
 div.enterButton {
   background: #002581;
   color: white;
-  padding: 12px !important;
-  width: 120px;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
