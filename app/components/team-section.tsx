@@ -2,12 +2,14 @@ export function TeamSection({
   team,
   title,
   blurb,
+  articleLink,
   alignment,
   anchor,
 }: {
   team: string;
   title: string;
   blurb: string;
+  articleLink: string;
   alignment: "left" | "right";
   anchor: string;
 }) {
@@ -41,10 +43,10 @@ export function TeamSection({
           {restBlurb}
         </div>
         <a
-          href=""
-          className={`self-center mt-4 cursor-pointer lg:mt-6 ${alignment == "right" ? "lg:self-end" : "lg:self-start"}`}
+          href={articleLink}
+          className={`self-center mt-4 lg:mt-6 ${alignment == "right" ? "lg:self-end" : "lg:self-start"}`}
         >
-          <button className="flex gap-1 p-2.5 upppercase bg-uaap-dark-blue text-white font-body font-bold lg:text-2xl lg:p-6">
+          <button className="flex gap-1 p-2.5 cursor-pointer upppercase bg-uaap-dark-blue text-white font-body font-bold lg:text-2xl lg:p-6">
             READ MORE
             <div>{">"}</div>
           </button>
