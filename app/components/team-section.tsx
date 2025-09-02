@@ -27,7 +27,9 @@ export function TeamSection({
       <div
         className={`text-center p-8 text-uaap-blue flex-4 flex flex-col ${alignment == "right" ? "lg:text-right" : "lg:text-left"} lg:px-20 lg:py-10`}
       >
-        <h2 className="capitalize font-display font-bold lg:hidden">{team}</h2>
+        <h2 className="capitalize font-display font-bold text-[2rem] lg:hidden">
+          {team}
+        </h2>
         <h2 className="uppercase text-[3.25rem] font-display font-bold leading-[85%] my-2 lg:text-[8.75rem] lg:my-4 lg:mt-0">
           {title}
         </h2>
