@@ -17,7 +17,7 @@ export function TeamSection({
   return (
     <section
       id={slug} // use this as anchor for navigation sidebar
-      className={`flex flex-col h-dvh ${alignment == "right" ? "md:flex-row" : "md:flex-row-reverse"} md:h-[50dvh] relative`}
+      className={`flex flex-col h-dvh relative overflow-hidden ${alignment == "right" ? "md:flex-row" : "md:flex-row-reverse"} md:h-[50dvh]`}
     >
       <div className="bg-black flex-6">
         image
