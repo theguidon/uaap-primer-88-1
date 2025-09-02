@@ -61,27 +61,27 @@ export function Welcome() {
         </div>
         <div className={styles.titleUAAP}>
           <motion.h1
-            initial={{ x: -100 }}
+            initial={{ x: -300 }}
             animate={{ x: 0 }}
-            transition={{ duration: 0.5, ease: "easeInOut" }}
+            transition={{ duration: 0.8, ease: "easeInOut" }}
           >
             UAAP
           </motion.h1>
         </div>
         <div className={styles.titleSeason}>
           <motion.h1
-            initial={{ x: -200 }}
+            initial={{ x: -300 }}
             animate={{ x: 0 }}
-            transition={{ duration: 0.5, ease: "easeInOut", delay: 0.1 }}
+            transition={{ duration: 0.8, ease: "easeInOut", delay: 0.1 }}
           >
             SEASON 88
           </motion.h1>
         </div>
         <div className={styles.titleSemester}>
           <motion.h1
-            initial={{ x: -200 }}
+            initial={{ x: -300 }}
             animate={{ x: 0 }}
-            transition={{ duration: 0.5, ease: "easeInOut", delay: 0.2 }}
+            transition={{ duration: 0.8, ease: "easeInOut", delay: 0.2 }}
           >
             First Semester Primer
           </motion.h1>
