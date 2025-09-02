@@ -87,6 +87,15 @@ export function Welcome() {
           </motion.h1>
         </div>
       </section>
+      <section className={styles.graphic}>
+        <motion.img
+          src="/homepage_player_mobile.png"
+          initial={{ y: 500 }}
+          animate={{ y: 0 }}
+          transition={{ duration: 0.5, ease: "easeInOut", delay: 0 }}
+          style={{ width: "100%" }}
+        />
+      </section>
     </main>
   );
 }

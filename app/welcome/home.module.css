@@ -45,3 +45,10 @@ main {
   flex-flow: column nowrap;
   align-items: center;
 }
+
+section.graphic {
+  width: 100%;
+  height: 450px;
+  position: relative;
+  overflow: hidden;
+}
