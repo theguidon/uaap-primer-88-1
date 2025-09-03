@@ -1,0 +1,86 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+}
+
+section.text {
+  background: #1c41d5;
+  flex: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+section.text > * {
+  width: 70%;
+}
+
+section.text h1,
+section.text h2 {
+  text-transform: uppercase;
+}
+
+section.text h2 {
+  font-family: "IBM Plex Sans Condensed";
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-bottom: 48px;
+}
+
+section.text h1 {
+  font-family: "Gotham Condensed";
+  font-weight: 700;
+  font-size: 5rem;
+  line-height: 5rem;
+}
+
+p.blurb {
+  font-family: "IBM Plex Sans Condensed";
+  font-weight: 1.5rem;
+}
+
+div.line {
+  height: 0;
+  border: 2px solid white;
+  margin: 16px 0;
+}
+
+.readMore {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.readMore p {
+  font-family: "IBM Plex Sans";
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.readMore img {
+  width: 16px;
+  height: 16px;
+}
+
+p span.firstTwo {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+section.graphic {
+  background: white;
+  flex: 40%;
+}
+
+@media (min-width: 700px) {
+  section.text {
+    flex: 60%;
+  }
+}
