@@ -28,13 +28,11 @@ export function TeamSection({
         image
         <motion.h2
           initial={{
-            translateX: alignment == "right" ? "-15%" : "15%",
-            opacity: 0,
+            translateX: alignment == "right" ? "20%" : "-20%",
           }}
           whileInView={{
-            transition: { duration: 0.25 },
+            transition: { duration: 0.75 },
             translateX: "0",
-            opacity: 1,
           }}
           className={`text-white hidden font-display font-bold text-5xl absolute w-min ${alignment == "right" ? "text-right" : "text-left"} top-0 ${alignment == "right" ? "right-0" : "left-0"} p-8 md:block md:px-[calc(60dvw-2rem)] lg:py-15 xl:py-10 xl:px-[calc(60dvw-6rem)] 2xl:py-14`}
         >
@@ -59,13 +57,11 @@ export function TeamSection({
           </h2>
           <motion.h2
             initial={{
-              translateX: alignment == "right" ? "50%" : "-50%",
-              opacity: 0,
+              translateX: alignment == "right" ? "100%" : "-100%",
             }}
             whileInView={{
-              transition: { duration: 0.25 },
+              transition: { duration: 0.75 },
               translateX: "0",
-              opacity: 1,
             }}
             className="uppercase text-[3.75rem] font-display font-bold leading-[85%] mb-2 sm:text-[4rem] md:text-[4.5rem] lg:text-[5rem] xl:text-[6rem] xl:mb-4"
           >
@@ -73,13 +69,11 @@ export function TeamSection({
           </motion.h2>
           <motion.p
             initial={{
-              translateX: alignment == "right" ? "50%" : "-50%",
-              opacity: 0,
+              translateX: alignment == "right" ? "100%" : "-100%",
             }}
             whileInView={{
-              transition: { duration: 0.25, delay: 0.175 },
+              transition: { duration: 0.75, delay: 0.125 },
               translateX: "0",
-              opacity: 1,
             }}
             className="text-sm font-body max-w-96 lg:text-base m-auto md:max-w-none"
           >
