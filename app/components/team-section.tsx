@@ -58,16 +58,18 @@ export function TeamSection({
           href={`/${slug}`}
           className={`self-center mt-4 ${alignment == "right" ? "md:self-end" : "md:self-start"}`}
         >
-          <button className="flex items-center gap-1 p-2.5 cursor-pointer upppercase bg-uaap-dark-blue text-white font-body font-bold xl:text-2xl xl:p-4">
+          <button className="hover:translate-x-1 hover:translate-y-[-0.25rem] ease-in-out duration-100 flex items-center gap-1 p-2.5 cursor-pointer upppercase bg-uaap-dark-blue text-white font-body font-bold xl:text-2xl xl:p-4">
             READ MORE
-            <IconContext.Provider
-              value={{
-                style: { color: "white" },
-                size: "1.75rem",
-              }}
-            >
-              <MdArrowOutward />
-            </IconContext.Provider>
+            <div className="">
+              <IconContext.Provider
+                value={{
+                  style: { color: "white" },
+                  size: "1.75rem",
+                }}
+              >
+                <MdArrowOutward />
+              </IconContext.Provider>
+            </div>
           </button>
         </a>
       </div>
