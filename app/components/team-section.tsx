@@ -50,7 +50,7 @@ export function TeamSection({
             opacity: 0,
           }}
           whileInView={{
-            transition: { duration: 0.5 },
+            transition: { duration: 0.25 },
             translateX: "0",
             opacity: 1,
           }}
