@@ -18,7 +18,75 @@ export default function EditorMessage() {
           <img src="/Arrow up-right.svg" />
         </div>
       </section>
-      <section className={styles.graphic}></section>
+      <section className={styles.graphic}>
+        <div
+          style={{
+            width: "500px",
+            height: "500px",
+            left: "-30%",
+            bottom: "-15%"
+          }}
+        >
+          <BloomingCircles
+            outerSize="100%"
+            radiiGap="10%"
+            colors={["rgba(143, 39, 134, 0.3)", "rgba(143, 39, 134, 0.7)", "#8f2786"]}
+            animStagger={25}
+            animSpeed="500ms"
+            delay={0}
+          />
+        </div>
+        <div
+          style={{
+            width: "300px",
+            height: "300px",
+            left: "15%",
+            top: "3%"
+          }}
+        >
+          <BloomingCircles
+            outerSize="100%"
+            radiiGap="10%"
+            colors={["rgba(249, 218, 44, 0.3)", "rgba(249, 218, 44, 0.7)", "#f9da2c"]}
+            animStagger={25}
+            animSpeed="500ms"
+            delay={0}
+          />
+        </div>
+        <div>
+          <img
+            src="/underphoto_message.svg"
+            style={{
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+              objectPosition: "20% 0"
+            }}
+          />
+        </div>
+        <div>
+          <img
+            src="/w-track-and-field.png"
+            style={{
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+              objectPosition: "0 0"
+            }}
+          />
+        </div>
+        <div>
+          <img
+            src="/overphoto_message.svg"
+            style={{
+              width: "100%",
+              height: "90%",
+              objectFit: "cover",
+              objectPosition: "-8%"
+            }}
+          />
+        </div>
+      </section>
     </section>
   );
 }
