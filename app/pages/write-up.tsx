@@ -1,5 +1,6 @@
 import type { Route } from "./+types/write-up";
 import data from "../assets/data/data.json";
+import { Fragment } from "react/jsx-runtime";
 
 const articleData: {
   [key: string]: {
@@ -19,7 +20,7 @@ export default function WriteUp({ loaderData }: Route.ComponentProps) {
     <div>
       {/* bg image */}
       <div className="bg-black w-full h-[70dvh]" />
-      <section className="max-w-[52rem] absolute top-48 left-1/2 translate-x-[-50%]">
+      <section className="max-w-[52rem] absolute top-36 left-1/2 translate-x-[-50%]">
         <h2 className="font-display font-bold text-4xl text-white">{team}</h2>
         <h1 className="font-display font-bold text-9xl text-white uppercase">
           {title}
@@ -30,17 +31,17 @@ export default function WriteUp({ loaderData }: Route.ComponentProps) {
         <div className="font-body text-uaap-blue mt-[4rem] mb-[6rem]">
           {article.split("\n\n").map((paragraph, idx) =>
             idx == 0 ? (
-              <p>
+              <p key={idx}>
                 <span className="font-bold uppercase">
                   {paragraph.split(" ").slice(0, 2).join(" ")}{" "}
                 </span>
                 {paragraph.split(" ").slice(2).join(" ")}
               </p>
             ) : (
-              <>
+              <Fragment key={idx}>
                 <br />
                 <p>{paragraph}</p>
-              </>
+              </Fragment>
             )
           )}
         </div>
