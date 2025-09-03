@@ -24,11 +24,11 @@ export default function WriteUp({ params, loaderData }: Route.ComponentProps) {
       <nav className="absolute w-dvw top-20 px-20 flex justify-between">
         <div className="text-white">hamburger</div>
         <NavLink to={`/#${params.slug}`}>
-          <button className="cursor-pointer flex gap-1 text-white font-body font-bold text-2xl items-center p-5 bg-uaap-dark-blue">
+          <button className="hover:-translate-1 ease-in-out duration-100 cursor-pointer flex gap-1 text-white font-body font-bold text-2xl items-center p-5 bg-uaap-dark-blue">
             <IconContext.Provider
               value={{
                 style: { color: "white", scale: "-1 1" },
-                size: "1.875rem",
+                size: "1.75rem",
               }}
             >
               <MdArrowOutward />
