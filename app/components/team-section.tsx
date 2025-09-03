@@ -28,7 +28,7 @@ export function TeamSection({
             <>
               {/* puts sports that are two words or more in one line */}
               {/* putting the non breaking space (\u00a0) in json breaks the font (Gotham Condensed) */}
-              {team.split(" ").slice(0, 1)}{" "}
+              {team.split(" ").slice(0, 1)}
               <p className="w-max">{team.split(" ").slice(1).join(" ")}</p>
             </>
           ) : (
