@@ -7,6 +7,10 @@
   --color-uaap-dark-blue: #002581;
 }
 
+:root {
+  overflow: hidden;
+}
+
 /* FONTS */
 /* IBM Plex Sans Condesed */
 @font-face {

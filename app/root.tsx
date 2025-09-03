@@ -32,7 +32,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Meta />
         <Links />
       </head>
-      <body>
+      <body className="snap-y snap-mandatory overflow-y-scroll h-dvh">
         {children}
         <ScrollRestoration />
         <Scripts />
