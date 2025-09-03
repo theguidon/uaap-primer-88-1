@@ -4,6 +4,7 @@ import { Fragment } from "react/jsx-runtime";
 import { MdArrowOutward } from "react-icons/md";
 import { IconContext } from "react-icons";
 import { NavLink } from "react-router";
+import { motion } from "motion/react";
 
 const articleData: {
   [key: string]: {
@@ -24,7 +25,13 @@ export default function WriteUp({ params, loaderData }: Route.ComponentProps) {
       <nav className="absolute w-dvw top-20 px-20 flex justify-between">
         <div className="text-white">hamburger</div>
         <NavLink to={`/#${params.slug}`}>
-          <button className="hover:-translate-1 ease-in-out duration-100 cursor-pointer flex gap-1 text-white font-body font-bold text-2xl items-center p-5 bg-uaap-dark-blue">
+          <motion.button
+            whileHover={{
+              transition: { duration: 0.125 },
+              translate: "-0.5rem -0.5rem",
+            }}
+            className="cursor-pointer flex gap-1 text-white font-body font-bold text-2xl items-center p-5 bg-uaap-dark-blue"
+          >
             <IconContext.Provider
               value={{
                 style: { color: "white", scale: "-1 1" },
@@ -34,7 +41,7 @@ export default function WriteUp({ params, loaderData }: Route.ComponentProps) {
               <MdArrowOutward />
             </IconContext.Provider>
             BACK
-          </button>
+          </motion.button>
         </NavLink>
       </nav>
       {/* bg image placeholder */}

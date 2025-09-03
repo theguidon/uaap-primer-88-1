@@ -1,6 +1,7 @@
 import { MdArrowOutward } from "react-icons/md";
 import { IconContext } from "react-icons";
 import { NavLink } from "react-router";
+import { motion } from "motion/react";
 
 export function TeamSection({
   team,
@@ -26,7 +27,7 @@ export function TeamSection({
       <div className="bg-black flex-6">
         image
         <h2
-          className={`text-white hidden font-display font-bold text-4xl absolute w-min ${alignment == "right" ? "text-right" : "text-left"} top-0 ${alignment == "right" ? "right-0" : "left-0"} p-8 md:block md:px-[calc(60dvw-2rem)] lg:py-15 xl:py-10 xl:px-[calc(60dvw-6rem)] 2xl:py-14`}
+          className={`text-white hidden font-display font-bold text-5xl absolute w-min ${alignment == "right" ? "text-right" : "text-left"} top-0 ${alignment == "right" ? "right-0" : "left-0"} p-8 md:block md:px-[calc(60dvw-2rem)] lg:py-15 xl:py-10 xl:px-[calc(60dvw-6rem)] 2xl:py-14`}
         >
           {team.split(" ").length > 2 ? (
             <>
@@ -43,7 +44,17 @@ export function TeamSection({
       <div
         className={`text-center p-8 text-uaap-blue flex-4 flex flex-col justify-between h-full sm:p-15 md:p-8 ${alignment == "right" ? "md:text-right" : "md:text-left"} lg:py-15 xl:px-20 xl:py-10 xl:self-center 2xl:py-14`}
       >
-        <div>
+        <motion.div
+          initial={{
+            translateX: alignment == "right" ? "40rem" : "-40rem",
+            opacity: 0,
+          }}
+          whileInView={{
+            transition: { duration: 0.5 },
+            translateX: "0",
+            opacity: 1,
+          }}
+        >
           <h2 className="capitalize font-display font-bold text-[2rem] mb-2 md:hidden">
             {team}
           </h2>
@@ -54,14 +65,20 @@ export function TeamSection({
             <span className="font-bold uppercase">{firstTwoBlurb} </span>
             {restBlurb}
           </p>
-        </div>
+        </motion.div>
         <NavLink
           to={`/${slug}`}
           className={`self-center mt-4 ${alignment == "right" ? "md:self-end" : "md:self-start"}`}
         >
-          <button className="hover:translate-x-1 hover:-translate-y-1 ease-in-out duration-100 flex items-center gap-1 p-2.5 cursor-pointer upppercase bg-uaap-dark-blue text-white font-body font-bold xl:text-2xl xl:p-4">
+          <motion.button
+            whileHover={{
+              transition: { duration: 0.125 },
+              translate: "0.5rem -0.5rem",
+            }}
+            className="flex items-center gap-1 p-2.5 cursor-pointer upppercase bg-uaap-dark-blue text-white font-body font-bold xl:text-2xl xl:p-4"
+          >
             READ MORE
-            <div className="">
+            <div>
               <IconContext.Provider
                 value={{
                   style: { color: "white" },
@@ -71,7 +88,7 @@ export function TeamSection({
                 <MdArrowOutward />
               </IconContext.Provider>
             </div>
-          </button>
+          </motion.button>
         </NavLink>
       </div>
     </section>
