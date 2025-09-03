@@ -1,6 +1,9 @@
 import type { Route } from "./+types/write-up";
 import data from "../assets/data/data.json";
 import { Fragment } from "react/jsx-runtime";
+import { MdArrowOutward } from "react-icons/md";
+import { IconContext } from "react-icons";
+import { NavLink } from "react-router";
 
 const articleData: {
   [key: string]: {
@@ -18,6 +21,20 @@ export default function WriteUp({ loaderData }: Route.ComponentProps) {
   const { team, title, byline, article } = loaderData;
   return (
     <div>
+      <nav className="absolute w-dvw top-24 px-24 flex justify-between">
+        <div className="text-white">hamburger</div>
+        <button className="flex text-white font-body font-bold text-2xl items-center p-6 bg-uaap-dark-blue">
+          <IconContext.Provider
+            value={{
+              style: { color: "white", scale: "-1 1" },
+              size: "1.5rem",
+            }}
+          >
+            <MdArrowOutward />
+          </IconContext.Provider>
+          BACK
+        </button>
+      </nav>
       {/* bg image */}
       <div className="bg-black w-full h-[70dvh]" />
       <section className="max-w-[52rem] absolute top-36 left-1/2 translate-x-[-50%]">
