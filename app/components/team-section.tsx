@@ -24,33 +24,35 @@ export function TeamSection({
       id={slug} // use this as anchor for navigation sidebar
       className={`snap-start flex flex-col h-dvh relative overflow-hidden ${alignment == "right" ? "md:flex-row" : "md:flex-row-reverse"} md:h-[50dvh]`}
     >
-      <div className="bg-black flex-6">
-        image
-        <motion.h2
-          initial={{
-            translateX: alignment == "right" ? "20%" : "-20%",
-          }}
-          whileInView={{
-            transition: { duration: 0.75 },
-            translateX: "0",
-          }}
-          className={`text-white hidden font-display font-bold text-5xl absolute w-min ${alignment == "right" ? "text-right" : "text-left"} top-0 ${alignment == "right" ? "right-0" : "left-0"} p-8 md:block md:px-[calc(60dvw-2rem)] lg:py-15 xl:py-10 xl:px-[calc(60dvw-6rem)] 2xl:py-14`}
-        >
-          {team.split(" ").length > 2 ? (
-            <>
-              {/* puts sports that are two words or more in one line */}
-              {/* putting the non breaking space (\u00a0) in json breaks the font (Gotham Condensed) */}
-              {team.split(" ").slice(0, 1)}
-              <p className="w-max">{team.split(" ").slice(1).join(" ")}</p>
-            </>
-          ) : (
-            team
-          )}
-        </motion.h2>
-      </div>
-      <div
-        className={`text-center p-8 text-uaap-blue flex-4 flex flex-col justify-between h-full sm:p-15 md:p-8 ${alignment == "right" ? "md:text-right" : "md:text-left"} lg:py-15 xl:px-20 xl:py-10 xl:self-center 2xl:py-14`}
+      <div className="bg-black flex-6">image</div>
+      <div className="absolute hidden bg-black z-10 h-1/3 top-0 right-[calc(40dvw+2.5rem)] w-[calc(100dvw-(40dvw+2.5rem)*2)] md:block xl:right-[calc(40dvw+6rem)] xl:w-[calc(100dvw-(40dvw+6rem)*2)]" />
+      <motion.h2
+        initial={{
+          translateX: alignment == "right" ? "20%" : "-20%",
+        }}
+        whileInView={{
+          transition: { duration: 0.75 },
+          translateX: "0",
+        }}
+        className={`text-white hidden font-display font-bold text-5xl absolute w-min ${alignment == "right" ? "text-right" : "text-left"} top-0 ${alignment == "right" ? "right-0" : "left-0"} p-8 md:block md:px-[calc(60dvw-2.5rem)] lg:py-15 xl:py-10 xl:px-[calc(60dvw-6rem)] 2xl:py-14`}
       >
+        {team.split(" ").length > 2 ? (
+          <>
+            {/* puts sports that are two words or more in one line */}
+            {/* putting the non breaking space (\u00a0) in json breaks the font (Gotham Condensed) */}
+            {team.split(" ").slice(0, 1)}
+            <p className="w-max">{team.split(" ").slice(1).join(" ")}</p>
+          </>
+        ) : (
+          team
+        )}
+      </motion.h2>
+      <div
+        className={`relative text-center p-8 text-uaap-blue flex-4 flex flex-col justify-between h-full sm:p-15 md:p-8 ${alignment == "right" ? "md:text-right" : "md:text-left"} lg:py-15 xl:px-20 xl:py-10 xl:self-center 2xl:py-14`}
+      >
+        <div
+          className={`absolute h-[50dvh] w-8 top-0 ${alignment == "right" ? "right-0" : "left-0"} bg-white z-10 xl:w-20`}
+        />
         <motion.div>
           <h2 className="capitalize font-display font-bold text-[2rem] mb-2 md:hidden">
             {team}
