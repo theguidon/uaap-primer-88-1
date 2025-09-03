@@ -26,20 +26,23 @@ export default function WriteUp({ params, loaderData }: Route.ComponentProps) {
         <div className="text-white">hamburger</div>
         <NavLink to={`/#${params.slug}`}>
           <motion.button
-            whileHover={{
-              transition: { duration: 0.125 },
-              translate: "-0.5rem -0.5rem",
-            }}
+            whileHover="hover"
             className="cursor-pointer flex gap-1 text-white font-body font-bold text-2xl items-center p-5 bg-uaap-dark-blue"
           >
-            <IconContext.Provider
-              value={{
-                style: { color: "white", scale: "-1 1" },
-                size: "1.75rem",
+            <motion.div
+              variants={{
+                hover: { translateX: -6, translateY: -6 },
               }}
             >
-              <MdArrowOutward />
-            </IconContext.Provider>
+              <IconContext.Provider
+                value={{
+                  style: { color: "white", scale: "-1 1" },
+                  size: "1.75rem",
+                }}
+              >
+                <MdArrowOutward />
+              </IconContext.Provider>
+            </motion.div>
             BACK
           </motion.button>
         </NavLink>
