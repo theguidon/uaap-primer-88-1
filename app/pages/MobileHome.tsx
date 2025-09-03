@@ -8,8 +8,6 @@ export default function MobileHome() {
 
   return (
     <main>
-      <section className={styles.menu}>
-      </section>
       <section className={styles.title}>
         <div>
           <motion.img
@@ -51,8 +49,8 @@ export default function MobileHome() {
         <div
           className={styles.bloom}
           style={{
-            width: '500px',
-            height: '500px',
+            width: '90vw',
+            height: '90vw',
             position: 'absolute',
             left: -200,
             top: 50,
@@ -60,19 +58,19 @@ export default function MobileHome() {
           }}
         >
           <BloomingCircles
-            outerSize="500px"
-            radiiGap="50px"
+            outerSize="100%"
+            radiiGap="10%"
             colors={['#b7e1f2', '#56b8e1', '#0e9ad4']}
             animStagger={25}
-            animSpeed="500ms"
+            animSpeed="750ms"
             delay={0}
           />
         </div>
         <div
           className={styles.bloom}
           style={{
-            width: '300px',
-            height: '300px',
+            width: '60vw',
+            height: '60vw',
             position: 'absolute',
             right: -120,
             top: 300,
@@ -80,29 +78,31 @@ export default function MobileHome() {
           }}
         >
           <BloomingCircles
-            outerSize="300px"
-            radiiGap="30px"
+            outerSize="100%"
+            radiiGap="10%"
             colors={['rgba(249, 218, 44, 0.3)', 'rgba(249, 218, 44, 0.7)', 'rgba(249, 218, 44, 1)']}
             animStagger={25}
-            animSpeed="500ms"
+            animSpeed="600ms"
             delay={15}
           />
         </div>
-        <motion.img
-          src="/homepage_player_mobile.png"
-          initial={{ y: 500 }}
-          animate={{ y: 0 }}
-          transition={{ duration: 0.5, ease: "easeInOut", delay: 0 }}
-          style={{ width: "100%", zIndex: 50, position: "absolute" }}
-        />
-        <motion.div className="under-ribbon"
+        <div style={{ width: "100%", height: "100%", bottom: 0, position: "absolute", zIndex: 50, display: "flex", justifyContent: "center" }}>
+          <motion.img
+            src="/homepage_player_desktop.png"
+            initial={{ y: 500 }}
+            animate={{ y: 0 }}
+            transition={{ duration: 0.5, ease: "easeInOut", delay: 0 }}
+            style={{ width: "100%", height: "auto", objectFit: "cover", objectPosition: "center top" }}
+          />
+        </div>
+        <motion.div className={styles.underRibbon}
           initial={{ width: 0 }}
           animate={{ width: "100%" }}
           style={{ overflowX: "clip", height: "100%", position: "absolute", zIndex: 25, right: 0 }}
         >
           <img
             src="/underphoto_mobile.svg"
-            style={{ width: 400, height: "100%", objectFit: "cover", objectPosition: "right center" }}
+            style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "right center" }}
           />
         </motion.div>
         <motion.div className="over-ribbon"
@@ -113,7 +113,7 @@ export default function MobileHome() {
         >
           <img
             src="/overphoto_mobile.svg"
-            style={{ width: 400, height: 450, objectFit: "cover", objectPosition: "right center" }}
+            style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "right center" }}
           />
         </motion.div>
       </section>
