@@ -1,8 +1,33 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-sans:
+    "Inter", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+@font-face {
+  font-family: "Gotham Condensed";
+  src: url("./fonts/Gotham Condensed/Gotham Condensed Book/Gotham Condensed Book.otf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Gotham Condensed";
+  src: url("./fonts/Gotham Condensed/Gotham Condensed Light/Gotham Condensed Light.otf");
+  font-weight: 100 300;
+}
+
+@font-face {
+  font-family: "Gotham Condensed";
+  src: url("./fonts/Gotham Condensed/Gotham Condensed Medium/Gotham Condensed Medium.otf");
+  font-weight: 500 600;
+}
+
+@font-face {
+  font-family: "Gotham Condensed";
+  src: url("./fonts/Gotham Condensed/Gotham Condensed Bold/Gotham Condensed Bold.otf");
+  font-weight: 700;
 }
 
 html,

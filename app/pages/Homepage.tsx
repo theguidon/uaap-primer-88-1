@@ -1,6 +1,6 @@
 import { useMediaQuery } from "react-responsive";
-import "./anims.css";
-import styles from "../pages/home.module.css";
+import "../components/anims.css";
+import styles from "./home.module.css";
 import { motion } from "motion/react";
 import BloomingCircles from "~/components/BloomingCircles";
 import MobileHome from "~/pages/MobileHome";
@@ -19,7 +19,7 @@ function EnterButton() {
   );
 }
 
-export function Welcome() {
+export default function Homepage() {
   const isMobile = useMediaQuery({ query: "(max-width: 899px)" })
   if (isMobile) { return <MobileHome />; }
   else {
