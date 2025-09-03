@@ -1,3 +1,6 @@
+import { MdArrowOutward } from "react-icons/md";
+import { IconContext } from "react-icons";
+
 export function TeamSection({
   team,
   title,
@@ -43,7 +46,7 @@ export function TeamSection({
           <h2 className="capitalize font-display font-bold text-[2rem] mb-2 md:hidden">
             {team}
           </h2>
-          <h2 className="uppercase text-[3.25rem] font-display font-bold leading-[85%] mb-2 sm:text-[4rem] md:text-[4.5rem] lg:text-[5rem] xl:text-[6rem] xl:mb-4">
+          <h2 className="uppercase text-[3.75rem] font-display font-bold leading-[85%] mb-2 sm:text-[4rem] md:text-[4.5rem] lg:text-[5rem] xl:text-[6rem] xl:mb-4">
             {title}
           </h2>
           <p className="text-sm font-body max-w-96 lg:text-base m-auto md:max-w-none">
@@ -55,9 +58,18 @@ export function TeamSection({
           href={`/${slug}`}
           className={`self-center mt-4 ${alignment == "right" ? "md:self-end" : "md:self-start"}`}
         >
-          <button className="flex gap-1 p-2.5 cursor-pointer upppercase bg-uaap-dark-blue text-white font-body font-bold xl:text-2xl xl:p-4">
+          <button className="hover:translate-x-1 hover:translate-y-[-0.25rem] ease-in-out duration-100 flex items-center gap-1 p-2.5 cursor-pointer upppercase bg-uaap-dark-blue text-white font-body font-bold xl:text-2xl xl:p-4">
             READ MORE
-            <div>{">"}</div>
+            <div className="">
+              <IconContext.Provider
+                value={{
+                  style: { color: "white" },
+                  size: "1.75rem",
+                }}
+              >
+                <MdArrowOutward />
+              </IconContext.Provider>
+            </div>
           </button>
         </a>
       </div>
