@@ -4,7 +4,7 @@ import { Fragment } from "react/jsx-runtime";
 import { MdArrowOutward } from "react-icons/md";
 import { IconContext } from "react-icons";
 import { NavLink } from "react-router";
-import { motion } from "motion/react";
+import { motion, stagger, type Variants } from "motion/react";
 
 const articleData: {
   [key: string]: {
@@ -17,6 +17,13 @@ const articleData: {
 export async function loader({ params }: Route.LoaderArgs) {
   return articleData[params.slug];
 }
+const variants: Variants = {
+  initial: { translateY: "-100%" },
+  view: {
+    translateY: "0",
+    transition: { duration: 0.75, ease: "easeInOut" },
+  },
+};
 
 export default function WriteUp({ params, loaderData }: Route.ComponentProps) {
   const { team, title, byline, article } = loaderData;
@@ -27,7 +34,7 @@ export default function WriteUp({ params, loaderData }: Route.ComponentProps) {
         <NavLink to={`/#${params.slug}`}>
           <motion.button
             whileHover="hover"
-            className="cursor-pointer flex gap-1 text-white font-body font-bold text-2xl items-center p-5 bg-uaap-dark-blue"
+            className="cursor-pointer flex gap-1 text-white font-body font-bold text-2xl items-center p-4 bg-uaap-dark-blue"
           >
             <motion.div
               variants={{
@@ -50,15 +57,41 @@ export default function WriteUp({ params, loaderData }: Route.ComponentProps) {
       {/* bg image placeholder */}
       <div className="bg-black w-full h-[60dvh]" />
       <section className="max-w-[50rem] w-full px-10 absolute top-44 left-1/2 translate-x-[-50%]">
-        <h2 className="font-display font-bold text-3xl text-white sm:text-4xl">
-          {team}
-        </h2>
-        <h1 className="font-display font-bold text-8xl text-white uppercase leading-[85%] sm:text-9xl">
-          {title}
-        </h1>
-        <h3 className="text-white mt-2 mb-4">By {byline}</h3>
-        {/* image placeholder */}
-        <div className="w-full aspect-[1.5] bg-uaap-blue" />
+        <motion.div
+          initial="initial"
+          whileInView="view"
+          viewport={{ once: true }}
+          variants={{ view: { transition: { delayChildren: stagger(0.1) } } }}
+        >
+          <div className="overflow-hidden">
+            <motion.h2
+              variants={variants}
+              className="font-display font-bold text-3xl text-white sm:text-4xl"
+            >
+              {team}
+            </motion.h2>
+          </div>
+          <div className="overflow-hidden">
+            <motion.h1
+              variants={variants}
+              className="font-display font-bold text-8xl text-white uppercase leading-[85%] sm:text-9xl"
+            >
+              {title}
+            </motion.h1>
+          </div>
+          <div className="overflow-hidden">
+            <motion.h3 variants={variants} className="text-white pt-2 pb-4">
+              By {byline}
+            </motion.h3>
+          </div>
+          <div className="overflow-hidden">
+            {/* image placeholder */}
+            <motion.div
+              variants={variants}
+              className="w-full aspect-[1.5] bg-uaap-blue"
+            />
+          </div>
+        </motion.div>
         <div className="font-body text-uaap-blue mt-[4rem] mb-[6rem]">
           {article.split("\n\n").map((paragraph, idx) =>
             idx == 0 ? (
