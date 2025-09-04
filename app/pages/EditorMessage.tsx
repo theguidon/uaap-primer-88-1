@@ -6,7 +6,15 @@ export default function EditorMessage() {
   return (
     <section className={styles.container}>
       <section className={styles.text}>
-        <h2>A message from the Editors</h2>
+        <div style={{ overflow: "hidden", marginBottom: 48 }}>
+          <motion.h2
+            initial={{ y: "100%" }}
+            animate={{ y: 0 }}
+            transition={{ duration: 0.6, ease: easeInOut }}
+          >
+            A message from the Editors
+          </motion.h2>
+        </div>
         <section className={styles.messageTitle}>
           <div>
             <motion.h1
@@ -73,29 +81,40 @@ export default function EditorMessage() {
             delay={0}
           />
         </div>
-        <div>
+        <motion.div
+          initial={{ width: 0 }}
+          animate={{ width: "100%" }}
+          transition={{ duration: 0.6, ease: easeInOut }}
+        >
           <img
             src="/underphoto_message.svg"
             className={styles.underphoto}
           />
-        </div>
+        </motion.div>
         <div style={{
           height: "100%",
           width: "100%",
           display: "flex",
           justifyContent: "center"
         }}>
-          <img
+          <motion.img
             className={styles.runner}
             src="/w-track-and-field.png"
+            initial={{ y: "100%" }}
+            animate={{ y: 0 }}
+            transition={{ duration: 0.6, ease: easeInOut }}
           />
         </div>
-        <div>
+        <motion.div
+          initial={{ width: 0 }}
+          animate={{ width: "100%" }}
+          transition={{ duration: 0.6, ease: easeInOut, delay: 0.2 }}
+        >
           <img
             src="/overphoto_message.svg"
             className={styles.overphoto}
           />
-        </div>
+        </motion.div>
       </section>
     </section >
   );
