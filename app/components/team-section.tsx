@@ -124,7 +124,7 @@ export function TeamSection({
                     },
                   },
                 }}
-                className="text-sm font-body max-w-96 lg:text-base m-auto md:max-w-none"
+                className="text-sm font-body max-w-96 text-uaap-dark-blue lg:text-base m-auto md:max-w-none"
               >
                 <span className="font-bold uppercase">{firstTwoBlurb} </span>
                 {restBlurb}

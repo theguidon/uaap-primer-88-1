@@ -81,7 +81,7 @@ export default function WriteUp({ params, loaderData }: Route.ComponentProps) {
           </div>
           <div className="overflow-hidden">
             <motion.h3 variants={variants} className="text-white pt-2 pb-4">
-              By {byline}
+              By <span className="font-bold">{byline}</span>
             </motion.h3>
           </div>
           <div className="overflow-hidden">
@@ -99,7 +99,7 @@ export default function WriteUp({ params, loaderData }: Route.ComponentProps) {
             />
           </div>
         </motion.div>
-        <div className="font-body text-uaap-blue mt-[4rem] mb-[6rem]">
+        <div className="font-body text-uaap-dark-blue mt-[4rem] mb-[6rem] text-[24px]">
           {article.split("\n\n").map((paragraph, idx) =>
             idx == 0 ? (
               <p key={idx}>
