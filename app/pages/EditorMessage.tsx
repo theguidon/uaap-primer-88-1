@@ -20,12 +20,7 @@ export default function EditorMessage() {
       </section>
       <section className={styles.graphic}>
         <div
-          style={{
-            width: "500px",
-            height: "500px",
-            left: "-30%",
-            bottom: "-15%"
-          }}
+          className={styles.bloom1}
         >
           <BloomingCircles
             outerSize="100%"
@@ -37,12 +32,7 @@ export default function EditorMessage() {
           />
         </div>
         <div
-          style={{
-            width: "300px",
-            height: "300px",
-            left: "15%",
-            top: "3%"
-          }}
+          className={styles.bloom2}
         >
           <BloomingCircles
             outerSize="100%"
@@ -56,34 +46,24 @@ export default function EditorMessage() {
         <div>
           <img
             src="/underphoto_message.svg"
-            style={{
-              width: "100%",
-              height: "100%",
-              objectFit: "cover",
-              objectPosition: "20% 0"
-            }}
+            className={styles.underphoto}
           />
         </div>
-        <div>
+        <div style={{
+          height: "100%",
+          width: "100%",
+          display: "flex",
+          justifyContent: "center"
+        }}>
           <img
+            className={styles.runner}
             src="/w-track-and-field.png"
-            style={{
-              width: "100%",
-              height: "100%",
-              objectFit: "cover",
-              objectPosition: "0 0"
-            }}
           />
         </div>
         <div>
           <img
             src="/overphoto_message.svg"
-            style={{
-              width: "100%",
-              height: "90%",
-              objectFit: "cover",
-              objectPosition: "-8%"
-            }}
+            className={styles.overphoto}
           />
         </div>
       </section>
