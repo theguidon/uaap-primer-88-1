@@ -1,5 +1,6 @@
 import styles from "./editormessage.module.css"
 import BloomingCircles from "~/components/BloomingCircles";
+import { easeInOut, motion } from "motion/react";
 
 export default function EditorMessage() {
   return (
@@ -7,11 +8,40 @@ export default function EditorMessage() {
       <section className={styles.text}>
         <h2>A message from the Editors</h2>
         <section className={styles.messageTitle}>
-          <div><h1>ASCENT TO</h1></div>
-          <div><h1>EXCELLENCE</h1></div>
+          <div>
+            <motion.h1
+              initial={{ y: "100%" }}
+              animate={{ y: 0 }}
+              transition={{ duration: 0.7, ease: easeInOut }}
+            >
+              ASCENT TO
+            </motion.h1>
+          </div>
+          <div>
+            <motion.h1
+              initial={{ y: "100%" }}
+              animate={{ y: 0 }}
+              transition={{ duration: 0.7, ease: easeInOut }}
+            >
+              EXCELLENCE
+            </motion.h1>
+          </div>
         </section>
-        <div className={styles.line} />
-        <p className={styles.blurb}><span className={styles.firstTwo}>IN ITS</span> 87th season, the University Athletic Association of the Philippines (UAAP) will feature a loaded semestral showcase of collegiate sports on a historic scale</p>
+        <motion.div
+          className={styles.line}
+          initial={{ width: 0 }}
+          animate={{ width: "70%" }}
+          transition={{ duration: 0.6, ease: easeInOut }}
+        />
+        <div style={{ overflow: "hidden" }}>
+          <motion.p
+            className={styles.blurb}
+            initial={{ y: "-100%" }}
+            animate={{ y: 0 }}
+            transition={{ duration: 0.6, ease: easeInOut }}
+          >
+            <span className={styles.firstTwo}>IN ITS</span> 87th season, the University Athletic Association of the Philippines (UAAP) will feature a loaded semestral showcase of collegiate sports on a historic scale</motion.p>
+        </div>
 
         <div className={styles.readMore}>
           <p>Read More</p>
@@ -67,6 +97,6 @@ export default function EditorMessage() {
           />
         </div>
       </section>
-    </section>
+    </section >
   );
 }

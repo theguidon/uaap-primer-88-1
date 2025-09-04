@@ -21,6 +21,10 @@ section.text > * {
   width: 70%;
 }
 
+section.messageTitle > div {
+  overflow: hidden;
+}
+
 section.text h1,
 section.text h2 {
   text-transform: uppercase;
