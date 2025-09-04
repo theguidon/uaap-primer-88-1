@@ -99,7 +99,7 @@ export default function WriteUp({ params, loaderData }: Route.ComponentProps) {
             />
           </div>
         </motion.div>
-        <div className="font-body text-uaap-dark-blue mt-[4rem] mb-[6rem] text-[24px]">
+        <div className="font-body text-uaap-dark-blue mt-[4rem] mb-[6rem] text-lg sm:text-2xl">
           {article.split("\n\n").map((paragraph, idx) =>
             idx == 0 ? (
               <p key={idx}>
