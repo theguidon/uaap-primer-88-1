@@ -19,6 +19,7 @@ export function TeamSection({
   const splitBlurb = blurb.split(" ");
   const firstTwoBlurb = splitBlurb.slice(0, 2).join(" ");
   const restBlurb = splitBlurb.slice(2).join(" ");
+  const animsDuration = 0.75;
 
   return (
     <section
@@ -34,7 +35,11 @@ export function TeamSection({
             translateX: alignment == "right" ? "100%" : "-100%",
           }}
           whileInView={{
-            transition: { duration: 0.75 },
+            transition: {
+              duration: animsDuration,
+
+              ease: "easeInOut",
+            },
             translateX: "0",
           }}
         >
@@ -61,7 +66,7 @@ export function TeamSection({
             initial="initial"
             whileInView="view"
             variants={{
-              view: { transition: { delayChildren: stagger(0.875) } },
+              view: { transition: { delayChildren: stagger(0.25) } },
             }}
           >
             <h2 className="capitalize font-display font-bold text-[2rem] mb-2 md:hidden">
@@ -75,7 +80,8 @@ export function TeamSection({
                 view: {
                   translateX: "0",
                   transition: {
-                    duration: 0.75,
+                    duration: animsDuration,
+                    ease: "easeInOut",
                   },
                 },
               }}
@@ -92,7 +98,8 @@ export function TeamSection({
                   view: {
                     translateY: "0",
                     transition: {
-                      duration: 0.5,
+                      duration: animsDuration,
+                      ease: "easeInOut",
                     },
                   },
                 }}
