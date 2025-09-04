@@ -31,7 +31,7 @@ export function TeamSection({
     >
       <div className="bg-black flex-6">image</div>
       <div
-        className={`overflow-hidden text-white hidden font-display font-bold text-5xl absolute w-min ${alignment == "right" ? "text-right" : "text-left"} top-8 ${alignment == "right" ? "right-0" : "left-0"} mx-8 md:block md:mx-[calc(60dvw-2.5rem)] lg:top-15 xl:top-10 xl:mx-[calc(60dvw-6rem)] 2xl:top-14`}
+        className={`overflow-hidden text-white hidden font-display font-bold text-5xl absolute w-min ${alignment == "right" ? "text-right" : "text-left"} top-8 ${alignment == "right" ? "right-0" : "left-0"} mx-8 md:block md:mx-[calc(60dvw-2.5rem)] lg:top-15 xl:mx-[calc(60dvw-6rem)] 2xl:top-20`}
       >
         <motion.h2
           initial={{
@@ -59,7 +59,7 @@ export function TeamSection({
         </motion.h2>
       </div>
       <div
-        className={`relative text-center p-8 text-uaap-blue flex-4 flex flex-col justify-between h-full sm:p-15 md:p-8 ${alignment == "right" ? "md:text-right" : "md:text-left"} lg:py-15 xl:px-20 xl:py-10 xl:self-center 2xl:py-14`}
+        className={`relative text-center p-8 text-uaap-blue flex-4 flex flex-col justify-between h-full sm:p-15 md:p-8 ${alignment == "right" ? "md:text-right" : "md:text-left"} lg:p-15 2xl:p-20`}
       >
         {/* <div
           className={`absolute h-[50dvh] w-8 top-0 ${alignment == "right" ? "right-0" : "left-0"} bg-white z-10 xl:w-20`}
