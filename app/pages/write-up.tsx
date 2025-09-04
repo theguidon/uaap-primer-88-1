@@ -29,12 +29,12 @@ export default function WriteUp({ params, loaderData }: Route.ComponentProps) {
   const { team, title, byline, article } = loaderData;
   return (
     <div>
-      <nav className="absolute w-dvw top-20 px-20 flex justify-between">
+      <nav className="absolute w-dvw top-20 px-10 flex justify-between lg:px-20">
         <div className="text-white">hamburger</div>
         <NavLink to={`/#${params.slug}`}>
           <motion.button
             whileHover="hover"
-            className="cursor-pointer flex gap-1 text-white font-body font-bold text-2xl items-center p-4 bg-uaap-dark-blue"
+            className="cursor-pointer flex gap-1 text-white font-body font-bold text-2xl items-center p-2.5 bg-uaap-dark-blue lg:p-4 lg:text-2xl"
           >
             <motion.div
               variants={{
