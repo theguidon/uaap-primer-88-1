@@ -19,7 +19,7 @@ export function TeamSection({
 }) {
   const splitBlurb = blurb.split(" ");
   const firstTwoBlurb = splitBlurb.slice(0, 2).join(" ");
-  const restBlurb = splitBlurb.slice(2).join(" ");
+  const restBlurb = splitBlurb.slice(2, 30).join(" ") + "...";
   const animsDuration = 0.75;
   const isMd = useMediaQuery({ query: "(width >= 48rem)" });
   const gender = slug.split("-")[0];
@@ -124,7 +124,7 @@ export function TeamSection({
                     },
                   },
                 }}
-                className="text-sm font-body max-w-96 text-uaap-dark-blue lg:text-base m-auto md:max-w-none"
+                className="font-body max-w-96 text-uaap-dark-blue m-auto md:max-w-none"
               >
                 <span className="font-bold uppercase">{firstTwoBlurb} </span>
                 {restBlurb}
