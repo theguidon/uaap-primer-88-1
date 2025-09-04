@@ -3,7 +3,7 @@ import data from "../assets/data/data.json";
 
 export function Welcome() {
   return (
-    <>
+    <div className="snap-y snap-mandatory overflow-y-scroll h-dvh">
       {Object.entries(data).map(([key, { team, title, article }], idx) => (
         <TeamSection
           key={key}
@@ -14,6 +14,6 @@ export function Welcome() {
           slug={key}
         />
       ))}
-    </>
+    </div>
   );
 }
