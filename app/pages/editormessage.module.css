@@ -1,0 +1,172 @@
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+section.text {
+  background: #1c41d5;
+  flex: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 40px 0;
+}
+
+section.text > * {
+  width: 70%;
+}
+
+section.messageTitle > div {
+  overflow: hidden;
+}
+
+section.text h1,
+section.text h2 {
+  text-transform: uppercase;
+}
+
+section.text h2 {
+  font-family: "IBM Plex Sans Condensed";
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+section.text h1 {
+  font-family: "Gotham Condensed";
+  font-weight: 700;
+  font-size: 5rem;
+  line-height: 5rem;
+}
+
+p.blurb {
+  font-family: "IBM Plex Sans Condensed";
+  font-weight: 1.5rem;
+}
+
+div.line {
+  height: 0;
+  border: 2px solid white;
+  margin: 16px 0;
+}
+
+.readMore {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.readMore p {
+  font-family: "IBM Plex Sans";
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.readMore img {
+  width: 16px;
+  height: 16px;
+}
+
+p span.firstTwo {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+section.graphic {
+  background: white;
+  flex: 40%;
+  position: relative;
+  overflow: hidden;
+  min-height: 400px;
+}
+
+section.graphic > * {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+div.bloom1 {
+  width: 300px;
+  height: 300px;
+  bottom: -40%;
+  left: -10%;
+}
+
+div.bloom2 {
+  width: 350px;
+  height: 350px;
+  top: -10%;
+  left: 20%;
+}
+
+.underphoto {
+  position: absolute;
+  object-position: top right;
+  object-fit: cover;
+  height: 150vw;
+  width: 100vw;
+}
+
+.overphoto {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  right: -20%;
+  height: 50vh;
+  width: 100vw;
+}
+
+img.runner {
+  object-position: 50% 0;
+  height: 150%;
+  object-fit: cover;
+}
+
+@media (min-width: 800px) {
+  section.text {
+    flex: 60%;
+  }
+
+  div.bloom1 {
+    width: 500px;
+    height: 500px;
+    left: -30%;
+    bottom: -15%;
+  }
+
+  div.bloom2 {
+    width: 300px;
+    height: 300px;
+    left: 15%;
+    top: 3%;
+  }
+
+  .underphoto {
+    object-fit: cover;
+    object-position: 20% 0;
+    height: 100vh;
+    width: 100%;
+  }
+
+  .overphoto {
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    object-position: -8%;
+    height: 100vh;
+    width: 100%;
+  }
+
+  img.runner {
+    height: 100%;
+    object-position: 0 0;
+  }
+}
