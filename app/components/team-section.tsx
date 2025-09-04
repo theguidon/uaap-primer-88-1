@@ -22,6 +22,7 @@ export function TeamSection({
   const restBlurb = splitBlurb.slice(2).join(" ");
   const animsDuration = 0.75;
   const isMd = useMediaQuery({ query: "(width >= 48rem)" });
+  const gender = slug.split("-")[0];
 
   return (
     <section
@@ -137,7 +138,7 @@ export function TeamSection({
         >
           <motion.button
             whileHover="hover"
-            className="flex items-center gap-1 p-2.5 cursor-pointer upppercase bg-uaap-dark-blue text-white font-body font-bold xl:text-2xl xl:p-4"
+            className={`flex items-center gap-1 p-2.5 cursor-pointer upppercase ${gender == "mens" ? "bg-uaap-orange" : gender == "womens" ? "bg-uaap-purple" : "bg-uaap-dark-blue"} text-white font-body font-bold xl:text-2xl xl:p-4`}
           >
             READ MORE
             <motion.div variants={{ hover: { translateX: 6, translateY: -6 } }}>
