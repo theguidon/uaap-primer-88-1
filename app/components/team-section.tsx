@@ -19,7 +19,12 @@ export function TeamSection({
 }) {
   const splitBlurb = blurb.split(" ");
   const firstTwoBlurb = splitBlurb.slice(0, 2).join(" ");
-  const restBlurb = splitBlurb.slice(2, 30).join(" ") + "...";
+  const splitRestBlurb = splitBlurb.slice(2, 30);
+  const restBlurb =
+    splitRestBlurb.slice(0, -1).join(" ") +
+    "\u00a0" +
+    splitRestBlurb.slice(-1) +
+    "...";
   const animsDuration = 0.75;
   const isMd = useMediaQuery({ query: "(width >= 48rem)" });
   const gender = slug.split("-")[0];
