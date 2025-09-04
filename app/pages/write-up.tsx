@@ -87,7 +87,14 @@ export default function WriteUp({ params, loaderData }: Route.ComponentProps) {
           <div className="overflow-hidden">
             {/* image placeholder */}
             <motion.div
-              variants={variants}
+              variants={{
+                initial: { translateY: "-100%", opacity: 0 },
+                view: {
+                  translateY: "0",
+                  opacity: 1,
+                  transition: { duration: 0.75, ease: "easeInOut" },
+                },
+              }}
               className="w-full aspect-[1.5] bg-uaap-blue"
             />
           </div>
