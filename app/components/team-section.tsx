@@ -1,7 +1,8 @@
 import { MdArrowOutward } from "react-icons/md";
 import { IconContext } from "react-icons";
 import { NavLink } from "react-router";
-import { motion, stagger } from "motion/react";
+import { motion } from "motion/react";
+import { useMediaQuery } from "react-responsive";
 
 export function TeamSection({
   team,
@@ -20,6 +21,7 @@ export function TeamSection({
   const firstTwoBlurb = splitBlurb.slice(0, 2).join(" ");
   const restBlurb = splitBlurb.slice(2).join(" ");
   const animsDuration = 0.75;
+  const isMd = useMediaQuery({ query: "(width >= 48rem)" });
 
   return (
     <section
@@ -62,33 +64,50 @@ export function TeamSection({
           className={`absolute h-[50dvh] w-8 top-0 ${alignment == "right" ? "right-0" : "left-0"} bg-white z-10 xl:w-20`}
         /> */}
         <div className="overflow-hidden">
-          <motion.div
-            initial="initial"
-            whileInView="view"
-            variants={{
-              view: { transition: { delayChildren: stagger(0.25) } },
-            }}
-          >
-            <h2 className="capitalize font-display font-bold text-[2rem] mb-2 md:hidden">
-              {team}
-            </h2>
-            <motion.h2
-              variants={{
-                initial: {
-                  translateX: alignment == "right" ? "100%" : "-100%",
-                },
-                view: {
-                  translateX: "0",
-                  transition: {
-                    duration: animsDuration,
-                    ease: "easeInOut",
+          <motion.div initial="initial" whileInView="view">
+            <div className="overflow-hidden">
+              <motion.h2
+                variants={{
+                  initial: {
+                    translateY: "-100%",
                   },
-                },
-              }}
-              className="uppercase text-[3.75rem] font-display font-bold leading-[85%] mb-2 sm:text-[4rem] md:text-[4.5rem] lg:text-[5rem] xl:text-[6rem]"
-            >
-              {title}
-            </motion.h2>
+                  view: {
+                    translateY: "0",
+                    transition: {
+                      duration: animsDuration,
+                      ease: "easeInOut",
+                    },
+                  },
+                }}
+                className="capitalize font-display font-bold text-[2rem] mb-2 md:hidden"
+              >
+                {team}
+              </motion.h2>
+            </div>
+            <div className="overflow-hidden">
+              <motion.h2
+                variants={{
+                  initial: isMd
+                    ? {
+                        translateX: alignment == "right" ? "100%" : "-100%",
+                      }
+                    : {
+                        translateY: "-100%",
+                      },
+                  view: {
+                    translateX: "0",
+                    translateY: "0",
+                    transition: {
+                      duration: animsDuration,
+                      ease: "easeInOut",
+                    },
+                  },
+                }}
+                className="uppercase text-[3.75rem] font-display font-bold leading-[85%] mb-2 sm:text-[4rem] md:text-[4.5rem] lg:text-[5rem] xl:text-[6rem]"
+              >
+                {title}
+              </motion.h2>
+            </div>
             <div className="overflow-hidden">
               <motion.p
                 variants={{
@@ -100,6 +119,7 @@ export function TeamSection({
                     transition: {
                       duration: animsDuration,
                       ease: "easeInOut",
+                      delay: 0.25,
                     },
                   },
                 }}
