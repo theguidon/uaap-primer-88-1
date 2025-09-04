@@ -106,13 +106,15 @@ export default function EditorMessage() {
           />
         </div>
         <motion.div
-          initial={{ width: 0 }}
-          animate={{ width: "100%" }}
+          initial={{ height: 0 }}
+          animate={{ height: "100%" }}
           transition={{ duration: 0.6, ease: easeInOut, delay: 0.2 }}
+          style={{ overflow: "hidden" }}
         >
           <img
             src="/overphoto_message.svg"
             className={styles.overphoto}
+            style={{ height: "50vh", width: "100vw" }}
           />
         </motion.div>
       </section>
