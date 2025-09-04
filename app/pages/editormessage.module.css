@@ -108,10 +108,11 @@ div.bloom2 {
 }
 
 .underphoto {
-  width: 100%;
-  height: 200%;
-  object-position: top left;
+  position: absolute;
+  object-position: top right;
   object-fit: cover;
+  height: 150vw;
+  width: 100vw;
 }
 
 .overphoto {
@@ -119,6 +120,8 @@ div.bloom2 {
   position: absolute;
   top: 0;
   right: -20%;
+  height: 50vh;
+  width: 100vw;
 }
 
 img.runner {
@@ -147,10 +150,10 @@ img.runner {
   }
 
   .underphoto {
-    width: 100%;
-    height: 100%;
     object-fit: cover;
     object-position: 20% 0;
+    height: 100vh;
+    width: 100%;
   }
 
   .overphoto {
@@ -158,6 +161,8 @@ img.runner {
     height: 90%;
     object-fit: cover;
     object-position: -8%;
+    height: 100vh;
+    width: 100%;
   }
 
   img.runner {
