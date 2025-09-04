@@ -19,21 +19,6 @@ export function TeamSection({
   const splitBlurb = blurb.split(" ");
   const firstTwoBlurb = splitBlurb.slice(0, 2).join(" ");
   const restBlurb = splitBlurb.slice(2).join(" ");
-  const variants = {
-    text: {
-      container: { view: { transition: { delayChildren: stagger(0.25) } } },
-      children: {
-        initial: { translateX: alignment == "right" ? "100%" : "-100%" },
-        view: {
-          translateX: "0",
-          transition: {
-            duration: 0.75,
-          },
-        },
-      },
-    },
-    button: { hover: { translateX: 6, translateY: -6 } },
-  };
 
   return (
     <section
@@ -75,24 +60,48 @@ export function TeamSection({
           <motion.div
             initial="initial"
             whileInView="view"
-            variants={variants.text.container}
+            variants={{
+              view: { transition: { delayChildren: stagger(0.875) } },
+            }}
           >
             <h2 className="capitalize font-display font-bold text-[2rem] mb-2 md:hidden">
               {team}
             </h2>
             <motion.h2
-              variants={variants.text.children}
+              variants={{
+                initial: {
+                  translateX: alignment == "right" ? "100%" : "-100%",
+                },
+                view: {
+                  translateX: "0",
+                  transition: {
+                    duration: 0.75,
+                  },
+                },
+              }}
               className="uppercase text-[3.75rem] font-display font-bold leading-[85%] mb-2 sm:text-[4rem] md:text-[4.5rem] lg:text-[5rem] xl:text-[6rem]"
             >
               {title}
             </motion.h2>
-            <motion.p
-              variants={variants.text.children}
-              className="text-sm font-body max-w-96 lg:text-base m-auto md:max-w-none"
-            >
-              <span className="font-bold uppercase">{firstTwoBlurb} </span>
-              {restBlurb}
-            </motion.p>
+            <div className="overflow-hidden">
+              <motion.p
+                variants={{
+                  initial: {
+                    translateY: "-100%",
+                  },
+                  view: {
+                    translateY: "0",
+                    transition: {
+                      duration: 0.5,
+                    },
+                  },
+                }}
+                className="text-sm font-body max-w-96 lg:text-base m-auto md:max-w-none"
+              >
+                <span className="font-bold uppercase">{firstTwoBlurb} </span>
+                {restBlurb}
+              </motion.p>
+            </div>
           </motion.div>
         </div>
         <NavLink
@@ -104,7 +113,7 @@ export function TeamSection({
             className="flex items-center gap-1 p-2.5 cursor-pointer upppercase bg-uaap-dark-blue text-white font-body font-bold xl:text-2xl xl:p-4"
           >
             READ MORE
-            <motion.div variants={variants.button}>
+            <motion.div variants={{ hover: { translateX: 6, translateY: -6 } }}>
               <IconContext.Provider
                 value={{
                   style: { color: "white" },
