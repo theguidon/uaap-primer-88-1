@@ -19,22 +19,36 @@ export function TeamSectionFull({
   const splitRestBlurb = splitBlurb.slice(2, 30);
   const restBlurb =
     splitRestBlurb.slice(0, -1).join(" ") + "\u00a0" + splitRestBlurb.slice(-1);
+  const animsDuration = 0.75;
 
   return (
     <section
       id={slug} // use this as anchor for navigation sidebar
       className={`snap-start flex flex-col h-dvh relative overflow-hidden`}
     >
-      <div className="bg-black flex-6 text-center relative">
+      <div className="bg-black flex-6 text-center relative overflow-hidden">
         <img
           src="/assets/images/background.png"
           alt=""
-          className="absolute bottom-0 left-1/2 -translate-x-1/2"
+          className="absolute bottom-0 left-1/2 -translate-x-1/2 object-cover h-full"
         />
-        <img
+        <motion.div
+          initial={{ translateX: "0" }}
+          whileInView={{
+            translateX: "100%",
+            transition: { ease: "easeInOut", duration: animsDuration },
+          }}
+          className="bg-black w-full h-full absolute"
+        />
+        <motion.img
+          initial={{ translateY: "100%" }}
+          whileInView={{
+            translateY: "0",
+            transition: { ease: "easeInOut", duration: animsDuration },
+          }}
           src={`/assets/images/${slug}.png`}
           alt=""
-          className="absolute bottom-0 left-1/2 -translate-x-1/2"
+          className="absolute bottom-0 left-1/2 -translate-x-1/2 object-cover h-full z-10"
         />
       </div>
       <div
@@ -54,7 +68,7 @@ export function TeamSectionFull({
         </motion.h2>
       </div>
       <div
-        className={`relative text-center p-8 text-uaap-blue flex-4 flex flex-col justify-between h-full md:p-15`}
+        className={`relative text-center p-8 text-uaap-blue flex-3 flex flex-col justify-between md:p-15`}
       >
         <div className="overflow-hidden">
           <motion.div initial="initial" whileInView="view">
@@ -64,7 +78,7 @@ export function TeamSectionFull({
               </motion.h2>
             </div>
             <div className="overflow-hidden">
-              <motion.h2 className="uppercase text-[3.75rem] font-display font-bold leading-[85%] mb-2 sm:text-[4rem] md:text-[4.5rem] lg:text-[5rem] xl:text-[6rem]">
+              <motion.h2 className="uppercase text-[3.75rem] font-display font-bold leading-[85%] mb-2 sm:text-[4rem] md:text-[5rem] md:mb-4 lg:text-[6rem] xl:text-[7rem]">
                 {title}
               </motion.h2>
             </div>

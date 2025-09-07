@@ -31,16 +31,29 @@ export function TeamSectionHalf({
       id={slug} // use this as anchor for navigation sidebar
       className={`snap-start flex flex-col h-dvh relative overflow-hidden ${alignment == "right" ? "md:flex-row" : "md:flex-row-reverse"} md:h-[50dvh]`}
     >
-      <div className="bg-black flex-6 text-center relative">
+      <div className="bg-black flex-6 text-center relative overflow-hidden">
         <img
           src="/assets/images/background.png"
           alt=""
-          className="absolute bottom-0 left-1/2 -translate-x-1/2"
+          className="absolute bottom-0 left-1/2 -translate-x-1/2 object-cover h-full"
         />
-        <img
+        <motion.div
+          initial={{ translateX: "0" }}
+          whileInView={{
+            translateX: "100%",
+            transition: { ease: "easeInOut", duration: animsDuration },
+          }}
+          className="bg-black w-full h-full absolute"
+        />
+        <motion.img
+          initial={{ translateY: "100%" }}
+          whileInView={{
+            translateY: "0",
+            transition: { ease: "easeInOut", duration: animsDuration },
+          }}
           src={`/assets/images/${slug}.png`}
           alt=""
-          className="absolute bottom-0 left-1/2 -translate-x-1/2"
+          className="absolute bottom-0 left-1/2 -translate-x-1/2 object-cover h-full z-10"
         />
       </div>
       <div
