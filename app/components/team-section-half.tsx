@@ -4,7 +4,7 @@ import { NavLink } from "react-router";
 import { motion } from "motion/react";
 import { useMediaQuery } from "react-responsive";
 
-export function TeamSection({
+export function TeamSectionHalf({
   team,
   title,
   blurb,
@@ -34,7 +34,18 @@ export function TeamSection({
       id={slug} // use this as anchor for navigation sidebar
       className={`snap-start flex flex-col h-dvh relative overflow-hidden ${alignment == "right" ? "md:flex-row" : "md:flex-row-reverse"} md:h-[50dvh]`}
     >
-      <div className="bg-black flex-6">image</div>
+      <div className="bg-black flex-6 text-center relative">
+        <img
+          src="/assets/images/background.png"
+          alt=""
+          className="absolute bottom-0 left-1/2 -translate-x-1/2"
+        />
+        <img
+          src={`/assets/images/${slug}.png`}
+          alt=""
+          className="absolute bottom-0 left-1/2 -translate-x-1/2"
+        />
+      </div>
       <div
         className={`overflow-hidden text-white hidden font-display font-bold text-5xl absolute w-min ${alignment == "right" ? "text-right" : "text-left"} top-8 ${alignment == "right" ? "right-0" : "left-0"} mx-8 md:block md:mx-[calc(60dvw-2.5rem)] lg:top-15 xl:mx-[calc(60dvw-6rem)] 2xl:top-20`}
       >
