@@ -5,6 +5,7 @@ import { MdArrowOutward } from "react-icons/md";
 import { IconContext } from "react-icons";
 import { NavLink } from "react-router";
 import { motion, stagger, type Variants } from "motion/react";
+import background from "../assets/images/backgrond-writeup.png";
 
 const articleData: {
   [key: string]: {
@@ -55,7 +56,21 @@ export default function WriteUp({ params, loaderData }: Route.ComponentProps) {
         </NavLink>
       </nav>
       {/* bg image placeholder */}
-      <div className="bg-black w-full h-[60dvh]" />
+      <div className="bg-black w-full h-[60dvh] relative overflow-hidden">
+        <img
+          src={background}
+          alt=""
+          className="absolute top-1/2 left-1/2 -translate-1/2 object-cover w-full"
+        />
+        <motion.div
+          initial={{ translateX: "0" }}
+          whileInView={{
+            translateX: "-100%",
+            transition: { ease: "easeInOut", duration: 0.75 },
+          }}
+          className="bg-black w-full h-full absolute"
+        />
+      </div>
       <section className="max-w-[50rem] w-full px-10 absolute top-44 left-1/2 translate-x-[-50%]">
         <motion.div
           initial="initial"
