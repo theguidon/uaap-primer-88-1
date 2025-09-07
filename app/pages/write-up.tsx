@@ -60,7 +60,7 @@ export default function WriteUp({ params, loaderData }: Route.ComponentProps) {
         <img
           src={background}
           alt=""
-          className="absolute top-1/2 left-1/2 -translate-1/2 object-cover w-full"
+          className="absolute bottom-0 left-1/2 -translate-x-1/2 object-cover min-w-[40rem] lg:min-w-full"
         />
         <motion.div
           initial={{ translateX: "0" }}
@@ -68,6 +68,7 @@ export default function WriteUp({ params, loaderData }: Route.ComponentProps) {
             translateX: "-100%",
             transition: { ease: "easeInOut", duration: 0.75 },
           }}
+          viewport={{ once: true }}
           className="bg-black w-full h-full absolute"
         />
       </div>
