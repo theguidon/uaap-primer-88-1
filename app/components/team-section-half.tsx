@@ -21,10 +21,7 @@ export function TeamSectionHalf({
   const firstTwoBlurb = splitBlurb.slice(0, 2).join(" ");
   const splitRestBlurb = splitBlurb.slice(2, 30);
   const restBlurb =
-    splitRestBlurb.slice(0, -1).join(" ") +
-    "\u00a0" +
-    splitRestBlurb.slice(-1) +
-    "...";
+    splitRestBlurb.slice(0, -1).join(" ") + "\u00a0" + splitRestBlurb.slice(-1);
   const animsDuration = 0.75;
   const isMd = useMediaQuery({ query: "(width >= 48rem)" });
   const gender = slug.split("-")[0];
@@ -140,10 +137,11 @@ export function TeamSectionHalf({
                     },
                   },
                 }}
-                className="font-body max-w-96 text-uaap-dark-blue m-auto md:max-w-none"
+                className="font-body max-w-96 text-uaap-dark-blue m-auto line-clamp-3 md:max-w-none"
               >
                 <span className="font-bold uppercase">{firstTwoBlurb} </span>
                 {restBlurb}
+                {"..."}
               </motion.p>
             </div>
           </motion.div>
@@ -154,7 +152,7 @@ export function TeamSectionHalf({
         >
           <motion.button
             whileHover="hover"
-            className={`flex items-center gap-1 p-2.5 cursor-pointer upppercase ${gender == "mens" ? "bg-uaap-orange" : "bg-uaap-purple"} text-white font-body font-bold xl:text-2xl xl:p-4`}
+            className={`flex items-center gap-1 p-2.5 cursor-pointer upppercase ${gender == "mens" ? "bg-uaap-orange" : "bg-uaap-purple"} text-white font-body font-bold md:p-4 md:text-xl xl:text-2xl`}
           >
             READ MORE
             <motion.div variants={{ hover: { translateX: 6, translateY: -6 } }}>

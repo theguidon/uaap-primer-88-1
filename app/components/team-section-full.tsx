@@ -18,10 +18,7 @@ export function TeamSectionFull({
   const firstTwoBlurb = splitBlurb.slice(0, 2).join(" ");
   const splitRestBlurb = splitBlurb.slice(2, 30);
   const restBlurb =
-    splitRestBlurb.slice(0, -1).join(" ") +
-    "\u00a0" +
-    splitRestBlurb.slice(-1) +
-    "...";
+    splitRestBlurb.slice(0, -1).join(" ") + "\u00a0" + splitRestBlurb.slice(-1);
 
   return (
     <section
@@ -57,11 +54,8 @@ export function TeamSectionFull({
         </motion.h2>
       </div>
       <div
-        className={`relative text-center p-8 text-uaap-blue flex-4 flex flex-col justify-between h-full`}
+        className={`relative text-center p-8 text-uaap-blue flex-4 flex flex-col justify-between h-full md:p-15`}
       >
-        {/* <div
-          className={`absolute h-[50dvh] w-8 top-0 ${alignment == "right" ? "right-0" : "left-0"} bg-white z-10 xl:w-20`}
-        /> */}
         <div className="overflow-hidden">
           <motion.div initial="initial" whileInView="view">
             <div className="overflow-hidden">
@@ -75,9 +69,10 @@ export function TeamSectionFull({
               </motion.h2>
             </div>
             <div className="overflow-hidden">
-              <motion.p className="font-body max-w-96 text-uaap-dark-blue m-auto md:max-w-none">
+              <motion.p className="font-body max-w-96 text-uaap-dark-blue m-auto line-clamp-3 md:max-w-[56rem]">
                 <span className="font-bold uppercase">{firstTwoBlurb} </span>
                 {restBlurb}
+                {"..."}
               </motion.p>
             </div>
           </motion.div>
@@ -85,7 +80,7 @@ export function TeamSectionFull({
         <NavLink to={`/${slug}`} className={`self-center mt-4`}>
           <motion.button
             whileHover="hover"
-            className={`flex items-center gap-1 p-2.5 cursor-pointer upppercase bg-uaap-dark-blue text-white font-body font-bold`}
+            className={`flex items-center gap-1 p-2.5 cursor-pointer upppercase bg-uaap-dark-blue text-white font-body font-bold md:p-4 md:text-xl xl:text-2xl`}
           >
             READ MORE
             <motion.div variants={{ hover: { translateX: 6, translateY: -6 } }}>
