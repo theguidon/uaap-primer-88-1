@@ -30,7 +30,7 @@ export function TeamSectionFull({
         <img
           src="/assets/images/background.png"
           alt=""
-          className="absolute bottom-0 left-1/2 -translate-x-1/2 object-cover h-full"
+          className="absolute bottom-0 left-1/2 -translate-x-1/2 object-cover h-full w-full"
         />
         <motion.div
           initial={{ translateX: "0" }}
