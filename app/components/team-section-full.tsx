@@ -73,17 +73,60 @@ export function TeamSectionFull({
         <div className="overflow-hidden">
           <motion.div initial="initial" whileInView="view">
             <div className="overflow-hidden">
-              <motion.h2 className="capitalize font-display font-bold text-[2rem] mb-2 md:hidden">
+              <motion.h2
+                variants={{
+                  initial: {
+                    translateY: "-100%",
+                  },
+                  view: {
+                    translateY: "0",
+                    transition: {
+                      duration: animsDuration,
+                      ease: "easeInOut",
+                    },
+                  },
+                }}
+                className="capitalize font-display font-bold text-[2rem] mb-2 md:hidden"
+              >
                 {team}
               </motion.h2>
             </div>
             <div className="overflow-hidden">
-              <motion.h2 className="uppercase text-[3.75rem] font-display font-bold leading-[85%] mb-2 sm:text-[4rem] md:text-[5rem] md:mb-4 lg:text-[6rem] xl:text-[7rem]">
+              <motion.h2
+                variants={{
+                  initial: {
+                    translateY: "-100%",
+                  },
+                  view: {
+                    translateY: "0",
+                    transition: {
+                      duration: animsDuration,
+                      ease: "easeInOut",
+                    },
+                  },
+                }}
+                className="uppercase text-[3.75rem] font-display font-bold leading-[85%] mb-2 sm:text-[4rem] md:text-[5rem] md:mb-4 lg:text-[6rem] xl:text-[7rem]"
+              >
                 {title}
               </motion.h2>
             </div>
             <div className="overflow-hidden">
-              <motion.p className="font-body max-w-96 text-uaap-dark-blue m-auto line-clamp-3 md:max-w-[56rem]">
+              <motion.p
+                variants={{
+                  initial: {
+                    translateY: "-100%",
+                  },
+                  view: {
+                    translateY: "0",
+                    transition: {
+                      duration: animsDuration,
+                      ease: "easeInOut",
+                      delay: 0.25,
+                    },
+                  },
+                }}
+                className="font-body max-w-96 text-uaap-dark-blue m-auto line-clamp-3 md:max-w-[56rem]"
+              >
                 <span className="font-bold uppercase">{firstTwoBlurb} </span>
                 {restBlurb}
                 {"..."}
