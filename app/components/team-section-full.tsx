@@ -2,6 +2,7 @@ import { MdArrowOutward } from "react-icons/md";
 import { IconContext } from "react-icons";
 import { NavLink } from "react-router";
 import { motion } from "motion/react";
+import backgroundLeft from "../assets/images/background-left.png";
 
 export function TeamSectionFull({
   team,
@@ -28,9 +29,9 @@ export function TeamSectionFull({
     >
       <div className="bg-black flex-6 text-center relative overflow-hidden">
         <img
-          src="/assets/images/background.png"
+          src={backgroundLeft}
           alt=""
-          className="absolute bottom-0 left-1/2 -translate-x-1/2 object-cover h-full w-full"
+          className="absolute top-1/2 left-1/2 -translate-1/2 object-cover h-full w-full"
         />
         <motion.div
           initial={{ translateX: "0" }}

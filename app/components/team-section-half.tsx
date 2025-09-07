@@ -3,6 +3,8 @@ import { IconContext } from "react-icons";
 import { NavLink } from "react-router";
 import { motion } from "motion/react";
 import { useMediaQuery } from "react-responsive";
+import backgroundLeft from "../assets/images/background-left.png";
+import backgroundRight from "../assets/images/background-right.png";
 
 export function TeamSectionHalf({
   team,
@@ -33,14 +35,14 @@ export function TeamSectionHalf({
     >
       <div className="bg-black flex-6 text-center relative overflow-hidden">
         <img
-          src="/assets/images/background.png"
+          src={alignment == "right" ? backgroundRight : backgroundLeft}
           alt=""
-          className="absolute bottom-0 left-1/2 -translate-x-1/2 object-cover h-full"
+          className="absolute bottom-0 left-1/2 -translate-x-1/2 object-cover h-full min-w-full"
         />
         <motion.div
           initial={{ translateX: "0" }}
           whileInView={{
-            translateX: "100%",
+            translateX: alignment == "right" ? "100%" : "-100%",
             transition: { ease: "easeInOut", duration: animsDuration },
           }}
           className="bg-black w-full h-full absolute"
