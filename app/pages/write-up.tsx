@@ -30,7 +30,7 @@ export default function WriteUp({ params, loaderData }: Route.ComponentProps) {
   const { team, title, byline, article } = loaderData;
   return (
     <div>
-      <nav className="absolute w-dvw top-20 px-10 flex justify-between lg:px-20">
+      <nav className="absolute w-dvw top-20 px-10 flex justify-between lg:px-20 z-10">
         <div className="text-white">hamburger</div>
         <NavLink to={`/#${params.slug}`}>
           <motion.button

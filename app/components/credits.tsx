@@ -1,4 +1,5 @@
 import logo from "../assets/images/logo-long.png";
+import { motion } from "motion/react";
 
 export function Credits() {
   return (
@@ -8,10 +9,19 @@ export function Credits() {
     >
       <div>
         <img src={logo} alt="" className="w-72" />
-        <h1 className="font-display uppercase font-bold text-6xl sm:text-7xl md:text-8xl mt-8">
-          UAAP SEASON 88 FIRST{" "}
-          <span className="whitespace-nowrap">SEMESTER PRIMER</span>
-        </h1>
+        <div className="overflow-hidden">
+          <motion.h1
+            initial={{ translateX: "-100%" }}
+            whileInView={{
+              translateX: "0",
+              transition: { ease: "easeInOut", duration: 0.75 },
+            }}
+            className="font-display uppercase font-bold text-6xl mt-6 sm:text-7xl md:text-8xl md:mt-8"
+          >
+            UAAP SEASON 88 FIRST{" "}
+            <span className="whitespace-nowrap">SEMESTER PRIMER</span>
+          </motion.h1>
+        </div>
       </div>
       <div className="bg-white h-[1px] font-body mb-8" />
       <div className="flex justify-between flex-col gap-7 md:flex-row md:gap-12 lg:gap-28">
