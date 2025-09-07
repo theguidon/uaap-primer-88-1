@@ -1,5 +1,6 @@
 import { TeamSectionHalf } from "~/components/team-section-half";
 import { TeamSectionFull } from "~/components/team-section-full";
+import { Credits } from "~/components/credits";
 import data from "../assets/data/data.json";
 
 export function Welcome() {
@@ -27,6 +28,7 @@ export function Welcome() {
           />
         )
       )}
+      <Credits />
     </div>
   );
 }
