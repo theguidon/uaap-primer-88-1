@@ -27,31 +27,40 @@ export function TeamSectionFull({
       id={slug} // use this as anchor for navigation sidebar
       className={`snap-start flex flex-col h-dvh relative overflow-hidden`}
     >
-      <div className="bg-black flex-6 text-center relative overflow-hidden">
+      <motion.div
+        initial="initial"
+        whileInView="view"
+        viewport={{ margin: "0px 0px -4px 0px" }}
+        className="bg-black flex-6 text-center relative overflow-hidden"
+      >
         <img
           src={backgroundLeft}
           alt=""
           className="absolute top-1/2 left-1/2 -translate-1/2 object-cover h-full w-full"
         />
         <motion.div
-          initial={{ translateX: "0" }}
-          whileInView={{
-            translateX: "100%",
-            transition: { ease: "easeInOut", duration: animsDuration },
+          variants={{
+            initial: { translateX: "0" },
+            view: {
+              translateX: "100%",
+              transition: { ease: "easeInOut", duration: animsDuration },
+            },
           }}
           className="bg-black w-full h-full absolute"
         />
         <motion.img
-          initial={{ translateY: "100%" }}
-          whileInView={{
-            translateY: "0",
-            transition: { ease: "easeInOut", duration: animsDuration },
+          variants={{
+            initial: { translateY: "100%" },
+            view: {
+              translateY: "0",
+              transition: { ease: "easeInOut", duration: animsDuration },
+            },
           }}
           src={`/assets/images/${slug}.png`}
           alt=""
           className="absolute bottom-0 left-1/2 -translate-x-1/2 object-cover h-full z-10"
         />
-      </div>
+      </motion.div>
       <div
         className={`overflow-hidden text-white hidden font-display font-bold text-5xl absolute w-min top-8 mx-8`}
       >
