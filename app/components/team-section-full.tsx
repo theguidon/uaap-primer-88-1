@@ -62,9 +62,15 @@ export function TeamSectionFull({
         />
       </motion.div>
       <div
-        className={`overflow-hidden text-white hidden font-display font-bold text-5xl absolute w-min top-8 mx-8`}
+        className={`overflow-hidden text-white hidden font-display font-bold text-5xl absolute w-min top-0 left-0 m-8 md:block lg:m-15 2xl:m-20`}
       >
-        <motion.h2>
+        <motion.h2
+          initial={{ translateX: "-100%" }}
+          whileInView={{
+            translateX: "0",
+            transition: { ease: "easeInOut", duration: animsDuration },
+          }}
+        >
           {team.split(" ").length > 2 ? (
             <>
               {/* puts sports that are two words or more in one line */}
