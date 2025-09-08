@@ -3,7 +3,7 @@ import data from "../assets/data/data.json";
 import { Fragment } from "react/jsx-runtime";
 import { MdArrowOutward } from "react-icons/md";
 import { IconContext } from "react-icons";
-import { NavLink } from "react-router";
+import { NavLink, redirect } from "react-router";
 import { motion, stagger, type Variants } from "motion/react";
 import background from "../assets/images/backgrond-writeup.png";
 
@@ -16,7 +16,8 @@ const articleData: {
   };
 } = data;
 export async function loader({ params }: Route.LoaderArgs) {
-  return articleData[params.slug];
+  if (!(params.slug in data)) throw redirect("/");
+  else return articleData[params.slug];
 }
 const variants: Variants = {
   initial: { translateY: "-100%" },
