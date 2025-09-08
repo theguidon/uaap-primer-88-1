@@ -1,5 +1,5 @@
-import { TeamSectionHalf } from "~/components/team-section-half";
-import { TeamSectionFull } from "~/components/team-section-full";
+import { TeamSectionHalf } from "~/components/TeamSectionHalf";
+import { TeamSectionFull } from "~/components/TeamSectionFull";
 import data from "../assets/data/data.json";
 
 export function TeamSection() {
