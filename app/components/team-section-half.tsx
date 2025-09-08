@@ -33,31 +33,42 @@ export function TeamSectionHalf({
       id={slug} // use this as anchor for navigation sidebar
       className={`snap-start flex flex-col h-dvh relative overflow-hidden ${alignment == "right" ? "md:flex-row" : "md:flex-row-reverse"} md:h-[50dvh]`}
     >
-      <div className="bg-black flex-6 text-center relative overflow-hidden">
+      <motion.div
+        initial="initial"
+        whileInView="view"
+        viewport={{ margin: "0px 0px -4px 0px" }}
+        className="bg-black flex-6 text-center relative overflow-hidden"
+      >
         <img
           src={alignment == "right" ? backgroundRight : backgroundLeft}
           alt=""
           className="absolute bottom-0 left-1/2 -translate-x-1/2 object-cover h-full min-w-full"
         />
         <motion.div
-          initial={{ translateX: "0" }}
-          whileInView={{
-            translateX: alignment == "right" ? "100%" : "-100%",
-            transition: { ease: "easeInOut", duration: animsDuration },
+          variants={{
+            initial: { translateX: "0" },
+            view: {
+              translateX: alignment == "right" ? "100%" : "-100%",
+              transition: { ease: "easeInOut", duration: animsDuration },
+            },
           }}
           className="bg-black w-full h-full absolute"
         />
         <motion.img
-          initial={{ translateY: "100%" }}
-          whileInView={{
-            translateY: "0",
-            transition: { ease: "easeInOut", duration: animsDuration },
+          variants={{
+            initial: {
+              translateY: "100%",
+            },
+            view: {
+              translateY: "0",
+              transition: { ease: "easeInOut", duration: animsDuration },
+            },
           }}
           src={`/assets/images/${slug}.png`}
           alt=""
           className="absolute bottom-0 left-1/2 -translate-x-1/2 object-cover h-full z-10"
         />
-      </div>
+      </motion.div>
       <div
         className={`overflow-hidden text-white hidden font-display font-bold text-5xl absolute w-min ${alignment == "right" ? "text-right" : "text-left"} top-8 ${alignment == "right" ? "right-0" : "left-0"} mx-8 md:block md:mx-[calc(60dvw-2.5rem)] lg:top-15 xl:mx-[calc(60dvw-6rem)] 2xl:top-20`}
       >
@@ -79,7 +90,10 @@ export function TeamSectionHalf({
               {/* puts sports that are two words or more in one line */}
               {/* putting the non breaking space (\u00a0) in json breaks the font (Gotham Condensed) */}
               {team.split(" ").slice(0, 1)}
-              <p className="w-max">{team.split(" ").slice(1).join(" ")}</p>
+              <br />
+              <span className="whitespace-nowrap">
+                {team.split(" ").slice(1).join(" ")}
+              </span>
             </>
           ) : (
             team
