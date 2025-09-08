@@ -25,7 +25,7 @@ export function TeamSectionHalf({
   const restBlurb =
     splitRestBlurb.slice(0, -1).join(" ") + "\u00a0" + splitRestBlurb.slice(-1);
   const animsDuration = 0.75;
-  const isMd = useMediaQuery({ query: "(width >= 48rem)" });
+  const isMd = useMediaQuery({ query: "(min-width: 48rem)" });
   const gender = slug.split("-")[0];
 
   return (
