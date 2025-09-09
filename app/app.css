@@ -8,115 +8,31 @@
   --color-uaap-dark-blue: #002581;
   --color-uaap-orange: #ed6226;
   --color-uaap-purple: #8f2886;
+  --font-sans:
+    "Inter", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-/* FONTS */
-/* Gotham Condensed */
 @font-face {
   font-family: "Gotham Condensed";
-  src: url("./assets/fonts/GothamCondensed/GothamCond-XBlack.otf");
-  font-weight: 950;
-  font-style: normal;
+  src: url("./fonts/Gotham Condensed/Gotham Condensed Book/Gotham Condensed Book.otf");
+  font-weight: normal;
 }
+
 @font-face {
   font-family: "Gotham Condensed";
-  src: url("./assets/fonts/GothamCondensed/GothamCond-XBlackItalic.otf");
-  font-weight: 950;
-  font-style: italic;
+  src: url("./fonts/Gotham Condensed/Gotham Condensed Light/Gotham Condensed Light.otf");
+  font-weight: 100 300;
 }
+
 @font-face {
   font-family: "Gotham Condensed";
-  src: url("./assets/fonts/GothamCondensed/GothamCond-Black.otf");
-  font-weight: 900;
-  font-style: normal;
+  src: url("./fonts/Gotham Condensed/Gotham Condensed Medium/Gotham Condensed Medium.otf");
+  font-weight: 500 600;
 }
+
 @font-face {
   font-family: "Gotham Condensed";
-  src: url("./assets/fonts/GothamCondensed/GothamCond-BlackItalic.otf");
-  font-weight: 900;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Gotham Condensed";
-  src: url("./assets/fonts/GothamCondensed/GothamCond-Ultra.otf");
-  font-weight: 800;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Gotham Condensed";
-  src: url("./assets/fonts/GothamCondensed/GothamCond-UltraItalic.otf");
-  font-weight: 800;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Gotham Condensed";
-  src: url("./assets/fonts/GothamCondensed/GothamCond-Bold.otf");
+  src: url("./fonts/Gotham Condensed/Gotham Condensed Bold/Gotham Condensed Bold.otf");
   font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Gotham Condensed";
-  src: url("./assets/fonts/GothamCondensed/GothamCond-BoldItalic.otf");
-  font-weight: 700;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Gotham Condensed";
-  src: url("./assets/fonts/GothamCondensed/GothamCond-Medium.otf");
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Gotham Condensed";
-  src: url("./assets/fonts/GothamCondensed/GothamCond-MediumItalic.otf");
-  font-weight: 500;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Gotham Condensed";
-  src: url("./assets/fonts/GothamCondensed/GothamCond-Book.otf");
-  font-weight: 350;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Gotham Condensed";
-  src: url("./assets/fonts/GothamCondensed/GothamCond-BookItalic.otf");
-  font-weight: 350;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Gotham Condensed";
-  src: url("./assets/fonts/GothamCondensed/GothamCond-Light.otf");
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Gotham Condensed";
-  src: url("./assets/fonts/GothamCondensed/GothamCond-LightItalic.otf");
-  font-weight: 300;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Gotham Condensed";
-  src: url("./assets/fonts/GothamCondensed/GothamCond-XLight.otf");
-  font-weight: 200;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Gotham Condensed";
-  src: url("./assets/fonts/GothamCondensed/GothamCond-XLightItalic.otf");
-  font-weight: 200;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Gotham Condensed";
-  src: url("./assets/fonts/GothamCondensed/GothamCond-Thin.otf");
-  font-weight: 100;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Gotham Condensed";
-  src: url("./assets/fonts/GothamCondensed/GothamCond-ThinItalic.otf");
-  font-weight: 100;
-  font-style: italic;
 }
