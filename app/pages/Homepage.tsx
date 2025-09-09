@@ -24,7 +24,7 @@ export default function Homepage() {
   if (isMobile) { return <MobileHome />; }
   else {
     return (
-      <main>
+      <section className={styles.mainSection}>
         <motion.div
           className={styles.underPhoto}
           initial={{ width: 0 }}
@@ -130,7 +130,7 @@ export default function Homepage() {
             src="/homepage_player_desktop.png"
           />
         </section>
-      </main>
+      </section>
     );
   }
 }
