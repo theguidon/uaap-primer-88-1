@@ -1,6 +1,8 @@
 import type { Route } from "./+types/home";
 import { Welcome } from "../welcome/welcome";
+import EditorMessage from "~/pages/EditorMessage";
 import Homepage from "../pages/Homepage";
+import SideBar from "~/components/SideBar";
 
 export function meta({ }: Route.MetaArgs) {
   return [
@@ -10,5 +12,10 @@ export function meta({ }: Route.MetaArgs) {
 }
 
 export default function Home() {
-  return <Homepage />;
+  return (
+    <>
+      <SideBar />
+      <Homepage />
+    </>
+  );
 }

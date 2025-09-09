@@ -1,0 +1,66 @@
+nav {
+  height: 100vh;
+  padding: 30px 40px;
+  background: #1c41d5;
+  color: white;
+  position: absolute;
+  left: 0;
+  z-index: 5000;
+  transition: left 500ms ease-in-out;
+}
+
+nav > * {
+  width: 100%;
+}
+
+section.title {
+  font-family: "Gotham Condensed";
+  margin-bottom: 48px;
+}
+
+section.title > div {
+  overflow: hidden;
+}
+
+section.title h1 {
+  font-size: 5rem;
+  line-height: 5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+section.title h2 {
+  font-size: 4rem;
+  line-height: 4rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+section.title p {
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  font-weight: 500;
+  font-family: "IBM Plex Sans Condensed";
+}
+
+ul > li > section.navLinkTitle {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+ul > li > ul {
+  margin-left: 16px;
+  font-family: "IBM Plex Sans Condensed";
+  font-weight: 500;
+}
+
+li img {
+  width: 32px;
+  height: 32px;
+}
+
+li p {
+  font-family: "IBM Plex Sans Condensed";
+  font-weight: 800;
+}
