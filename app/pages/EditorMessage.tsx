@@ -1,6 +1,6 @@
 import styles from "./editormessage.module.css"
 import BloomingCircles from "~/components/BloomingCircles";
-import { easeInOut, motion } from "motion/react";
+import { easeInOut, motion, AnimatePresence } from "motion/react";
 
 export default function EditorMessage() {
   const images = ["football.png", "basketball.png", "volleyball.png"];
@@ -101,13 +101,17 @@ export default function EditorMessage() {
           display: "flex",
           justifyContent: "center"
         }}>
-          <motion.img
-            className={styles.runner}
-            src={`/editormessage/${images[Math.floor(Math.random() * images.length)]}`}
-            initial={{ y: "100%" }}
-            whileInView={{ y: 0 }}
-            transition={{ duration: 0.6, ease: easeInOut }}
-          />
+          <AnimatePresence>
+            <motion.img
+              className={styles.runner}
+              key={`/editormessage/${images[Math.floor(Math.random() * images.length)]}`}
+              src={`/editormessage/${images[Math.floor(Math.random() * images.length)]}`}
+              initial={{ y: "100%" }}
+              whileInView={{ y: 0 }}
+              exit={{ y: "100%" }}
+              transition={{ duration: 0.6, ease: easeInOut }}
+            />
+          </AnimatePresence>
         </div>
         <motion.div
           initial={{ height: 0 }}
