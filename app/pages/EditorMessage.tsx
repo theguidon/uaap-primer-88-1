@@ -51,10 +51,12 @@ export default function EditorMessage() {
             <span className={styles.firstTwo}>IN ITS</span> 87th season, the University Athletic Association of the Philippines (UAAP) will feature a loaded semestral showcase of collegiate sports on a historic scale</motion.p>
         </div>
 
-        <div className={styles.readMore}>
-          <p>Read More</p>
-          <img src="/Arrow up-right.svg" />
-        </div>
+        <a href="/editors-message">
+          <div className={styles.readMore}>
+            <p>Read More</p>
+            <img src="/Arrow up-right.svg" />
+          </div>
+        </a>
       </section>
       <section className={styles.graphic}>
         <div

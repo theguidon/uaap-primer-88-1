@@ -32,7 +32,7 @@ export default function MainPage() {
       <main>
         <Homepage />
         <EditorMessage />
-        {Object.keys(data).map((sport) => (
+        {Object.keys(data["sports"]).map((sport) => (
           <TeamSection key={sport} sport={sport as (keyof (typeof data))} />
         ))}
         <Credits />

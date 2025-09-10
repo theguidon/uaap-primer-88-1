@@ -12,8 +12,11 @@ import background from "../assets/images/backgrond-writeup.png";
 
 export async function loader({ params }: Route.ClientLoaderArgs) {
   const generalSport = params.slug.slice(params.slug.indexOf("-") + 1);
-  if (!(generalSport in data)) throw redirect("/");
-  const sportsData = data[generalSport as keyof (typeof data)];
+  if (params.slug != "editors-message" && !(generalSport in data)) throw redirect("/");
+  if (params.slug == "editors-message") {
+    return data["editors-message"];
+  }
+  const sportsData = data.sports[generalSport as keyof (typeof data.sports)];
   return sportsData[params.slug as keyof (typeof sportsData)];
 }
 const variants: Variants = {
