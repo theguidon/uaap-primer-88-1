@@ -102,6 +102,7 @@ div.enterButton {
     z-index: 10;
     height: 100%;
     position: relative;
+    overflow: hidden;
   }
 
   div.underPhoto > img {

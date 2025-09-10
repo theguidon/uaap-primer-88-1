@@ -17,7 +17,7 @@ export default function MainPage() {
       <SideBar visible={sidebarVisible} setVisibility={(isVisible: boolean) => setSideBarVisibility(isVisible)} />
       <button
         style={{
-          position: "absolute",
+          position: "fixed",
           left: "2%",
           top: "2%",
           cursor: "pointer",
@@ -27,12 +27,16 @@ export default function MainPage() {
       >
         <IoMdMenu
           color="#1c41d5"
-          size="40" />
+          size="40"
+          style={{
+            mixBlendMode: "difference"
+          }}
+        />
       </button>
       <main>
         <Homepage />
         <EditorMessage />
-        {Object.keys(data).map((sport) => (
+        {Object.keys(data["sports"]).map((sport) => (
           <TeamSection key={sport} sport={sport as (keyof (typeof data))} />
         ))}
         <Credits />

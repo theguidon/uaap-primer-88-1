@@ -5,6 +5,7 @@
   flex-direction: row-reverse;
   flex-wrap: wrap;
   overflow: hidden;
+  background: black;
 }
 
 section.text {
@@ -72,6 +73,11 @@ div.line {
 .readMore img {
   width: 16px;
   height: 16px;
+  transition: all 250ms ease-in-out;
+}
+
+.readMore:hover > img {
+  transform: rotate(45deg);
 }
 
 p span.firstTwo {

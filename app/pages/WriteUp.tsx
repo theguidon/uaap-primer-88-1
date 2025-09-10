@@ -12,8 +12,11 @@ import background from "../assets/images/backgrond-writeup.png";
 
 export async function loader({ params }: Route.ClientLoaderArgs) {
   const generalSport = params.slug.slice(params.slug.indexOf("-") + 1);
-  if (!(generalSport in data)) throw redirect("/");
-  const sportsData = data[generalSport as keyof (typeof data)];
+  if (params.slug != "editors-message" && !(generalSport in data)) throw redirect("/");
+  if (params.slug == "editors-message") {
+    return data["editors-message"];
+  }
+  const sportsData = data.sports[generalSport as keyof (typeof data.sports)];
   return sportsData[params.slug as keyof (typeof sportsData)];
 }
 const variants: Variants = {
@@ -27,6 +30,9 @@ const variants: Variants = {
 export default function WriteUp({ params, loaderData }: Route.ComponentProps) {
   const { team, title, byline, article } = loaderData;
   const [sidebarVisible, setSideBarVisibility] = useState<boolean>(false);
+
+  const imageName = team.includes("Track and Field") ? "track-and-field.webp" : `${params.slug}.webp`;
+
   return (
     <>
       <SideBar visible={sidebarVisible} setVisibility={(isVisible: boolean) => setSideBarVisibility(isVisible)} />
@@ -123,7 +129,16 @@ export default function WriteUp({ params, loaderData }: Route.ComponentProps) {
                   },
                 }}
                 className="w-full aspect-[1.5] bg-uaap-blue"
-              />
+              >
+                <img
+                  src={`/public/writeups/${imageName}`}
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "cover"
+                  }}
+                />
+              </motion.div>
             </div>
           </motion.div>
           <div className="font-body text-uaap-dark-blue mt-[4rem] mb-[6rem] text-lg sm:text-2xl">

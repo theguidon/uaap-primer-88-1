@@ -51,10 +51,12 @@ export default function EditorMessage() {
             <span className={styles.firstTwo}>IN ITS</span> 87th season, the University Athletic Association of the Philippines (UAAP) will feature a loaded semestral showcase of collegiate sports on a historic scale</motion.p>
         </div>
 
-        <div className={styles.readMore}>
-          <p>Read More</p>
-          <img src="/Arrow up-right.svg" />
-        </div>
+        <a href="/editors-message">
+          <div className={styles.readMore}>
+            <p>Read More</p>
+            <img src="/Arrow up-right.svg" />
+          </div>
+        </a>
       </section>
       <section className={styles.graphic}>
         <div
@@ -65,7 +67,7 @@ export default function EditorMessage() {
             radiiGap="10%"
             colors={["rgba(143, 39, 134, 0.3)", "rgba(143, 39, 134, 0.7)", "#8f2786"]}
             animStagger={25}
-            animSpeed="500ms"
+            animSpeed={0.5}
             delay={0}
           />
         </div>
@@ -77,7 +79,7 @@ export default function EditorMessage() {
             radiiGap="10%"
             colors={["rgba(249, 218, 44, 0.3)", "rgba(249, 218, 44, 0.7)", "#f9da2c"]}
             animStagger={25}
-            animSpeed="500ms"
+            animSpeed={0.5}
             delay={0}
           />
         </div>
