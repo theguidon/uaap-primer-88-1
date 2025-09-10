@@ -1,7 +1,7 @@
 import { useMediaQuery } from "react-responsive";
 import "../components/anims.css";
 import styles from "./home.module.css";
-import { motion } from "motion/react";
+import { motion, AnimatePresence } from "motion/react";
 import BloomingCircles from "~/components/BloomingCircles";
 import MobileHome from "~/pages/MobileHome";
 
@@ -125,13 +125,17 @@ export default function Homepage() {
             whileInView={{ x: 0 }}
             transition={{ duration: 0.5, ease: "easeInOut", delay: 0.3 }}
           />
-          <motion.img
-            initial={{ y: "100%" }}
-            animate={{ y: 0 }}
-            transition={{ duration: 0.7, ease: "easeInOut" }}
-            style={{ height: "100%", width: "100%", maxWidth: 620, objectFit: "cover", objectPosition: "top", position: "absolute", bottom: 0, right: 0, zIndex: 50 }}
-            src={`/homepage/${images[Math.floor(Math.random() * images.length)]}`}
-          />
+          <AnimatePresence>
+            <motion.img
+              initial={{ y: "100%" }}
+              animate={{ y: 0 }}
+              exit={{ y: "100%" }}
+              transition={{ duration: 0.7, ease: "easeInOut" }}
+              style={{ height: "100%", width: "100%", maxWidth: 620, objectFit: "cover", objectPosition: "top", position: "absolute", bottom: 0, right: 0, zIndex: 50 }}
+              src={`/homepage/${images[Math.floor(Math.random() * images.length)]}`}
+              key={`/homepage/${images[Math.floor(Math.random() * images.length)]}`}
+            />
+          </AnimatePresence>
         </section>
       </section>
     );
