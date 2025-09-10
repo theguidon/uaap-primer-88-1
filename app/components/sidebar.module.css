@@ -1,12 +1,14 @@
 nav {
   height: 100vh;
-  padding: 30px 40px;
+  padding: 40px 0px;
   background: #1c41d5;
   color: white;
   position: absolute;
   left: 0;
   z-index: 5000;
   transition: left 500ms ease-in-out;
+  justify-content: space-between;
+  overflow-y: scroll;
 }
 
 nav > * {
@@ -15,6 +17,7 @@ nav > * {
 
 section.title {
   font-family: "Gotham Condensed";
+  padding: 0 40px;
   margin-bottom: 48px;
 }
 
@@ -23,8 +26,8 @@ section.title > div {
 }
 
 section.title h1 {
-  font-size: 5rem;
-  line-height: 5rem;
+  font-size: 4rem;
+  line-height: 4rem;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -37,22 +40,44 @@ section.title h2 {
 }
 
 section.title p {
-  font-size: 1.2rem;
-  line-height: 1.2rem;
+  font-size: 1rem;
+  line-height: 1rem;
   font-weight: 500;
   font-family: "IBM Plex Sans Condensed";
+}
+
+nav > ul > li.selected > section.navLinkTitle {
+  border-left: 12px solid white;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+ul {
+  cursor: pointer;
 }
 
 ul > li > section.navLinkTitle {
   display: flex;
   align-items: center;
   gap: 4px;
+  padding: 12px 40px;
+  transition: all 250ms ease-in-out;
 }
 
 ul > li > ul {
-  margin-left: 16px;
+  margin-left: 80px;
   font-family: "IBM Plex Sans Condensed";
   font-weight: 500;
+  overflow-y: clip;
+  height: 0;
+  transition: height 250ms ease-in-out;
+}
+
+ul > li > ul > li {
+  margin: 8px 0;
+}
+
+nav > ul > li.selected > ul {
+  height: 60px;
 }
 
 li img {
