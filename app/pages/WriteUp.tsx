@@ -27,6 +27,9 @@ const variants: Variants = {
 export default function WriteUp({ params, loaderData }: Route.ComponentProps) {
   const { team, title, byline, article } = loaderData;
   const [sidebarVisible, setSideBarVisibility] = useState<boolean>(false);
+
+  const imageName = team.includes("Track and Field") ? "track-and-field.webp" : `${params.slug}.webp`;
+
   return (
     <>
       <SideBar visible={sidebarVisible} setVisibility={(isVisible: boolean) => setSideBarVisibility(isVisible)} />
@@ -123,7 +126,16 @@ export default function WriteUp({ params, loaderData }: Route.ComponentProps) {
                   },
                 }}
                 className="w-full aspect-[1.5] bg-uaap-blue"
-              />
+              >
+                <img
+                  src={`/public/writeups/${imageName}`}
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "cover"
+                  }}
+                />
+              </motion.div>
             </div>
           </motion.div>
           <div className="font-body text-uaap-dark-blue mt-[4rem] mb-[6rem] text-lg sm:text-2xl">
