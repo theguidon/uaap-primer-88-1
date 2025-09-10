@@ -3,7 +3,7 @@ import { easeInOut, motion } from "motion/react";
 import { useState } from "react";
 import { IoClose } from "react-icons/io5";
 
-export default function SideBar(visible: boolean, setVisibility: (visible: boolean) => void) {
+export default function SideBar({ visible, setVisibility }: { visible: boolean, setVisibility: (isVisible: boolean) => void }) {
 	const [selected, setSelected] = useState(-1);
 	const links = [
 		{ name: "Cheerdance", sublinks: false },
@@ -88,8 +88,18 @@ export default function SideBar(visible: boolean, setVisibility: (visible: boole
 						{
 							link.sublinks &&
 							<ul>
-								<li>Men's {link.name}</li>
-								<li>Women's {link.name}</li>
+								<li>
+									<a
+										href={`#mens-${link.name.split(' ').join('-').toLowerCase()}`}>
+										Men's {link.name}
+									</a>
+								</li>
+								<li>
+									<a
+										href={`#womens-${link.name.split(' ').join('-').toLowerCase()}`}>
+										Women's {link.name}
+									</a>
+								</li>
 							</ul>
 						}
 					</li>

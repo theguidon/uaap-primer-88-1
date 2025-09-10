@@ -12,7 +12,7 @@ export function TeamSection({ sport }: { sport: keyof (typeof data) }) {
     />);
   } else {
     return (
-      <div>
+      <div id={sport}>
         {Object.entries(data[sport]).map(([key, { team, title, article }], ix) => (
           <TeamSectionHalf
             key={key}

@@ -146,7 +146,7 @@ export function TeamSectionHalf({
                     },
                   },
                 }}
-                className="uppercase text-[3.75rem] font-display font-bold leading-[85%] mb-2 sm:text-[4rem] md:text-[4.5rem] lg:text-[5rem]"
+                className="uppercase text-[3.75rem] font-display font-bold leading-[85%] mb-2"
               >
                 {title}
               </motion.h2>
