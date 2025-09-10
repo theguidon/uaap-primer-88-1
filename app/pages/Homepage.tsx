@@ -22,6 +22,7 @@ function EnterButton() {
 }
 
 export default function Homepage() {
+  const images = ["badminton.png", "chess.png", "football.png", "table-tennis.png"];
   const isMobile = useMediaQuery({ query: "(max-width: 899px)" })
   if (isMobile) { return <MobileHome />; }
   else {
@@ -39,7 +40,7 @@ export default function Homepage() {
           <div>
             <motion.img
               src="/Long_Logo.svg"
-              initial={{ y: "100%" }}
+              initial={{ y: "125%" }}
               whileInView={{ y: 0 }}
               transition={{ duration: 0.5, ease: "easeInOut" }}
               style={{ height: 25, marginBottom: 8 }}
@@ -129,7 +130,7 @@ export default function Homepage() {
             animate={{ y: 0 }}
             transition={{ duration: 0.7, ease: "easeInOut" }}
             style={{ height: "100%", width: "100%", maxWidth: 620, objectFit: "cover", objectPosition: "top", position: "absolute", bottom: 0, right: 0, zIndex: 50 }}
-            src="/homepage_player_desktop.png"
+            src={`/public/homepage/${images[Math.floor(Math.random() * images.length)]}`}
           />
         </section>
       </section>
