@@ -1,4 +1,4 @@
-nav {
+nav.sidebar {
   height: 100vh;
   padding: 40px 0px;
   background: #1c41d5;
@@ -10,51 +10,51 @@ nav {
   overflow-y: scroll;
 }
 
-nav > * {
+nav.sidebar > * {
   width: 100%;
 }
 
-section.title {
+nav.sidebar section.title {
   font-family: "Gotham Condensed";
   padding: 0 40px;
   margin-bottom: 48px;
 }
 
-section.title > div {
+nav.sidebar section.title > div {
   overflow: hidden;
 }
 
-section.title h1 {
+nav.sidebar section.title h1 {
   font-size: 4rem;
   line-height: 4rem;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-section.title h2 {
+nav.sidebar section.title h2 {
   font-size: 4rem;
   line-height: 4rem;
   font-weight: 800;
   text-transform: uppercase;
 }
 
-section.title p {
+nav.sidebar section.title p {
   font-size: 1rem;
   line-height: 1rem;
   font-weight: 500;
   font-family: "IBM Plex Sans Condensed";
 }
 
-nav > ul > li.selected > section.navLinkTitle {
+nav.sidebar > ul > li.selected > section.navLinkTitle {
   border-left: 12px solid white;
   background: rgba(255, 255, 255, 0.2);
 }
 
-ul {
+nav.sidebar ul {
   cursor: pointer;
 }
 
-ul > li > section.navLinkTitle {
+nav.sidebar ul > li > section.navLinkTitle {
   display: flex;
   align-items: center;
   gap: 4px;
@@ -62,7 +62,7 @@ ul > li > section.navLinkTitle {
   transition: all 250ms ease-in-out;
 }
 
-ul > li > ul {
+nav.sidebar ul > li > ul {
   margin-left: 80px;
   font-family: "IBM Plex Sans Condensed";
   font-weight: 500;
@@ -71,20 +71,20 @@ ul > li > ul {
   transition: height 250ms ease-in-out;
 }
 
-ul > li > ul > li {
+nav.sidebar ul > li > ul > li {
   margin: 8px 0;
 }
 
-nav > ul > li.selected > ul {
+nav.sidebar > ul > li.selected > ul {
   height: 60px;
 }
 
-li img {
+nav.sidebar li img {
   width: 32px;
   height: 32px;
 }
 
-li p {
+nav.sidebar li p {
   font-family: "IBM Plex Sans Condensed";
   font-weight: 800;
 }

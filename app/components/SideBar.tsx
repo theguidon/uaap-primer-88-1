@@ -21,6 +21,7 @@ export default function SideBar({ visible, setVisibility }: { visible: boolean, 
 	}
 	return (
 		<nav
+			className={styles.sidebar}
 			style={{
 				left: (visible ? 0 : "-100%")
 			}}
@@ -82,7 +83,7 @@ export default function SideBar({ visible, setVisibility }: { visible: boolean, 
 							className={styles.navLinkTitle}
 							onClick={() => select(link.sublinks, ix)}
 						>
-							<p>{link.name}</p>
+							{!link.sublinks ? (<a href={`/#${link.name.toLowerCase()}`} onClick={() => setVisibility(false)}><p>{link.name}</p></a>) : (<p>{link.name}</p>)}
 							{link.sublinks && <img src="/keyboard_arrow_down.svg" />}
 						</section>
 						{
@@ -90,13 +91,17 @@ export default function SideBar({ visible, setVisibility }: { visible: boolean, 
 							<ul>
 								<li>
 									<a
-										href={`#mens-${link.name.split(' ').join('-').toLowerCase()}`}>
+										href={`/#mens-${link.name.split(' ').join('-').toLowerCase()}`}
+										onClick={() => setVisibility(false)}
+									>
 										Men's {link.name}
 									</a>
 								</li>
 								<li>
 									<a
-										href={`#womens-${link.name.split(' ').join('-').toLowerCase()}`}>
+										href={`/#womens-${link.name.split(' ').join('-').toLowerCase()}`}
+										onClick={() => setVisibility(false)}
+									>
 										Women's {link.name}
 									</a>
 								</li>
