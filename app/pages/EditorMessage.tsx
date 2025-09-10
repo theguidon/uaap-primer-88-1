@@ -9,7 +9,7 @@ export default function EditorMessage() {
         <div style={{ overflow: "hidden", marginBottom: 48 }}>
           <motion.h2
             initial={{ y: "100%" }}
-            animate={{ y: 0 }}
+            whileInView={{ y: 0 }}
             transition={{ duration: 0.6, ease: easeInOut }}
           >
             A message from the Editors
@@ -19,7 +19,7 @@ export default function EditorMessage() {
           <div>
             <motion.h1
               initial={{ y: "100%" }}
-              animate={{ y: 0 }}
+              whileInView={{ y: 0 }}
               transition={{ duration: 0.7, ease: easeInOut }}
             >
               ASCENT TO
@@ -28,7 +28,7 @@ export default function EditorMessage() {
           <div>
             <motion.h1
               initial={{ y: "100%" }}
-              animate={{ y: 0 }}
+              whileInView={{ y: 0 }}
               transition={{ duration: 0.7, ease: easeInOut }}
             >
               EXCELLENCE
@@ -38,14 +38,14 @@ export default function EditorMessage() {
         <motion.div
           className={styles.line}
           initial={{ width: 0 }}
-          animate={{ width: "70%" }}
+          whileInView={{ width: "70%" }}
           transition={{ duration: 0.6, ease: easeInOut }}
         />
         <div style={{ overflow: "hidden" }}>
           <motion.p
             className={styles.blurb}
             initial={{ y: "-100%" }}
-            animate={{ y: 0 }}
+            whileInView={{ y: 0 }}
             transition={{ duration: 0.6, ease: easeInOut }}
           >
             <span className={styles.firstTwo}>IN ITS</span> 87th season, the University Athletic Association of the Philippines (UAAP) will feature a loaded semestral showcase of collegiate sports on a historic scale</motion.p>
@@ -83,7 +83,7 @@ export default function EditorMessage() {
         </div>
         <motion.div
           initial={{ height: 0 }}
-          animate={{ height: "100%" }}
+          whileInView={{ height: "100%" }}
           style={{ overflow: "hidden" }}
           transition={{ duration: 0.6, ease: easeInOut }}
         >
@@ -102,13 +102,13 @@ export default function EditorMessage() {
             className={styles.runner}
             src="/w-track-and-field.png"
             initial={{ y: "100%" }}
-            animate={{ y: 0 }}
+            whileInView={{ y: 0 }}
             transition={{ duration: 0.6, ease: easeInOut }}
           />
         </div>
         <motion.div
           initial={{ height: 0 }}
-          animate={{ height: "100%" }}
+          whileInView={{ height: "100%" }}
           transition={{ duration: 0.6, ease: easeInOut, delay: 0.2 }}
           style={{ overflow: "hidden" }}
         >
