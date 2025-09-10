@@ -31,7 +31,7 @@ export function TeamSectionHalf({
   return (
     <section
       id={slug} // use this as anchor for navigation sidebar
-      className={`snap-start flex flex-col h-dvh relative overflow-hidden ${alignment == "right" ? "md:flex-row" : "md:flex-row-reverse"} md:h-[50dvh]`}
+      className={`flex flex-col h-dvh relative overflow-hidden ${alignment == "right" ? "md:flex-row" : "md:flex-row-reverse"} md:h-[50dvh]`}
     >
       <motion.div
         initial="initial"
@@ -70,7 +70,7 @@ export function TeamSectionHalf({
         />
       </motion.div>
       <div
-        className={`overflow-hidden text-white hidden font-display font-bold text-5xl absolute w-min ${alignment == "right" ? "text-right" : "text-left"} top-8 ${alignment == "right" ? "right-0" : "left-0"} mx-8 md:block md:mx-[calc(60dvw-2.5rem)] lg:top-15 xl:mx-[calc(60dvw-6rem)] 2xl:top-20`}
+        className={`overflow-hidden text-white hidden font-display font-bold text-4xl absolute w-min ${alignment == "right" ? "text-right" : "text-left"} top-8 ${alignment == "right" ? "right-0" : "left-0"} mx-8 md:block md:mx-[calc(60dvw-2.5rem)] lg:top-15 xl:mx-[calc(60dvw-6rem)] 2xl:top-20`}
       >
         <motion.h2
           initial={{
@@ -146,7 +146,7 @@ export function TeamSectionHalf({
                     },
                   },
                 }}
-                className="uppercase text-[3.75rem] font-display font-bold leading-[85%] mb-2 sm:text-[4rem] md:text-[4.5rem] lg:text-[5rem] xl:text-[6rem]"
+                className="uppercase text-[3.75rem] font-display font-bold leading-[85%] mb-2 sm:text-[4rem] md:text-[4.5rem] lg:text-[5rem]"
               >
                 {title}
               </motion.h2>
