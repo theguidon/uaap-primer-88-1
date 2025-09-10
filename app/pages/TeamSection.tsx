@@ -8,11 +8,11 @@ export function TeamSection({ sport }: { sport: keyof (typeof data) }) {
       team={data[sport]["cheerdance"].team}
       title={data[sport]["cheerdance"].title}
       blurb={data[sport]["cheerdance"].article.split("\n\n")[0]}
-      slug={data[sport]["cheerdance"].team}
+      slug="cheerdance"
     />);
   } else {
     return (
-      <div>
+      <div id={sport}>
         {Object.entries(data[sport]).map(([key, { team, title, article }], ix) => (
           <TeamSectionHalf
             key={key}

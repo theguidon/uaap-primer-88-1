@@ -4,7 +4,7 @@ import { easeInOut, motion } from "motion/react";
 
 export default function EditorMessage() {
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id="editor-message">
       <section className={styles.text}>
         <div style={{ overflow: "hidden", marginBottom: 48 }}>
           <motion.h2

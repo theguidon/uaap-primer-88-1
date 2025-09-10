@@ -7,15 +7,17 @@ import MobileHome from "~/pages/MobileHome";
 
 function EnterButton() {
   return (
-    <motion.div
-      initial={{ width: 0, padding: 0 }}
-      whileInView={{ width: 120, padding: 12 }}
-      transition={{ duration: 0.5, ease: "easeInOut" }}
-      className={styles.enterButton}
-    >
-      <p>Enter</p>
-      <img src="/Arrow up-right.svg" />
-    </motion.div>
+    <a href="#editor-message">
+      <motion.div
+        initial={{ width: 0, padding: 0 }}
+        whileInView={{ width: 120, padding: 12 }}
+        transition={{ duration: 0.5, ease: "easeInOut" }}
+        className={styles.enterButton}
+      >
+        <p>Enter</p>
+        <img src="/Arrow up-right.svg" />
+      </motion.div>
+    </a>
   );
 }
 
@@ -24,7 +26,7 @@ export default function Homepage() {
   if (isMobile) { return <MobileHome />; }
   else {
     return (
-      <section className={styles.mainSection}>
+      <section className={styles.mainSection} id="main">
         <motion.div
           className={styles.underPhoto}
           initial={{ width: 0 }}
