@@ -131,7 +131,7 @@ export default function WriteUp({ params, loaderData }: Route.ComponentProps) {
                 className="w-full aspect-[1.5] bg-uaap-blue"
               >
                 <img
-                  src={`/public/writeups/${imageName}`}
+                  src={`/writeups/${imageName}`}
                   style={{
                     width: "100%",
                     height: "100%",
