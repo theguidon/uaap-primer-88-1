@@ -3,6 +3,7 @@ import BloomingCircles from "~/components/BloomingCircles";
 import { easeInOut, motion } from "motion/react";
 
 export default function EditorMessage() {
+  const images = ["football.png", "basketball.png", "volleyball.png"];
   return (
     <section className={styles.container} id="editor-message">
       <section className={styles.text}>
@@ -102,7 +103,7 @@ export default function EditorMessage() {
         }}>
           <motion.img
             className={styles.runner}
-            src="/w-track-and-field.png"
+            src={`/public/editormessage/${images[Math.floor(Math.random() * images.length)]}`}
             initial={{ y: "100%" }}
             whileInView={{ y: 0 }}
             transition={{ duration: 0.6, ease: easeInOut }}
