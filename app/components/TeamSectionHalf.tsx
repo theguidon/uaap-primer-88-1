@@ -181,7 +181,7 @@ export function TeamSectionHalf({
         >
           <motion.button
             whileHover="hover"
-            className={`flex items-center gap-1 p-2.5 cursor-pointer upppercase ${gender == "mens" ? "bg-uaap-orange" : "bg-uaap-purple"} text-white font-body font-bold md:p-4 md:text-xl xl:text-2xl`}
+            className={`flex items-center gap-1 p-2 cursor-pointer upppercase ${gender == "mens" ? "bg-uaap-orange" : "bg-uaap-purple"} text-white font-body font-bold md:p-2 md:text-lg xl:text-lg`}
           >
             READ MORE
             <motion.div variants={{ hover: { translateX: 6, translateY: -6 } }}>
