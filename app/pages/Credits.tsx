@@ -11,10 +11,10 @@ export function Credits() {
         <img src={logo} alt="" className="w-72" />
         <div className="overflow-hidden">
           <motion.h1
-            initial={{ translateX: "-100%" }}
+            initial={{ translateY: "100%" }}
             whileInView={{
-              translateX: "0",
-              transition: { ease: "easeInOut", duration: 0.75 },
+              translateY: "0",
+              transition: { ease: "easeInOut", duration: 0.70 },
             }}
             className="font-display uppercase font-bold text-6xl mt-6 sm:text-7xl md:text-8xl md:mt-8"
           >

@@ -7,17 +7,11 @@ import { NavLink, redirect } from "react-router";
 import { motion, stagger, type Variants } from "motion/react";
 import background from "../assets/images/backgrond-writeup.png";
 
-const articleData: {
-  [key: string]: {
-    team: string;
-    title: string;
-    byline: string;
-    article: string;
-  };
-} = data;
-export async function loader({ params }: Route.LoaderArgs) {
-  if (!(params.slug in data)) throw redirect("/");
-  else return articleData[params.slug];
+export async function loader({ params }: Route.ClientLoaderArgs) {
+  const generalSport = params.slug.slice(params.slug.indexOf("-") + 1);
+  if (!(generalSport in data)) throw redirect("/");
+  const sportsData = data[generalSport as keyof (typeof data)];
+  return sportsData[params.slug as keyof (typeof sportsData)];
 }
 const variants: Variants = {
   initial: { translateY: "-100%" },

@@ -132,11 +132,11 @@ export function TeamSectionHalf({
                 variants={{
                   initial: isMd
                     ? {
-                        translateX: alignment == "right" ? "100%" : "-100%",
-                      }
+                      translateX: alignment == "right" ? "100%" : "-100%",
+                    }
                     : {
-                        translateY: "-100%",
-                      },
+                      translateY: "-100%",
+                    },
                   view: {
                     translateX: "0",
                     translateY: "0",
