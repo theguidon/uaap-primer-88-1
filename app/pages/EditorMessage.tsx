@@ -67,7 +67,7 @@ export default function EditorMessage() {
             radiiGap="10%"
             colors={["rgba(143, 39, 134, 0.3)", "rgba(143, 39, 134, 0.7)", "#8f2786"]}
             animStagger={25}
-            animSpeed="500ms"
+            animSpeed={0.5}
             delay={0}
           />
         </div>
@@ -79,7 +79,7 @@ export default function EditorMessage() {
             radiiGap="10%"
             colors={["rgba(249, 218, 44, 0.3)", "rgba(249, 218, 44, 0.7)", "#f9da2c"]}
             animStagger={25}
-            animSpeed="500ms"
+            animSpeed={0.5}
             delay={0}
           />
         </div>

@@ -31,7 +31,7 @@ export default function Homepage() {
           className={styles.underPhoto}
           initial={{ width: 0 }}
           whileInView={{ width: "100%" }}
-          transition={{ duration: 0.5, ease: "easeInOut" }}
+          transition={{ duration: 0.8, ease: "easeInOut" }}
         >
           <img src="/underphoto_desktop.svg" style={{ width: "100vw", height: "100vh" }} />
         </motion.div>
@@ -39,9 +39,9 @@ export default function Homepage() {
           <div>
             <motion.img
               src="/Long_Logo.svg"
-              initial={{ y: 100 }}
+              initial={{ y: "100%" }}
               whileInView={{ y: 0 }}
-              transition={{ duration: 1, ease: "easeInOut" }}
+              transition={{ duration: 0.5, ease: "easeInOut" }}
               style={{ height: 25, marginBottom: 8 }}
             />
           </div>
@@ -91,7 +91,7 @@ export default function Homepage() {
               radiiGap="calc(40vw / 10)"
               colors={['rgba(143, 39, 134, 0.3)', 'rgba(143, 39, 134, 0.7)', '#8f2786']}
               animStagger={25}
-              animSpeed="500ms"
+              animSpeed={0.5}
               delay={0}
             />
           </div>
@@ -111,7 +111,7 @@ export default function Homepage() {
               radiiGap="calc(50vw / 15)"
               colors={['#b7e1f2', '#56b8e1', '#0e9ad4']}
               animStagger={25}
-              animSpeed="750ms"
+              animSpeed={0.75}
               delay={1}
             />
           </div>
