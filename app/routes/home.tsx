@@ -2,8 +2,7 @@ import type { Route } from "./+types/home";
 import { Welcome } from "../welcome/welcome";
 import EditorMessage from "~/pages/EditorMessage";
 import Homepage from "../pages/Homepage";
-import SideBar from "~/components/SideBar";
-
+import MainPage from "~/pages/MainPage";
 export function meta({ }: Route.MetaArgs) {
   return [
     { title: "New React Router App" },
@@ -12,10 +11,5 @@ export function meta({ }: Route.MetaArgs) {
 }
 
 export default function Home() {
-  return (
-    <>
-      <SideBar />
-      <Homepage />
-    </>
-  );
+  return <MainPage />;
 }

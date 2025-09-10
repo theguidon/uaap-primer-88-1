@@ -20,9 +20,10 @@ function EnterButton() {
 }
 
 export function Welcome() {
-  const isMobile = useMediaQuery({ query: "(max-width: 899px)" })
-  if (isMobile) { return <MobileHome />; }
-  else {
+  const isMobile = useMediaQuery({ query: "(max-width: 899px)" });
+  if (isMobile) {
+    return <MobileHome />;
+  } else {
     return (
       <main>
         <motion.div
@@ -31,7 +32,10 @@ export function Welcome() {
           animate={{ width: "100%" }}
           transition={{ duration: 0.5, ease: "easeInOut" }}
         >
-          <img src="/underphoto_desktop.svg" style={{ width: "100vw", height: "100vh" }} />
+          <img
+            src="/underphoto_desktop.svg"
+            style={{ width: "100vw", height: "100vh" }}
+          />
         </motion.div>
         <section className={styles.title}>
           <div>
@@ -76,18 +80,22 @@ export function Welcome() {
           <div
             className={styles.bloom}
             style={{
-              width: '40vw',
-              height: '40vw',
-              position: 'absolute',
+              width: "40vw",
+              height: "40vw",
+              position: "absolute",
               right: "10%",
               top: -30,
-              zIndex: 5
+              zIndex: 5,
             }}
           >
             <BloomingCircles
               outerSize="40vw"
               radiiGap="calc(40vw / 10)"
-              colors={['rgba(143, 39, 134, 0.3)', 'rgba(143, 39, 134, 0.7)', '#8f2786']}
+              colors={[
+                "rgba(143, 39, 134, 0.3)",
+                "rgba(143, 39, 134, 0.7)",
+                "#8f2786",
+              ]}
               animStagger={25}
               animSpeed="500ms"
               delay={0}
@@ -96,18 +104,18 @@ export function Welcome() {
           <div
             className={styles.bloom}
             style={{
-              width: '50vw',
-              height: '50vw',
-              position: 'absolute',
+              width: "50vw",
+              height: "50vw",
+              position: "absolute",
               right: "-20%",
               top: 120,
-              zIndex: 10
+              zIndex: 10,
             }}
           >
             <BloomingCircles
               outerSize="50vw"
               radiiGap="calc(50vw / 15)"
-              colors={['#b7e1f2', '#56b8e1', '#0e9ad4']}
+              colors={["#b7e1f2", "#56b8e1", "#0e9ad4"]}
               animStagger={25}
               animSpeed="750ms"
               delay={1}
@@ -117,7 +125,12 @@ export function Welcome() {
         <section className={styles.graphic} style={{ zIndex: 50 }}>
           <motion.img
             src="/overphoto_desktop.svg"
-            style={{ zIndex: 70, position: "absolute", right: 0, bottom: "10%" }}
+            style={{
+              zIndex: 70,
+              position: "absolute",
+              right: 0,
+              bottom: "10%",
+            }}
             initial={{ x: "100%" }}
             animate={{ x: 0 }}
             transition={{ duration: 0.5, ease: "easeInOut", delay: 0.3 }}
@@ -126,7 +139,17 @@ export function Welcome() {
             initial={{ y: "100%" }}
             animate={{ y: 0 }}
             transition={{ duration: 0.7, ease: "easeInOut" }}
-            style={{ height: "100%", width: "100%", maxWidth: 620, objectFit: "cover", objectPosition: "top", position: "absolute", bottom: 0, right: 0, zIndex: 50 }}
+            style={{
+              height: "100%",
+              width: "100%",
+              maxWidth: 620,
+              objectFit: "cover",
+              objectPosition: "top",
+              position: "absolute",
+              bottom: 0,
+              right: 0,
+              zIndex: 50,
+            }}
             src="/homepage_player_desktop.png"
           />
         </section>

@@ -9,7 +9,7 @@ function EnterButton() {
   return (
     <motion.div
       initial={{ width: 0, padding: 0 }}
-      animate={{ width: 120, padding: 12 }}
+      whileInView={{ width: 120, padding: 12 }}
       transition={{ duration: 0.5, ease: "easeInOut" }}
       className={styles.enterButton}
     >
@@ -24,11 +24,11 @@ export default function Homepage() {
   if (isMobile) { return <MobileHome />; }
   else {
     return (
-      <main>
+      <section className={styles.mainSection}>
         <motion.div
           className={styles.underPhoto}
           initial={{ width: 0 }}
-          animate={{ width: "100%" }}
+          whileInView={{ width: "100%" }}
           transition={{ duration: 0.5, ease: "easeInOut" }}
         >
           <img src="/underphoto_desktop.svg" style={{ width: "100vw", height: "100vh" }} />
@@ -38,7 +38,7 @@ export default function Homepage() {
             <motion.img
               src="/Long_Logo.svg"
               initial={{ y: 100 }}
-              animate={{ y: 0 }}
+              whileInView={{ y: 0 }}
               transition={{ duration: 1, ease: "easeInOut" }}
               style={{ height: 25, marginBottom: 8 }}
             />
@@ -46,7 +46,7 @@ export default function Homepage() {
           <div className={styles.titleUAAP}>
             <motion.h1
               initial={{ y: "-100%" }}
-              animate={{ y: 0 }}
+              whileInView={{ y: 0 }}
               transition={{ duration: 0.6, ease: "easeInOut" }}
             >
               UAAP
@@ -55,7 +55,7 @@ export default function Homepage() {
           <div className={styles.titleSeason}>
             <motion.h1
               initial={{ y: "-100%" }}
-              animate={{ y: 0 }}
+              whileInView={{ y: 0 }}
               transition={{ duration: 0.7, ease: "easeInOut", delay: 0.1 }}
             >
               SEASON 88
@@ -64,7 +64,7 @@ export default function Homepage() {
           <div className={styles.titleSemester}>
             <motion.h1
               initial={{ y: "-100%" }}
-              animate={{ y: 0 }}
+              whileInView={{ y: 0 }}
               transition={{ duration: 0.8, ease: "easeInOut", delay: 0.2 }}
             >
               First Semester Primer
@@ -119,7 +119,7 @@ export default function Homepage() {
             src="/overphoto_desktop.svg"
             style={{ zIndex: 70, position: "absolute", right: 0, bottom: "10%" }}
             initial={{ x: "100%" }}
-            animate={{ x: 0 }}
+            whileInView={{ x: 0 }}
             transition={{ duration: 0.5, ease: "easeInOut", delay: 0.3 }}
           />
           <motion.img
@@ -130,7 +130,7 @@ export default function Homepage() {
             src="/homepage_player_desktop.png"
           />
         </section>
-      </main>
+      </section>
     );
   }
 }

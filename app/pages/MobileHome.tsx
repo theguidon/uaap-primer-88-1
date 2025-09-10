@@ -7,7 +7,7 @@ export default function MobileHome() {
   // if (!isMobile) { return <p>DESKTOP</p>; }
 
   return (
-    <main>
+    <section className={styles.mainSection}>
       <section className={styles.title}>
         <div>
           <motion.img
@@ -117,6 +117,6 @@ export default function MobileHome() {
           />
         </motion.div>
       </section>
-    </main>
+    </section>
   );
 }
