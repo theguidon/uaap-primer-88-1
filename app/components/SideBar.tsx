@@ -78,7 +78,7 @@ export default function SideBar({ visible, setVisibility }: { visible: boolean, 
 			</section>
 			<ul>
 				{links.map((link, ix) => (
-					<li className={selected == ix ? styles.selected : ''}>
+					<li key={link.name} className={selected == ix ? styles.selected : ''}>
 						<section
 							className={styles.navLinkTitle}
 							onClick={() => select(link.sublinks, ix)}
