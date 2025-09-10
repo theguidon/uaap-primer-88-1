@@ -103,7 +103,7 @@ export default function EditorMessage() {
         }}>
           <motion.img
             className={styles.runner}
-            src={`/public/editormessage/${images[Math.floor(Math.random() * images.length)]}`}
+            src={`/editormessage/${images[Math.floor(Math.random() * images.length)]}`}
             initial={{ y: "100%" }}
             whileInView={{ y: 0 }}
             transition={{ duration: 0.6, ease: easeInOut }}

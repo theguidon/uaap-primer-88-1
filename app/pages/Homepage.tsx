@@ -130,7 +130,7 @@ export default function Homepage() {
             animate={{ y: 0 }}
             transition={{ duration: 0.7, ease: "easeInOut" }}
             style={{ height: "100%", width: "100%", maxWidth: 620, objectFit: "cover", objectPosition: "top", position: "absolute", bottom: 0, right: 0, zIndex: 50 }}
-            src={`/public/homepage/${images[Math.floor(Math.random() * images.length)]}`}
+            src={`/homepage/${images[Math.floor(Math.random() * images.length)]}`}
           />
         </section>
       </section>
