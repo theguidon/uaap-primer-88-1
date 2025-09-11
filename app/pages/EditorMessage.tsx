@@ -105,8 +105,7 @@ export default function EditorMessage() {
           <AnimatePresence>
             <motion.img
               className={styles.runner}
-              key={`/editormessage/${images[Math.floor(Math.random() * images.length)]}`}
-              src={`/editormessage/${images[Math.floor(Math.random() * images.length)]}`}
+              src={`/editormessage/${images[1]}`}
               initial={{ y: "100%" }}
               whileInView={{ y: 0 }}
               exit={{ y: "100%" }}

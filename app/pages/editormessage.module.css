@@ -86,7 +86,7 @@ p span.firstTwo {
 }
 
 section.graphic {
-  background: white;
+  background: black;
   flex: 40%;
   position: relative;
   overflow: hidden;
