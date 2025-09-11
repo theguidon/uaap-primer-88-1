@@ -3,6 +3,7 @@ import BloomingCircles from "~/components/BloomingCircles";
 import { easeInOut, motion, AnimatePresence } from "motion/react";
 
 export default function EditorMessage() {
+
   const images = ["football.png", "basketball.png", "volleyball.png"];
   return (
     <section className={styles.container} id="editor-message">

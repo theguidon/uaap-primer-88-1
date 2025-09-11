@@ -31,7 +31,7 @@ export function TeamSectionHalf({
   return (
     <section
       id={slug} // use this as anchor for navigation sidebar
-      className={`snap-start lg:snap-align-none flex flex-col h-dvh relative overflow-hidden ${alignment == "right" ? "md:flex-row" : "md:flex-row-reverse"} md:h-[50dvh]`}
+      className={`${alignment} snap-start lg:snap-align-none flex flex-col h-dvh relative overflow-hidden ${alignment == "right" ? "md:flex-row" : "md:flex-row-reverse"} md:h-[50dvh]`}
     >
       <motion.div
         initial="initial"
