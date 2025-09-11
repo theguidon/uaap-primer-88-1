@@ -34,7 +34,7 @@ export default function Homepage() {
           whileInView={{ width: "100%" }}
           transition={{ duration: 0.8, ease: "easeInOut" }}
         >
-          <img src="/underphoto_desktop.svg" style={{ width: "100vw", height: "100vh" }} />
+          <img src="/underphoto_desktop.svg" style={{ width: "100vw", height: "100vh", minWidth: "100vw" }} />
         </motion.div>
         <section className={styles.title}>
           <div>

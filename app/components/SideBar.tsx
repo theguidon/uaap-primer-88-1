@@ -2,19 +2,16 @@ import styles from "./sidebar.module.css";
 import { easeInOut, motion } from "motion/react";
 import { useState } from "react";
 import { IoClose } from "react-icons/io5";
+import data from "../assets/data/data.json";
 
 export default function SideBar({ visible, setVisibility }: { visible: boolean, setVisibility: (isVisible: boolean) => void }) {
+
+	function slugToSport(slug: string) {
+		const words = slug.split('-');
+		return words.map((w) => `${w[0].toUpperCase()}${w.slice(1)}`).join(" ");
+	}
 	const [selected, setSelected] = useState(-1);
-	const links = [
-		{ name: "Cheerdance", sublinks: false },
-		{ name: "Badminton", sublinks: true },
-		{ name: "Basketball", sublinks: true },
-		{ name: "Chess", sublinks: true },
-		{ name: "Football", sublinks: true },
-		{ name: "Swimming", sublinks: true },
-		{ name: "Tennis", sublinks: true },
-		{ name: "Track and Field", sublinks: true }
-	]
+	const links = Object.keys(data.sports).map(slugToSport);
 
 	function select(hasLinks: boolean, ix: number) {
 		setSelected(hasLinks ? ix : -1);
@@ -78,31 +75,31 @@ export default function SideBar({ visible, setVisibility }: { visible: boolean, 
 			</section>
 			<ul>
 				{links.map((link, ix) => (
-					<li key={link.name} className={selected == ix ? styles.selected : ''}>
+					<li key={link} className={selected == ix ? styles.selected : ''}>
 						<section
 							className={styles.navLinkTitle}
-							onClick={() => select(link.sublinks, ix)}
+							onClick={() => select(link != "Cheerdance", ix)}
 						>
-							{!link.sublinks ? (<a href={`/#${link.name.toLowerCase()}`} onClick={() => setVisibility(false)}><p>{link.name}</p></a>) : (<p>{link.name}</p>)}
-							{link.sublinks && <img src="/keyboard_arrow_down.svg" />}
+							{link == "Cheerdance" ? (<a href={`/#${link.toLowerCase()}`} onClick={() => setVisibility(false)}><p>{link}</p></a>) : (<p>{link}</p>)}
+							{link != "Cheerdance" && <img src="/keyboard_arrow_down.svg" />}
 						</section>
 						{
-							link.sublinks &&
+							link != "Cheerdance" &&
 							<ul>
 								<li>
 									<a
-										href={`/#mens-${link.name.split(' ').join('-').toLowerCase()}`}
+										href={`/#mens-${link.split(' ').join('-').toLowerCase()}`}
 										onClick={() => setVisibility(false)}
 									>
-										Men's {link.name}
+										Men's {link}
 									</a>
 								</li>
 								<li>
 									<a
-										href={`/#womens-${link.name.split(' ').join('-').toLowerCase()}`}
+										href={`/#womens-${link.split(' ').join('-').toLowerCase()}`}
 										onClick={() => setVisibility(false)}
 									>
-										Women's {link.name}
+										Women's {link}
 									</a>
 								</li>
 							</ul>

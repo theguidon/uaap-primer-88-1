@@ -61,7 +61,7 @@ div.enterButton {
 }
 
 .enterButton > p {
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 600;
   text-transform: uppercase;
   font-size: 1.2rem;
