@@ -38,6 +38,7 @@ export default function MainPage() {
           } else {
             setMenuColor("#1c41d5");
           }
+          return;
         }
       });
     }
