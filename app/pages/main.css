@@ -1,0 +1,11 @@
+main {
+  overflow-y: scroll;
+  scroll-snap-type: y proximity;
+  height: 100vh;
+  scroll-behavior: smooth;
+}
+
+main > * {
+  scroll-snap-align: start;
+  min-height: 100vh;
+}

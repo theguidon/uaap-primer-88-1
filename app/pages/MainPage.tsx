@@ -2,16 +2,14 @@ import Homepage from "./Homepage"
 import EditorMessage from "./EditorMessage"
 import { TeamSection } from "./TeamSection";
 import { Credits } from "./Credits";
-import styles from "./main.module.css";
+import "./main.css";
 import data from "../assets/data/data.json";
 import { useState } from "react";
 import SideBar from "~/components/SideBar";
 import { IoMdMenu } from "react-icons/io";
-import { useScroll } from "motion/react";
 
 export default function MainPage() {
   const [sidebarVisible, setSideBarVisibility] = useState<boolean>(false);
-  const { scrollY } = useScroll();
   return (
     <>
       <SideBar visible={sidebarVisible} setVisibility={(isVisible: boolean) => setSideBarVisibility(isVisible)} />
