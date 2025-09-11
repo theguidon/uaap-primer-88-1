@@ -16,10 +16,10 @@ export function Credits() {
               translateY: "0",
               transition: { ease: "easeInOut", duration: 0.70 },
             }}
-            className="font-display uppercase font-bold text-6xl mt-6 sm:text-7xl md:text-8xl md:mt-8"
+            className="font-display uppercase font-bold text-4xl mt-6 sm:text-7xl md:text-8xl md:mt-8"
           >
-            UAAP SEASON 88 FIRST{" "}
-            <span className="whitespace-nowrap">SEMESTER PRIMER</span>
+            UAAP SEASON 88
+            <br />FIRST SEMESTER PRIMER
           </motion.h1>
         </div>
       </div>

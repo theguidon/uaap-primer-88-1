@@ -27,7 +27,7 @@ export default function Homepage() {
   if (isMobile) { return <MobileHome />; }
   else {
     return (
-      <section className={styles.mainSection} id="main">
+      <section className={styles.mainSection} id="home">
         <motion.div
           className={styles.underPhoto}
           initial={{ width: 0 }}

@@ -41,8 +41,8 @@ section.text h2 {
 section.text h1 {
   font-family: "Gotham Condensed";
   font-weight: 700;
-  font-size: 5rem;
-  line-height: 5rem;
+  font-size: 3rem;
+  line-height: 3rem;
 }
 
 p.blurb {
@@ -174,5 +174,10 @@ img.runner {
   img.runner {
     height: 100%;
     object-position: 0 0;
+  }
+
+  section.text h1 {
+    font-size: 5rem;
+    line-height: 5rem;
   }
 }
