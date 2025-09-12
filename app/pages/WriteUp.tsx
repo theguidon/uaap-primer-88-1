@@ -113,9 +113,14 @@ export default function WriteUp({ params, loaderData }: Route.ComponentProps) {
               </motion.h1>
             </div>
             <div className="overflow-hidden">
-              <motion.h3 variants={variants} className="text-white pt-2 pb-4">
-                By <span className="font-bold">{byline}</span>
-              </motion.h3>
+              {params.slug == "editors-message" ?
+                (<motion.h3 variants={variants} className="text-white pt-2 pb-4">
+                  By <span className="font-bold">Caitlin Bernal</span> and <span className="font-bold">Gabriel Renee Quizan</span>
+                </motion.h3>) :
+                (<motion.h3 variants={variants} className="text-white pt-2 pb-4">
+                  By <span className="font-bold">{byline}</span>
+                </motion.h3>)
+              }
             </div>
             {params.slug !== "editors-message" && <div className="overflow-hidden">
               {/* image placeholder */}
