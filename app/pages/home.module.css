@@ -4,7 +4,7 @@ section.title {
   flex-flow: column nowrap;
   align-items: stretch;
   gap: 8px;
-  padding-top: 10vh;
+  margin-top: 15vh;
 }
 
 section.title > div {
@@ -57,7 +57,7 @@ div.enterButton {
   align-items: center;
   justify-items: center;
   gap: 8px;
-  margin-top: 24px;
+  margin-top: 80px;
   cursor: pointer;
 }
 

@@ -32,8 +32,8 @@ export default function MainPage() {
     function callback(entries, observer) {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          console.debug("Observing:", entry.target);
-          if (entry.target.id == "credits" || entry.target.id == "cheerdance" || entry.target.id.includes("womens")) {
+          console.debug(entry.target);
+          if (entry.target.id == "credits" || entry.target.id == "editor-message" || entry.target.id == "cheerdance" || entry.target.id.includes("womens")) {
             setMenuColor("white");
           } else {
             setMenuColor("#1c41d5");

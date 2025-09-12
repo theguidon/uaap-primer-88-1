@@ -6,7 +6,14 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 
 export default function MobileHome() {
-  const images = ["badminton.png", "chess.png", "football.png", "table-tennis.png"];
+  const images = [
+    "jbahay.png",
+    "badminton.png",
+    "football.png",
+    "table-tennis.png",
+    "mfootball.png",
+    "volleyball.png",
+  ];
 
   return (
     <section className={styles.mainSection}>
@@ -54,7 +61,7 @@ export default function MobileHome() {
             width: '90vw',
             height: '90vw',
             position: 'absolute',
-            left: -200,
+            left: 0,
             top: 50,
             zIndex: 20
           }}
@@ -74,9 +81,9 @@ export default function MobileHome() {
             width: '60vw',
             height: '60vw',
             position: 'absolute',
-            right: -120,
-            top: 300,
-            zIndex: 10
+            right: 0,
+            bottom: 0,
+            zIndex: 20
           }}
         >
           <BloomingCircles
@@ -117,7 +124,7 @@ export default function MobileHome() {
         <motion.div className={styles.underRibbon}
           initial={{ width: 0 }}
           animate={{ width: "100%" }}
-          style={{ overflowX: "clip", height: "100%", position: "absolute", zIndex: 25, right: 0 }}
+          style={{ overflowX: "clip", height: "100%", position: "absolute", zIndex: 25, right: 0, bottom: 0 }}
         >
           <img
             src="/underphoto_mobile.svg"
@@ -126,13 +133,13 @@ export default function MobileHome() {
         </motion.div>
         <motion.div className="over-ribbon"
           initial={{ width: 0 }}
-          animate={{ width: "100%" }}
+          animate={{ width: "100vw" }}
           transition={{ delay: 0.65 }}
-          style={{ overflowX: "clip", height: 200, position: "absolute", zIndex: 75, right: 0 }}
+          style={{ overflowX: "clip", height: 200, position: "absolute", zIndex: 575, right: 0, bottom: 0 }}
         >
           <img
             src="/overphoto_mobile.svg"
-            style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "right center" }}
+            style={{ width: "100vw", height: "100%", objectFit: "cover", objectPosition: "right center" }}
           />
         </motion.div>
       </section>
