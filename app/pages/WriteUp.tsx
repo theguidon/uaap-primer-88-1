@@ -94,7 +94,7 @@ export default function WriteUp({ params, loaderData }: Route.ComponentProps) {
           />
         </div>
         <section
-          className={`max-w-[50rem] w-full px-10 absolute ${params.slug == "editors-message" ? "top-100" : "top-20"} left-1/2 translate-x-[-50%] md:top-90`}
+          className={`max-w-[50rem] w-full px-10 absolute ${params.slug == "editors-message" ? "top-100" : "top-20"} left-1/2 translate-x-[-50%] sm:top-90`}
         >
           <motion.div
             initial="initial"
@@ -114,7 +114,7 @@ export default function WriteUp({ params, loaderData }: Route.ComponentProps) {
               {params.slug == "editors-message" ? (
                 <motion.div
                   variants={variants}
-                  className="font-display font-bold text-7xl text-white uppercase leading-[85%] md:text-8xl"
+                  className="font-display font-bold text-7xl text-white uppercase leading-[85%] sm:text-8xl"
                 >
                   <h1>NEW FLIGHT,</h1>
                   <h1>HIGHER HEIGHTS</h1>
