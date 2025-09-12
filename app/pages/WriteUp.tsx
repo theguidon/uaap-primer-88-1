@@ -1,4 +1,4 @@
-import type { Route } from "./+types/write-up";
+import type { Route } from "./+types/WriteUp";
 import data from "../assets/data/data.json";
 import { Fragment } from "react/jsx-runtime";
 import { MdArrowOutward } from "react-icons/md";
@@ -10,7 +10,7 @@ import SideBar from "~/components/SideBar";
 import { IoMdMenu } from "react-icons/io";
 import background from "../assets/images/backgrond-writeup.png";
 
-export async function loader({ params }: Route.ClientLoaderArgs) {
+export async function clientLoader({ params }: Route.ClientLoaderArgs) {
   const generalSport = params.slug.slice(params.slug.indexOf("-") + 1);
   if (params.slug != "editors-message" && !(generalSport in data.sports))
     throw redirect("/");
