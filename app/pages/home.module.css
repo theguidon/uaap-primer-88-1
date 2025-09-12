@@ -38,6 +38,17 @@ section.title > div > h1 {
   line-height: 2rem;
 }
 
+.swiper {
+  z-index: 500;
+  width: 50%;
+  position: relative;
+  top: 5vh;
+}
+
+.swiper img {
+  object-fit: contain;
+}
+
 .mainSection {
   display: flex;
   width: 100%;

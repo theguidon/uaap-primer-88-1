@@ -6,7 +6,7 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 
 export default function MobileHome() {
-  const images = ["badminton.png", "chess.png", "football.png", "table-tennis.png"];
+  const images = ["basketball.png", "football.png"];
 
   return (
     <section className={styles.mainSection}>
@@ -89,6 +89,7 @@ export default function MobileHome() {
           />
         </div>
         <Swiper
+          className={styles.swiper}
           style={{
             zIndex: 500,
             width: "100%",
@@ -106,7 +107,7 @@ export default function MobileHome() {
             <SwiperSlide>
               <img
                 style={{
-                  height: "100%",
+                  height: "80%",
                   objectFit: "contain"
                 }}
                 src={`/homepage/${image}`}

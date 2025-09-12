@@ -26,7 +26,7 @@ function EnterButton() {
 }
 
 export default function Homepage() {
-  const images = ["badminton.png", "chess.png", "football.png", "table-tennis.png"];
+  const images = ["basketball.png", "football.png"];
   const isMobile = useMediaQuery({ query: "(max-width: 899px)" })
   if (isMobile) { return <MobileHome />; }
   else {
@@ -130,6 +130,7 @@ export default function Homepage() {
             transition={{ duration: 0.5, ease: "easeInOut", delay: 0.3 }}
           />
           <Swiper
+            className={styles.swiper}
             spaceBetween={1}
             loop={true}
             centeredSlides={true}
