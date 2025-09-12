@@ -33,12 +33,11 @@ export default function MainPage() {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           console.debug("Observing:", entry.target);
-          if (entry.target.id == "credits" || entry.target.id == "cheerdance" || entry.target.classList.contains("left")) {
+          if (entry.target.id == "credits" || entry.target.id == "cheerdance" || entry.target.id.includes("womens")) {
             setMenuColor("white");
           } else {
             setMenuColor("#1c41d5");
           }
-          return;
         }
       });
     }

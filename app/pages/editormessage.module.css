@@ -86,7 +86,7 @@ p span.firstTwo {
 }
 
 section.graphic {
-  background: white;
+  background: black;
   flex: 40%;
   position: relative;
   overflow: hidden;
@@ -125,7 +125,7 @@ div.bloom2 {
   object-fit: cover;
   position: absolute;
   top: 0;
-  right: -20%;
+  right: -50%;
   height: 50vh;
   width: 100vw;
 }

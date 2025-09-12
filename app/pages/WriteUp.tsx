@@ -52,7 +52,7 @@ export default function WriteUp({ params, loaderData }: Route.ComponentProps) {
           <NavLink to={`/#${params.slug}`}>
             <motion.button
               whileHover="hover"
-              className="cursor-pointer flex gap-1 text-white font-body font-bold text-lg items-center p-2 bg-uaap-dark-blue"
+              className="cursor-pointer flex gap-1 text-white font-body font-bold text-lg items-center py-2 px-2.5 bg-uaap-dark-blue"
             >
               <motion.div
                 variants={{
@@ -62,7 +62,7 @@ export default function WriteUp({ params, loaderData }: Route.ComponentProps) {
                 <IconContext.Provider
                   value={{
                     style: { color: "white", scale: "-1 1" },
-                    size: "1.75rem",
+                    size: "1.4rem",
                   }}
                 >
                   <MdArrowOutward />
@@ -117,7 +117,7 @@ export default function WriteUp({ params, loaderData }: Route.ComponentProps) {
                 By <span className="font-bold">{byline}</span>
               </motion.h3>
             </div>
-            <div className="overflow-hidden">
+            {params.slug !== "editors-message" && <div className="overflow-hidden">
               {/* image placeholder */}
               <motion.div
                 variants={{
@@ -139,9 +139,9 @@ export default function WriteUp({ params, loaderData }: Route.ComponentProps) {
                   }}
                 />
               </motion.div>
-            </div>
+            </div>}
           </motion.div>
-          <div className="font-body text-uaap-dark-blue mt-[4rem] mb-[6rem] text-lg sm:text-2xl">
+          <div className={`font-body text-uaap-dark-blue ${params.slug == 'editors-message' ? 'mt-[10rem]' : 'mt-[4rem]'} mb-[6rem] text-lg sm:text-2xl`}>
             {article.split("\n\n").map((paragraph, idx) =>
               idx == 0 ? (
                 <p key={idx}>

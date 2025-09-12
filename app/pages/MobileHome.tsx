@@ -1,10 +1,12 @@
 import styles from "./home.module.css";
 import { motion } from "motion/react";
 import BloomingCircles from "../components/BloomingCircles";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import "swiper/css";
 
 export default function MobileHome() {
-  // const isMobile = useMediaQuery({ query: '(max-width): 400px' });
-  // if (!isMobile) { return <p>DESKTOP</p>; }
+  const images = ["badminton.png", "chess.png", "football.png", "table-tennis.png"];
 
   return (
     <section className={styles.mainSection}>
@@ -62,7 +64,7 @@ export default function MobileHome() {
             radiiGap="10%"
             colors={['#b7e1f2', '#56b8e1', '#0e9ad4']}
             animStagger={25}
-            animSpeed="750ms"
+            animSpeed={0.75}
             delay={0}
           />
         </div>
@@ -82,19 +84,36 @@ export default function MobileHome() {
             radiiGap="10%"
             colors={['rgba(249, 218, 44, 0.3)', 'rgba(249, 218, 44, 0.7)', 'rgba(249, 218, 44, 1)']}
             animStagger={25}
-            animSpeed="600ms"
+            animSpeed={0.6}
             delay={15}
           />
         </div>
-        <div style={{ width: "100%", height: "100%", bottom: 0, position: "absolute", zIndex: 50, display: "flex", justifyContent: "center" }}>
-          <motion.img
-            src="/homepage_player_desktop.png"
-            initial={{ y: 500 }}
-            animate={{ y: 0 }}
-            transition={{ duration: 0.5, ease: "easeInOut", delay: 0 }}
-            style={{ width: "100%", height: "auto", objectFit: "cover", objectPosition: "center top" }}
-          />
-        </div>
+        <Swiper
+          style={{
+            zIndex: 500,
+            width: "100%",
+          }}
+          spaceBetween={1}
+          loop={true}
+          centeredSlides={true}
+          autoplay={{
+            delay: 1500,
+            disableOnInteraction: false
+          }}
+          modules={[Autoplay]}
+        >
+          {images.map((image) => (
+            <SwiperSlide>
+              <img
+                style={{
+                  height: "100%",
+                  objectFit: "contain"
+                }}
+                src={`/homepage/${image}`}
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
         <motion.div className={styles.underRibbon}
           initial={{ width: 0 }}
           animate={{ width: "100%" }}
@@ -109,7 +128,7 @@ export default function MobileHome() {
           initial={{ width: 0 }}
           animate={{ width: "100%" }}
           transition={{ delay: 0.65 }}
-          style={{ overflowX: "clip", height: 450, position: "absolute", zIndex: 75, right: 0 }}
+          style={{ overflowX: "clip", height: 200, position: "absolute", zIndex: 75, right: 0 }}
         >
           <img
             src="/overphoto_mobile.svg"
