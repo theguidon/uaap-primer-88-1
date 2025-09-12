@@ -14,12 +14,13 @@ export function Credits() {
             initial={{ translateY: "100%" }}
             whileInView={{
               translateY: "0",
-              transition: { ease: "easeInOut", duration: 0.70 },
+              transition: { ease: "easeInOut", duration: 0.7 },
             }}
             className="font-display uppercase font-bold text-4xl mt-6 sm:text-7xl md:text-8xl md:mt-8"
           >
             UAAP SEASON 88
-            <br />FIRST SEMESTER PRIMER
+            <br />
+            FIRST SEMESTER PRIMER
           </motion.h1>
         </div>
       </div>
@@ -74,17 +75,29 @@ export function Credits() {
           </div>
           <div>
             <h3 className="uppercase text-xl font-semibold">PHOTO CREDITS</h3>
-            <p className="text-lg">Miguel&nbsp;Abad, Rhian&nbsp;Herrera, Celina&nbsp;Iñgel, Enrico&nbsp;Jocson, Ariana&nbsp;Jurisprudencia, Juls&nbsp;Leonardo, Clarence&nbsp;Masilag, CJ&nbsp;Ochoa, Bea&nbsp;Pador, Earl&nbsp;Rafael, Jillian&nbsp;Santos, Sam&nbsp;Tadeo, Chelsea&nbsp;May&nbsp;Tan, Henri&nbsp;V.&nbsp;To, and Ayenne&nbsp;Torres</p>
+            <p className="text-lg">
+              Miguel&nbsp;Abad, Rhian&nbsp;Herrera, Celina&nbsp;Iñgel,
+              Enrico&nbsp;Jocson, Ariana&nbsp;Jurisprudencia,
+              Juls&nbsp;Leonardo, Clarence&nbsp;Masilag, CJ&nbsp;Ochoa,
+              Bea&nbsp;Pador, Earl&nbsp;Rafael, Jillian&nbsp;Santos,
+              Sam&nbsp;Tadeo, Chelsea&nbsp;May&nbsp;Tan, Henri&nbsp;V.&nbsp;To
+              and Ayenne&nbsp;Torres
+            </p>
           </div>
           <div>
-            <h3 className="uppercase text-xl font-semibold">GRAPHIC DESIGN EDITORS</h3>
+            <h3 className="uppercase text-xl font-semibold">
+              GRAPHIC DESIGN EDITORS
+            </h3>
             <p className="text-lg">
               Aliya&nbsp;Delos&nbsp;Santos and Chevin&nbsp;Paul&nbsp;Gealone
             </p>
           </div>
           <div>
             <h3 className="uppercase text-xl font-semibold">BRANDING</h3>
-            <p className="text-lg">Jizelle&nbsp;Arollado, Gaby&nbsp;Molina, Roxcel&nbsp;Obos and, Raphael&nbsp;E.&nbsp;Polintan</p>
+            <p className="text-lg">
+              Jizelle&nbsp;Arollado, Gaby&nbsp;Molina, Roxcel&nbsp;Obos and
+              Raphael&nbsp;E.&nbsp;Polintan
+            </p>
           </div>
           <div>
             <h3 className="uppercase text-xl font-semibold">DESIGNERS</h3>
