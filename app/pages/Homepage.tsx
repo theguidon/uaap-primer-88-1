@@ -148,6 +148,7 @@ export default function Homepage() {
               zIndex: 70,
               position: "absolute",
               right: 0,
+              bottom: "10%"
             }}
             initial={{ x: "100%" }}
             whileInView={{ x: 0 }}
