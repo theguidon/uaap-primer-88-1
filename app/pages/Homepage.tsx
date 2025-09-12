@@ -4,6 +4,10 @@ import styles from "./home.module.css";
 import { motion, AnimatePresence } from "motion/react";
 import BloomingCircles from "~/components/BloomingCircles";
 import MobileHome from "~/pages/MobileHome";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+
+import "swiper/css";
 
 function EnterButton() {
   return (
@@ -125,17 +129,24 @@ export default function Homepage() {
             whileInView={{ x: 0 }}
             transition={{ duration: 0.5, ease: "easeInOut", delay: 0.3 }}
           />
-          <AnimatePresence>
-            <motion.img
-              initial={{ y: "100%" }}
-              animate={{ y: 0 }}
-              exit={{ y: "100%" }}
-              transition={{ duration: 0.7, ease: "easeInOut" }}
-              style={{ height: "100%", width: "100%", maxWidth: 620, objectFit: "cover", objectPosition: "top", position: "absolute", bottom: 0, right: 0, zIndex: 50 }}
-              src={`/homepage/${images[Math.floor(Math.random() * images.length)]}`}
-              key={`/homepage/${images[Math.floor(Math.random() * images.length)]}`}
-            />
-          </AnimatePresence>
+          <Swiper
+            spaceBetween={1}
+            loop={true}
+            centeredSlides={true}
+            autoplay={{
+              delay: 1500,
+              disableOnInteraction: false
+            }}
+            modules={[Autoplay]}
+          >
+            {images.map((image) => (
+              <SwiperSlide>
+                <motion.img
+                  src={`/homepage/${image}`}
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </section>
       </section>
     );

@@ -125,7 +125,7 @@ div.bloom2 {
   object-fit: cover;
   position: absolute;
   top: 0;
-  right: -20%;
+  right: -50%;
   height: 50vh;
   width: 100vw;
 }
