@@ -12,12 +12,13 @@ import background from "../assets/images/backgrond-writeup.png";
 
 export async function loader({ params }: Route.ClientLoaderArgs) {
   const generalSport = params.slug.slice(params.slug.indexOf("-") + 1);
-  if (params.slug != "editors-message" && !(generalSport in data.sports)) throw redirect("/");
+  if (params.slug != "editors-message" && !(generalSport in data.sports))
+    throw redirect("/");
   if (params.slug == "editors-message") {
     return data["editors-message"];
   }
-  const sportsData = data.sports[generalSport as keyof (typeof data.sports)];
-  return sportsData[params.slug as keyof (typeof sportsData)];
+  const sportsData = data.sports[generalSport as keyof typeof data.sports];
+  return sportsData[params.slug as keyof typeof sportsData];
 }
 const variants: Variants = {
   initial: { translateY: "-100%" },
@@ -31,23 +32,26 @@ export default function WriteUp({ params, loaderData }: Route.ComponentProps) {
   const { team, title, byline, article } = loaderData;
   const [sidebarVisible, setSideBarVisibility] = useState<boolean>(false);
 
-  const imageName = team.includes("Track and Field") ? "track-and-field.webp" : `${params.slug}.webp`;
+  const imageName = team.includes("Track and Field")
+    ? "track-and-field.webp"
+    : `${params.slug}.webp`;
 
   return (
     <>
-      <SideBar visible={sidebarVisible} setVisibility={(isVisible: boolean) => setSideBarVisibility(isVisible)} />
+      <SideBar
+        visible={sidebarVisible}
+        setVisibility={(isVisible: boolean) => setSideBarVisibility(isVisible)}
+      />
       <div>
         <nav className="absolute w-dvw top-10 px-10 flex justify-between lg:px-20 z-10">
           <button
             style={{
               cursor: "pointer",
-              zIndex: 300
+              zIndex: 300,
             }}
             onClick={() => setSideBarVisibility(true)}
           >
-            <IoMdMenu
-              color="white"
-              size="40" />
+            <IoMdMenu color="white" size="40" />
           </button>
           <NavLink to={`/#${params.slug}`}>
             <motion.button
@@ -89,7 +93,9 @@ export default function WriteUp({ params, loaderData }: Route.ComponentProps) {
             className="bg-black w-full h-full absolute"
           />
         </div>
-        <section className="max-w-[50rem] w-full px-10 absolute top-20 left-1/2 translate-x-[-50%]">
+        <section
+          className={`max-w-[50rem] w-full px-10 absolute ${params.slug == "editors-message" ? "top-100" : "top-20"} left-1/2 translate-x-[-50%] md:top-90`}
+        >
           <motion.div
             initial="initial"
             whileInView="view"
@@ -105,48 +111,64 @@ export default function WriteUp({ params, loaderData }: Route.ComponentProps) {
               </motion.h2>
             </div>
             <div className="overflow-hidden">
-              <motion.h1
-                variants={variants}
-                className="font-display font-bold text-8xl text-white uppercase leading-[85%]"
-              >
-                {title}
-              </motion.h1>
+              {params.slug == "editors-message" ? (
+                <motion.div
+                  variants={variants}
+                  className="font-display font-bold text-7xl text-white uppercase leading-[85%] md:text-8xl"
+                >
+                  <h1>NEW FLIGHT,</h1>
+                  <h1>HIGHER HEIGHTS</h1>
+                </motion.div>
+              ) : (
+                <motion.h1
+                  variants={variants}
+                  className="font-display font-bold text-8xl text-white uppercase leading-[85%]"
+                >
+                  {title}
+                </motion.h1>
+              )}
             </div>
             <div className="overflow-hidden">
-              {params.slug == "editors-message" ?
-                (<motion.h3 variants={variants} className="text-white pt-2 pb-4">
-                  By <span className="font-bold">Caitlin Bernal</span> and <span className="font-bold">Gabriel Renee Quizan</span>
-                </motion.h3>) :
-                (<motion.h3 variants={variants} className="text-white pt-2 pb-4">
+              {params.slug == "editors-message" ? (
+                <motion.h3 variants={variants} className="text-white pt-2 pb-4">
+                  By <span className="font-bold">Caitlin Bernal</span> and{" "}
+                  <span className="font-bold">Gabriel Renee Quizan</span>
+                </motion.h3>
+              ) : (
+                <motion.h3 variants={variants} className="text-white pt-2 pb-4">
                   By <span className="font-bold">{byline}</span>
-                </motion.h3>)
-              }
+                </motion.h3>
+              )}
             </div>
-            {params.slug !== "editors-message" && <div className="overflow-hidden">
-              {/* image placeholder */}
-              <motion.div
-                variants={{
-                  initial: { translateY: "-100%", opacity: 0 },
-                  view: {
-                    translateY: "0",
-                    opacity: 1,
-                    transition: { duration: 0.75, ease: "easeInOut" },
-                  },
-                }}
-                className="w-full aspect-[1.5] bg-uaap-blue"
-              >
-                <img
-                  src={`/writeups/${imageName}`}
-                  style={{
-                    width: "100%",
-                    height: "100%",
-                    objectFit: "cover"
+            {params.slug !== "editors-message" && (
+              <div className="overflow-hidden">
+                {/* image placeholder */}
+                <motion.div
+                  variants={{
+                    initial: { translateY: "-100%", opacity: 0 },
+                    view: {
+                      translateY: "0",
+                      opacity: 1,
+                      transition: { duration: 0.75, ease: "easeInOut" },
+                    },
                   }}
-                />
-              </motion.div>
-            </div>}
+                  className="w-full aspect-[1.5] bg-uaap-blue"
+                >
+                  <img
+                    src={`/writeups/${imageName}`}
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "cover",
+                    }}
+                  />
+                </motion.div>
+              </div>
+            )}
           </motion.div>
-          <div className={`font-body text-uaap-dark-blue ${params.slug == 'editors-message' ? 'mt-[10rem]' : 'mt-[4rem]'} mb-[6rem] text-lg sm:text-2xl`}>
+          <div
+            className={`font-body text-uaap-dark-blue ${params.slug == "editors-message" ? "mt-[4rem]" : "mt-[4rem]"} mb-[6rem] text-lg sm:text-2xl`}
+          >
             {article.split("\n\n").map((paragraph, idx) =>
               idx == 0 ? (
                 <p key={idx}>
