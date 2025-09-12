@@ -66,7 +66,7 @@ export function TeamSectionHalf({
           }}
           src={`/assets/images/${slug}.png`}
           alt=""
-          className={`absolute bottom-0 left-1/2 ${alignment == "left" ? 'lg:left-2/3' : 'lg:left-1/3'} -translate-x-1/2 object-cover h-full z-10 ${slug == "mens-beach-volleyball" && "md:bottom-[-50px]"}`}
+          className={`absolute bottom-0 left-1/2 ${alignment == "left" ? "lg:left-2/3" : "lg:left-1/3"} -translate-x-1/2 object-cover h-full z-10 ${slug == "mens-beach-volleyball" && "md:bottom-[-50px]"}`}
         />
       </motion.div>
       <div
@@ -132,11 +132,11 @@ export function TeamSectionHalf({
                 variants={{
                   initial: isMd
                     ? {
-                      translateX: alignment == "right" ? "100%" : "-100%",
-                    }
+                        translateX: alignment == "right" ? "100%" : "-100%",
+                      }
                     : {
-                      translateY: "-100%",
-                    },
+                        translateY: "-100%",
+                      },
                   view: {
                     translateX: "0",
                     translateY: "0",
@@ -181,7 +181,7 @@ export function TeamSectionHalf({
         >
           <motion.button
             whileHover="hover"
-            className={`flex items-center gap-1 p-2 cursor-pointer upppercase ${gender == "mens" ? "bg-uaap-orange" : "bg-uaap-purple"} text-white font-body font-bold md:p-2 md:text-lg xl:text-lg`}
+            className={`flex items-center gap-1 p-2 cursor-pointer upppercase ${gender == "mens" ? "bg-uaap-orange" : "bg-uaap-purple"} text-white font-body font-bold md:pr-2 md:pl-3 md:text-lg xl:text-lg`}
           >
             READ MORE
             <motion.div variants={{ hover: { translateX: 6, translateY: -6 } }}>

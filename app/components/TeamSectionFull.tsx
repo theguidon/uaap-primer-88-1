@@ -153,7 +153,7 @@ export function TeamSectionFull({
         <NavLink to={`/${slug}`} className={`self-center mt-4`}>
           <motion.button
             whileHover="hover"
-            className={`flex items-center gap-1 p-2 cursor-pointer upppercase bg-uaap-dark-blue text-white font-body font-bold md:p-2 md:text-lg`}
+            className={`flex items-center gap-1 p-2 cursor-pointer upppercase bg-uaap-dark-blue text-white font-body font-bold md:pr-2 md:pl-3 md:text-lg`}
           >
             READ MORE
             <motion.div variants={{ hover: { translateX: 6, translateY: -6 } }}>
