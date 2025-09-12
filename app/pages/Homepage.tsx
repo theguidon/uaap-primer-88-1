@@ -48,7 +48,12 @@ export default function Homepage() {
         >
           <img
             src="/underphoto_desktop.svg"
-            style={{ width: "100vw", height: "100vh", minWidth: "100vw" }}
+            style={{
+              width: "100vw",
+              height: "100vh",
+              minWidth: "100vw",
+              objectFit: "cover",
+            }}
           />
         </motion.div>
         <section className={styles.title}>
