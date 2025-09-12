@@ -14,7 +14,7 @@ function EnterButton() {
     <a href="#editor-message">
       <motion.div
         initial={{ width: 0, padding: 0 }}
-        whileInView={{ width: 120, padding: 12 }}
+        whileInView={{ width: 120, padding: 12, paddingLeft: 16 }}
         transition={{ duration: 0.5, ease: "easeInOut" }}
         className={styles.enterButton}
       >
