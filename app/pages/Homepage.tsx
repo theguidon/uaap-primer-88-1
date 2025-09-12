@@ -26,10 +26,18 @@ function EnterButton() {
 }
 
 export default function Homepage() {
-  const images = ["badminton.png", "chess.png", "football.png", "table-tennis.png"];
-  const isMobile = useMediaQuery({ query: "(max-width: 899px)" })
-  if (isMobile) { return <MobileHome />; }
-  else {
+  const images = [
+    "jbahay.png",
+    "badminton.png",
+    "football.png",
+    "table-tennis.png",
+    "mfootball.png",
+    "volleyball.png",
+  ];
+  const isMobile = useMediaQuery({ query: "(max-width: 899px)" });
+  if (isMobile) {
+    return <MobileHome />;
+  } else {
     return (
       <section className={styles.mainSection} id="home">
         <motion.div
@@ -38,7 +46,10 @@ export default function Homepage() {
           whileInView={{ width: "100%" }}
           transition={{ duration: 0.8, ease: "easeInOut" }}
         >
-          <img src="/underphoto_desktop.svg" style={{ width: "100vw", height: "100vh", minWidth: "100vw" }} />
+          <img
+            src="/underphoto_desktop.svg"
+            style={{ width: "100vw", height: "100vh", minWidth: "100vw" }}
+          />
         </motion.div>
         <section className={styles.title}>
           <div>
@@ -83,18 +94,22 @@ export default function Homepage() {
           <div
             className={styles.bloom}
             style={{
-              width: '40vw',
-              height: '40vw',
-              position: 'absolute',
+              width: "40vw",
+              height: "40vw",
+              position: "absolute",
               right: "10%",
               top: -30,
-              zIndex: 5
+              zIndex: 5,
             }}
           >
             <BloomingCircles
               outerSize="40vw"
               radiiGap="calc(40vw / 10)"
-              colors={['rgba(143, 39, 134, 0.3)', 'rgba(143, 39, 134, 0.7)', '#8f2786']}
+              colors={[
+                "rgba(143, 39, 134, 0.3)",
+                "rgba(143, 39, 134, 0.7)",
+                "#8f2786",
+              ]}
               animStagger={25}
               animSpeed={0.5}
               delay={0}
@@ -103,18 +118,18 @@ export default function Homepage() {
           <div
             className={styles.bloom}
             style={{
-              width: '50vw',
-              height: '50vw',
-              position: 'absolute',
+              width: "50vw",
+              height: "50vw",
+              position: "absolute",
               right: "-20%",
               top: 120,
-              zIndex: 10
+              zIndex: 10,
             }}
           >
             <BloomingCircles
               outerSize="50vw"
               radiiGap="calc(50vw / 15)"
-              colors={['#b7e1f2', '#56b8e1', '#0e9ad4']}
+              colors={["#b7e1f2", "#56b8e1", "#0e9ad4"]}
               animStagger={25}
               animSpeed={0.75}
               delay={1}
@@ -124,7 +139,11 @@ export default function Homepage() {
         <section className={styles.graphic} style={{ zIndex: 50 }}>
           <motion.img
             src="/overphoto_desktop.svg"
-            style={{ zIndex: 70, position: "absolute", right: 0, bottom: "10%" }}
+            style={{
+              zIndex: 70,
+              position: "absolute",
+              right: 0,
+            }}
             initial={{ x: "100%" }}
             whileInView={{ x: 0 }}
             transition={{ duration: 0.5, ease: "easeInOut", delay: 0.3 }}
@@ -135,15 +154,13 @@ export default function Homepage() {
             centeredSlides={true}
             autoplay={{
               delay: 1500,
-              disableOnInteraction: false
+              disableOnInteraction: false,
             }}
             modules={[Autoplay]}
           >
             {images.map((image) => (
               <SwiperSlide>
-                <motion.img
-                  src={`/homepage/${image}`}
-                />
+                <motion.img src={`/homepage/${image}`} />
               </SwiperSlide>
             ))}
           </Swiper>
