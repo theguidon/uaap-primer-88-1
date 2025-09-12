@@ -168,27 +168,27 @@ export default function Homepage() {
                 {image == "jbahay.png" ? (
                   <motion.img
                     src={`/homepage/${image}`}
-                    className="border-2 border-red-500 h-dvh mx-auto mt-10 ml-20"
+                    className="h-dvh mx-auto mt-10 ml-20"
                   />
                 ) : image == "mfootball.png" ? (
                   <motion.img
                     src={`/homepage/${image}`}
-                    className="border-2 border-red-500 h-dvh mx-auto mt-10"
+                    className="h-dvh mx-auto mt-10"
                   />
                 ) : image == "volleyball.png" ? (
                   <motion.img
                     src={`/homepage/${image}`}
-                    className="border-2 border-red-500 h-dvh mx-auto mt-25"
+                    className="h-dvh mx-auto mt-25"
                   />
                 ) : image == "football.png" ? (
                   <motion.img
                     src={`/homepage/${image}`}
-                    className="border-2 border-red-500 h-dvh mx-auto mt-25"
+                    className="h-dvh mx-auto mt-25"
                   />
                 ) : (
                   <motion.img
                     src={`/homepage/${image}`}
-                    className="border-2 border-red-500 h-dvh mx-auto"
+                    className="h-dvh mx-auto"
                   />
                 )}
               </SwiperSlide>
