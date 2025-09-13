@@ -1,0 +1,12 @@
+# https://stackoverflow.com/a/45723487
+
+# allow users to enter from subdirectories (since this is an SPA)
+
+# redirects to index.html
+
+<ifModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule (.*) index.html [QSA,L]
+</ifModule>
