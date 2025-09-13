@@ -57,7 +57,7 @@ export default function EditorMessage() {
           </motion.p>
         </div>
 
-        <a href="/editors-message">
+        <a href={baseurl + `editors-message`}>
           <div className={styles.readMore}>
             <p>Read More</p>
             <img src={baseurl + `/Arrow up-right.svg`} />

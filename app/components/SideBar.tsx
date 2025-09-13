@@ -88,7 +88,7 @@ export default function SideBar({
             >
               {link == "Cheerdance" ? (
                 <a
-                  href={`/#${link.toLowerCase()}`}
+                  href={baseurl + `#${link.toLowerCase()}`}
                   onClick={() => setVisibility(false)}
                 >
                   <p>{link}</p>
@@ -104,7 +104,10 @@ export default function SideBar({
               <ul>
                 <li>
                   <a
-                    href={`/#mens-${link.split(" ").join("-").toLowerCase()}`}
+                    href={
+                      baseurl +
+                      `#mens-${link.split(" ").join("-").toLowerCase()}`
+                    }
                     onClick={() => setVisibility(false)}
                   >
                     Men's {link}
@@ -112,7 +115,10 @@ export default function SideBar({
                 </li>
                 <li>
                   <a
-                    href={`/#womens-${link.split(" ").join("-").toLowerCase()}`}
+                    href={
+                      baseurl +
+                      `#womens-${link.split(" ").join("-").toLowerCase()}`
+                    }
                     onClick={() => setVisibility(false)}
                   >
                     Women's {link}
