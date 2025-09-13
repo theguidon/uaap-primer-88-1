@@ -1,5 +1,5 @@
-import Homepage from "./Homepage";
-import EditorMessage from "./EditorMessage";
+import Homepage from "./Homepage"
+import EditorMessage from "./EditorMessage"
 import { TeamSection } from "./TeamSection";
 import { Credits } from "./Credits";
 import "./main.css";
@@ -13,32 +13,27 @@ export default function MainPage() {
   const [menuColor, setMenuColor] = useState("#1c41d5");
 
   function getTeamIds() {
-    return Object.values(data.sports)
-      .map((sports) => Object.keys(sports))
-      .flat()
-      .map((sport) => "#" + sport);
+    return Object.values(data.sports).map((sports) => Object.keys(sports)).flat().map((sport) => '#' + sport);
   }
 
-  const sectionIds = ["#editor-message", "#credits", "#home"].concat(
-    getTeamIds()
-  );
+  const sectionIds = [
+    "#editor-message",
+    "#credits",
+  ].concat(getTeamIds());
 
   useEffect(() => {
     const options = {
-      rootMargin: "-5% 0px -80% 0px",
-      threshold: 0,
+      root: document.querySelector("#menu-butto"),
+      rootMargin: "0px",
+      scrollMargin: "8px",
+      threshold: 1.0
     };
 
     function callback(entries, observer) {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           console.debug(entry.target);
-          if (
-            // entry.target.id.includes("womens") ||
-            entry.target.id == "credits" ||
-            entry.target.id == "editor-message" ||
-            entry.target.id == "cheerdance"
-          ) {
+          if (entry.target.id == "credits" || entry.target.id == "editor-message" || entry.target.id == "cheerdance" || entry.target.id.includes("womens")) {
             setMenuColor("white");
           } else {
             setMenuColor("#1c41d5");
@@ -49,16 +44,11 @@ export default function MainPage() {
 
     const observer = new IntersectionObserver(callback, options);
 
-    sectionIds.forEach((id) =>
-      observer.observe(document.body.querySelector(id))
-    );
+    sectionIds.forEach((id) => observer.observe(document.body.querySelector(id)));
   }, []);
   return (
     <>
-      <SideBar
-        visible={sidebarVisible}
-        setVisibility={(isVisible: boolean) => setSideBarVisibility(isVisible)}
-      />
+      <SideBar visible={sidebarVisible} setVisibility={(isVisible: boolean) => setSideBarVisibility(isVisible)} />
       <button
         id="menu-button"
         style={{
@@ -66,7 +56,7 @@ export default function MainPage() {
           left: "2%",
           top: "2%",
           cursor: "pointer",
-          zIndex: 300,
+          zIndex: 300
         }}
         onClick={() => setSideBarVisibility(true)}
       >
@@ -74,7 +64,7 @@ export default function MainPage() {
           color={menuColor}
           size="40"
           style={{
-            transition: "color 100ms ease-in-out",
+            transition: "color 100ms ease-in-out"
           }}
         />
       </button>
@@ -82,7 +72,7 @@ export default function MainPage() {
         <Homepage />
         <EditorMessage />
         {Object.keys(data["sports"]).map((sport) => (
-          <TeamSection key={sport} sport={sport as keyof typeof data.sports} />
+          <TeamSection key={sport} sport={sport as (keyof (typeof data.sports))} />
         ))}
         <Credits />
       </main>
