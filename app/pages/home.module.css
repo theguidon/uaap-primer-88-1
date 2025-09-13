@@ -4,7 +4,7 @@ section.title {
   flex-flow: column nowrap;
   align-items: stretch;
   gap: 8px;
-  margin-top: 15vh;
+  margin-top: 15dvh;
 }
 
 section.title > div {
