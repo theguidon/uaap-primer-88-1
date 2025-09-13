@@ -95,7 +95,7 @@ export default function WriteUp({ params, loaderData }: Route.ComponentProps) {
           />
         </div>
         <section
-          className={`max-w-[50rem] w-full px-10 absolute ${params.slug == "editors-message" ? "top-100 sm:top-90" : "top-20"} left-1/2 translate-x-[-50%]`}
+          className={`max-w-[50rem] w-full px-10 absolute ${params.slug == "editors-message" ? "top-25 sm:top-30" : "top-20"} left-1/2 translate-x-[-50%]`}
         >
           <motion.div
             initial="initial"
