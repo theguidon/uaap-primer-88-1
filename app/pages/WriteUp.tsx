@@ -95,7 +95,7 @@ export default function WriteUp({ params, loaderData }: Route.ComponentProps) {
           />
         </div>
         <section
-          className={`max-w-[50rem] w-full px-10 absolute ${params.slug == "editors-message" ? "top-25 sm:top-30" : "top-20"} left-1/2 translate-x-[-50%]`}
+          className={`max-w-[50rem] w-full px-10 absolute ${params.slug == "editors-message" ? "top-25 sm:top-35 md:top-30" : "top-20"} left-1/2 translate-x-[-50%]`}
         >
           <motion.div
             initial="initial"
@@ -115,7 +115,7 @@ export default function WriteUp({ params, loaderData }: Route.ComponentProps) {
               {params.slug == "editors-message" ? (
                 <motion.div
                   variants={variants}
-                  className="font-display font-bold text-7xl text-white uppercase leading-[85%] sm:text-8xl"
+                  className="font-display font-bold text-5xl xs:text-6xl text-white uppercase leading-[85%] sm:text-8xl"
                 >
                   <h1>NEW FLIGHT,</h1>
                   <h1>HIGHER HEIGHTS</h1>
@@ -168,7 +168,7 @@ export default function WriteUp({ params, loaderData }: Route.ComponentProps) {
             )}
           </motion.div>
           <div
-            className={`font-body text-uaap-dark-blue ${params.slug == "editors-message" ? "mt-[4rem]" : "mt-[4rem]"} mb-[6rem] text-lg sm:text-2xl`}
+            className={`font-body text-uaap-dark-blue ${params.slug == "editors-message" ? "mt-[9rem] sm:mt-[4rem]" : "mt-[4rem]"} mb-[6rem] text-lg sm:text-2xl`}
           >
             {article.split("\n\n").map((paragraph, idx) =>
               idx == 0 ? (
