@@ -3,6 +3,7 @@ import { easeInOut, motion } from "motion/react";
 import { useState } from "react";
 import { IoClose } from "react-icons/io5";
 import data from "../assets/data/data.json";
+import { NavLink } from "react-router";
 
 export default function SideBar({
   visible,
@@ -87,12 +88,12 @@ export default function SideBar({
               onClick={() => select(link != "Cheerdance", ix)}
             >
               {link == "Cheerdance" ? (
-                <a
-                  href={baseurl + `#${link.toLowerCase()}`}
+                <NavLink
+                  to={`/#${link.toLowerCase()}`}
                   onClick={() => setVisibility(false)}
                 >
                   <p>{link}</p>
-                </a>
+                </NavLink>
               ) : (
                 <p>{link}</p>
               )}
@@ -103,26 +104,20 @@ export default function SideBar({
             {link != "Cheerdance" && (
               <ul>
                 <li>
-                  <a
-                    href={
-                      baseurl +
-                      `#mens-${link.split(" ").join("-").toLowerCase()}`
-                    }
+                  <NavLink
+                    to={`/#mens-${link.split(" ").join("-").toLowerCase()}`}
                     onClick={() => setVisibility(false)}
                   >
                     Men's {link}
-                  </a>
+                  </NavLink>
                 </li>
                 <li>
-                  <a
-                    href={
-                      baseurl +
-                      `#womens-${link.split(" ").join("-").toLowerCase()}`
-                    }
+                  <NavLink
+                    to={`/#womens-${link.split(" ").join("-").toLowerCase()}`}
                     onClick={() => setVisibility(false)}
                   >
                     Women's {link}
-                  </a>
+                  </NavLink>
                 </li>
               </ul>
             )}
