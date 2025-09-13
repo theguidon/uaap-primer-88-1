@@ -8,5 +8,5 @@ export default defineConfig({
   // dev base
   // base: "/uaap-88-primer-first-semester",
   // prod base
-  // base: "https://theguidon.com/uaap-88-primer-first-semester/",
+  base: "https://theguidon.com/uaap-88-primer-first-semester/",
 });

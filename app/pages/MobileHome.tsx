@@ -118,15 +118,12 @@ export default function MobileHome() {
             <SwiperSlide>
               {image == "mfootball.png" ? (
                 <img
-                  className="h-full object-cover mt-10"
+                  className="w-full h-auto mt-10"
                   src={baseurl + `/homepage/${image}`}
                 />
               ) : (
                 <img
-                  style={{
-                    height: "100%",
-                    objectFit: "cover",
-                  }}
+                  className="w-full h-auto"
                   src={baseurl + `/homepage/${image}`}
                 />
               )}
