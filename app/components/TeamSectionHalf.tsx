@@ -19,6 +19,7 @@ export function TeamSectionHalf({
   alignment: "left" | "right";
   slug: string;
 }) {
+  const baseurl = import.meta.env.BASE_URL;
   const splitBlurb = blurb.split(" ");
   const firstTwoBlurb = splitBlurb.slice(0, 2).join(" ");
   const splitRestBlurb = splitBlurb.slice(2, 30);
@@ -64,7 +65,7 @@ export function TeamSectionHalf({
               transition: { ease: "easeInOut", duration: animsDuration },
             },
           }}
-          src={`/assets/images/${slug}.png`}
+          src={baseurl + `/assets/images/${slug}.png`}
           alt=""
           className={`absolute bottom-0 left-1/2 ${alignment == "left" ? "lg:left-2/3" : "lg:left-1/3"} -translate-x-1/2 object-cover h-full z-10 ${slug == "mens-beach-volleyball" && "md:bottom-[-50px]"}`}
         />

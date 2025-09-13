@@ -6,6 +6,7 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 
 export default function MobileHome() {
+  const baseurl = import.meta.env.BASE_URL;
   const images = [
     "jbahay.png",
     "badminton.png",
@@ -20,7 +21,7 @@ export default function MobileHome() {
       <section className={styles.title}>
         <div>
           <motion.img
-            src="/Long_Logo.svg"
+            src={baseurl + `/Long_Logo.svg`}
             initial={{ y: 100 }}
             animate={{ y: 0 }}
             transition={{ duration: 1, ease: "easeInOut" }}
@@ -118,7 +119,7 @@ export default function MobileHome() {
               {image == "mfootball.png" ? (
                 <img
                   className="h-full object-contain mt-10"
-                  src={`/homepage/${image}`}
+                  src={baseurl + `/homepage/${image}`}
                 />
               ) : (
                 <img
@@ -126,7 +127,7 @@ export default function MobileHome() {
                     height: "100%",
                     objectFit: "contain",
                   }}
-                  src={`/homepage/${image}`}
+                  src={baseurl + `/homepage/${image}`}
                 />
               )}
             </SwiperSlide>
@@ -146,7 +147,7 @@ export default function MobileHome() {
           }}
         >
           <img
-            src="/underphoto_mobile.svg"
+            src={baseurl + `/underphoto_mobile.svg`}
             style={{
               width: "100%",
               height: "100%",
@@ -170,7 +171,7 @@ export default function MobileHome() {
           }}
         >
           <img
-            src="/overphoto_mobile.svg"
+            src={baseurl + `/overphoto_mobile.svg`}
             style={{
               width: "100vw",
               height: "100%",

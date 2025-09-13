@@ -20,6 +20,7 @@ function EnterButton() {
 }
 
 export function Welcome() {
+  const baseurl = import.meta.env.BASE_URL;
   const isMobile = useMediaQuery({ query: "(max-width: 899px)" });
   if (isMobile) {
     return <MobileHome />;
@@ -33,14 +34,14 @@ export function Welcome() {
           transition={{ duration: 0.5, ease: "easeInOut" }}
         >
           <img
-            src="/underphoto_desktop.svg"
+            src={baseurl + `/underphoto_desktop.svg`}
             style={{ width: "100vw", height: "100vh" }}
           />
         </motion.div>
         <section className={styles.title}>
           <div>
             <motion.img
-              src="/Long_Logo.svg"
+              src={baseurl + `/Long_Logo.svg`}
               initial={{ y: 100 }}
               animate={{ y: 0 }}
               transition={{ duration: 1, ease: "easeInOut" }}
@@ -124,7 +125,7 @@ export function Welcome() {
         </section>
         <section className={styles.graphic} style={{ zIndex: 50 }}>
           <motion.img
-            src="/overphoto_desktop.svg"
+            src={baseurl + `/overphoto_desktop.svg`}
             style={{
               zIndex: 70,
               position: "absolute",
@@ -150,7 +151,7 @@ export function Welcome() {
               right: 0,
               zIndex: 50,
             }}
-            src="/homepage_player_desktop.png"
+            src={baseurl + `/homepage_player_desktop.png`}
           />
         </section>
       </main>

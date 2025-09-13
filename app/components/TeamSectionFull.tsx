@@ -15,6 +15,7 @@ export function TeamSectionFull({
   blurb: string;
   slug: string;
 }) {
+  const baseurl = import.meta.env.BASE_URL;
   const splitBlurb = blurb.split(" ");
   const firstTwoBlurb = splitBlurb.slice(0, 2).join(" ");
   const splitRestBlurb = splitBlurb.slice(2, 30);
@@ -56,7 +57,7 @@ export function TeamSectionFull({
               transition: { ease: "easeInOut", duration: animsDuration },
             },
           }}
-          src={`/assets/images/${slug}.png`}
+          src={baseurl + `/assets/images/${slug}.png`}
           alt=""
           className="absolute bottom-0 left-1/2 -translate-x-1/2 object-cover h-full z-10"
         />

@@ -29,6 +29,7 @@ const variants: Variants = {
 };
 
 export default function WriteUp({ params, loaderData }: Route.ComponentProps) {
+  const baseurl = import.meta.env.BASE_URL;
   const { team, title, byline, article } = loaderData;
   const [sidebarVisible, setSideBarVisibility] = useState<boolean>(false);
 
@@ -155,7 +156,7 @@ export default function WriteUp({ params, loaderData }: Route.ComponentProps) {
                   className="w-full aspect-[1.5] bg-uaap-blue"
                 >
                   <img
-                    src={`/writeups/${imageName}`}
+                    src={baseurl + `/writeups/${imageName}`}
                     style={{
                       width: "100%",
                       height: "100%",

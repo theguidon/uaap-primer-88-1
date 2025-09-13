@@ -10,6 +10,7 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 
 function EnterButton() {
+  const baseurl = import.meta.env.BASE_URL;
   return (
     <a href="#editor-message">
       <motion.div
@@ -19,13 +20,14 @@ function EnterButton() {
         className={styles.enterButton}
       >
         <p>Enter</p>
-        <img src="/Arrow up-right.svg" />
+        <img src={baseurl + `/Arrow up-right.svg`} />
       </motion.div>
     </a>
   );
 }
 
 export default function Homepage() {
+  const baseurl = import.meta.env.BASE_URL;
   const images = [
     "jbahay.png",
     "badminton.png",
@@ -47,7 +49,7 @@ export default function Homepage() {
           transition={{ duration: 0.8, ease: "easeInOut" }}
         >
           <img
-            src="/underphoto_desktop.svg"
+            src={baseurl + `/underphoto_desktop.svg`}
             style={{
               width: "100vw",
               height: "100vh",
@@ -59,7 +61,7 @@ export default function Homepage() {
         <section className={styles.title}>
           <div>
             <motion.img
-              src="/Long_Logo.svg"
+              src={baseurl + `/Long_Logo.svg`}
               initial={{ y: "125%" }}
               whileInView={{ y: 0 }}
               transition={{ duration: 0.5, ease: "easeInOut" }}
@@ -143,12 +145,12 @@ export default function Homepage() {
         </section>
         <section className={styles.graphic} style={{ zIndex: 50 }}>
           <motion.img
-            src="/overphoto_desktop.svg"
+            src={baseurl + `/overphoto_desktop.svg`}
             style={{
               zIndex: 70,
               position: "absolute",
               right: 0,
-              bottom: "10%"
+              bottom: "10%",
             }}
             initial={{ x: "100%" }}
             whileInView={{ x: 0 }}
@@ -168,27 +170,27 @@ export default function Homepage() {
               <SwiperSlide>
                 {image == "jbahay.png" ? (
                   <motion.img
-                    src={`/homepage/${image}`}
+                    src={baseurl + `/homepage/${image}`}
                     className="h-dvh mx-auto mt-10 ml-20"
                   />
                 ) : image == "mfootball.png" ? (
                   <motion.img
-                    src={`/homepage/${image}`}
+                    src={baseurl + `/homepage/${image}`}
                     className="h-dvh mx-auto mt-10"
                   />
                 ) : image == "volleyball.png" ? (
                   <motion.img
-                    src={`/homepage/${image}`}
+                    src={baseurl + `/homepage/${image}`}
                     className="h-dvh mx-auto mt-25"
                   />
                 ) : image == "football.png" ? (
                   <motion.img
-                    src={`/homepage/${image}`}
+                    src={baseurl + `/homepage/${image}`}
                     className="h-dvh mx-auto mt-25"
                   />
                 ) : (
                   <motion.img
-                    src={`/homepage/${image}`}
+                    src={baseurl + `/homepage/${image}`}
                     className="h-dvh mx-auto"
                   />
                 )}
