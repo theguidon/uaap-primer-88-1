@@ -1,6 +1,7 @@
 import styles from "./editormessage.module.css";
 import BloomingCircles from "~/components/BloomingCircles";
 import { easeInOut, motion, AnimatePresence } from "motion/react";
+import { NavLink } from "react-router";
 
 export default function EditorMessage() {
   const baseurl = import.meta.env.BASE_URL;
@@ -57,12 +58,12 @@ export default function EditorMessage() {
           </motion.p>
         </div>
 
-        <a href={baseurl + `editors-message`}>
+        <NavLink to={`/editors-message`}>
           <div className={styles.readMore}>
             <p>Read More</p>
             <img src={baseurl + `/Arrow up-right.svg`} />
           </div>
-        </a>
+        </NavLink>
       </section>
       <section className={styles.graphic}>
         <div className={styles.bloom1}>
