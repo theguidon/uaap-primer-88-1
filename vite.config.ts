@@ -5,5 +5,8 @@ import tsconfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig({
   plugins: [tailwindcss(), reactRouter(), tsconfigPaths()],
-  base: "https://theguidon.com/uaap-88-primer-first-semester/",
+  // dev base
+  base: "/uaap-88-primer-first-semester",
+  // prod base
+  // base: "https://theguidon.com/uaap-88-primer-first-semester/",
 });
