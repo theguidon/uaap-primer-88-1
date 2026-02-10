@@ -62,4 +62,41 @@
         "article": ""
       }
     },
+    "tennis": {
+      "womens-tennis": {
+        "team": "Women's Tennis",
+        "title": "Back in business",
+        "byline": "Xavi Tumale",
+        "article": ""
+      },
+      "mens-tennis": {
+        "team": "Men's Tennis",
+        "title": "",
+        "byline": "",
+        "article": ""
+      }
+    },
+    "baseball": {
+      "baseball": {
+        "team": "Baseball",
+        "title": "Pressure makes diamonds",
+        "byline": "A.J. Antonio",
+        "article": "SWINGING THEIR way back onto the diamond, the Ateneo Baseball Team (ABT) enters Season 88 amid a transitioning period. Despite retooling over the summer, this hungry squad maintains the competitive fuel of the Blue and White.\n\nTeam Captains Angelo “Bop” Bernardo and Joshua de Juras lead the way for the ABT, filling in the holes left by predecessors Alejandro Mendoza and Zeke Laygo.\n\nReturning to the base are veteran hitters Dax Fabella, Matthew San Juan, and Alfy Tueres—who all aim to bring slugging expertise on the field. The ABT also exhibits a dangerous rotation this season, flanked by pitcher Lucas Atendido, who had an impressive Season 87 on the mound.\n\nOn the forefront of Ateneo’s reinforcements are nine new rookies, headlined by Ryu Garcia, Jayden Ponce, and Mikaelo Osorio. This new batch of athletes aims to add athleticism and agility to an experienced and battle-tested bullpen.\n\nHeading into Season 88 with new talent and undeniable hustle, the ABT are ready to face the top teams in their league, possessing the potential to shake up the UAAP baseball scene."
+      }
+    },
+    "taekwondo": {
+      "mens-taekwondo": {
+        "team": "Men's Taekwondo",
+        "title": "Push to podium",
+        "byline": "Seleeya Rumbaoa",
+        "article": "LOOKING TO push their way to the podium, the Ateneo Men's Taekwondo Team kicks off UAAP Season 88 with a fresh lineup.\n\nLast Season 87, the Blue Eagles came up short in the Men's Kyorugi division with a last-place finish. While the Poomsae teams headed to the finals in three of five categories, they still came away empty-handed, with Joaquin Tuzon placing fourth in Individual Male Poomsae.\n\nLooking to shift the tides this season, the Katipunan-based squad has tapped four recruits. In particular, Michael Cabaluna Jr., Kier Cuyugan, and Randz Gaupo joined the Men's Kyorugi team, while Jerome Castro entered the Poomsae squad.\n\nThe new roster has already shown promise in the preseason, nipping gold at the 2025 Philippine Taekwondo Association Taekwondo Championships and bronze at the 2025 Smart MVP Sports Foundation National Interschool Taekwondo Championships.\n\nWith its lineup set on the mats, Ateneo is determined to seize the chance to return to the map and bring home hardware."
+      },
+      "womens-taekwondo": {
+        "team": "Women's Taekwondo",
+        "title": "",
+        "byline": "",
+        "article": ""
+      }
+    },
   }
+}
