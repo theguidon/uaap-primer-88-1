@@ -78,7 +78,7 @@ export default function WriteUp({ params, loaderData }: Route.ComponentProps) {
           </NavLink>
         </nav>
         {/* bg image placeholder */}
-        <div className="bg-black w-full h-[60dvh] relative overflow-hidden">
+        <div className="bg-black w-full h-[18rem] sm:h-[24rem] md:h-[25rem] relative overflow-hidden">
           <img
             src={background}
             alt=""
@@ -141,7 +141,7 @@ export default function WriteUp({ params, loaderData }: Route.ComponentProps) {
                 </motion.h3>
               )}
             </div>
-            {params.slug !== "editors-message" && (
+            {(
               <div className="overflow-hidden">
                 {/* image placeholder */}
                 <motion.div
@@ -153,16 +153,17 @@ export default function WriteUp({ params, loaderData }: Route.ComponentProps) {
                       transition: { duration: 0.75, ease: "easeInOut" },
                     },
                   }}
-                  className="w-full aspect-[1.5] bg-uaap-blue"
+                  className={`w-full ${params.slug == "editors-message" ? "h-10" : "aspect-[1.5] bg-uaap-blue"}`}
                 >
-                  <img
-                    src={baseurl + `/writeups/${imageName}`}
-                    style={{
-                      width: "100%",
-                      height: "100%",
-                      objectFit: "cover",
-                    }}
-                  />
+                  {params.slug !== "editors-message" &&
+                    <img
+                      src={baseurl + `/writeups/${imageName}`}
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                        objectFit: "cover",
+                      }}
+                    />}
                 </motion.div>
               </div>
             )}

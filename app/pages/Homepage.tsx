@@ -92,7 +92,7 @@ export default function Homepage() {
               whileInView={{ y: 0 }}
               transition={{ duration: 0.8, ease: "easeInOut", delay: 0.2 }}
             >
-              First Semester Primer
+              Second Semester Primer
             </motion.h1>
           </div>
           <EnterButton />
