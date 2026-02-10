@@ -47,5 +47,19 @@
         "byline": "RV Quinto",
         "article": "AFTER THREE consecutive seasons of falling short of the Final Four, the Ateneo Women’s Volleyball Team returns with renewed resolve to reassert themselves among the league’s elite.\n\nThough injuries defined much of their previous campaign, the Blue Eagles showed grit in pushing through adversity, while remaining a competitive force in the collegiate volleyball scene.\n\nAt the helm of Ateneo’s campaign is veteran setter Taks Fujimoto, entrusted with steering the Blue and White’s on-court gameplay. Alongside her are JLo Delos Santos and Zel Tsunashima, who enter the year eager to showcase their renewed strength and impact after recovering from major injuries.\n\nOn the youth front, sophomores Alex Montoro and Jihan Chuatico enter the season intent on building their legacy as two of the league’s promising young talents.\n\nBuilt around a blend of proven veterans and rising talents, the AWVT enters Season 88 with renewed confidence and a clearer sense of direction toward sustained success."
       }
-    }
+    },
+    "fencing": {
+      "mens-fencing": {
+        "team": "Men’s Fencing",
+        "title": "Lunging to greatness",
+        "byline": "Laurence L. Fernando",
+        "article": "WITH A depleted squad last UAAP Season 87, the Ateneo Men’s Fencing Team (AMFeT) left the piste tattered and bruised, finishing last. Newly appointed team captain, Andre Agatep, strives to continue his stellar form last season as the Blue Eagles strike for greater heights with a rejuvenated roster.\n\nStepping into the shoes of former captain Mico Suplico, Agatep aims to continue his exploits on the piste, building on a podium finish last season. Alongside him, incoming rookie Adam Acero aims to resume his colorful high school career in Loyola Heights, representing the Blue and White in the sabre discipline.\n\nBringing much-needed experience to the table, Toby Cabrera and Alfonso Biason will attempt to capture a top-three finish for the Kaptiunan-based team this season.\n\nWith Acero and Agatep’s youthful flair paired with Biason and Cabrera’s experience, the AMFeT will be pointing their sabres to capture a podium finish. Redemption is firmly in sight for the fencers from Loyola Heights."
+      },
+      "womens-fencing": {
+        "team": "Women’s Fencing",
+        "title": "",
+        "byline": "",
+        "article": ""
+      }
+    },
   }
