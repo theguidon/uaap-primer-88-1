@@ -5,6 +5,12 @@ import { IoClose } from "react-icons/io5";
 import data from "../assets/data/data.json";
 import { NavLink } from "react-router";
 
+type SportKey = keyof (typeof data.sports);
+
+function hasDropDown(sport: SportKey) {
+  return (Object.values(data.sports[sport]).length > 1);
+}
+
 export default function SideBar({
   visible,
   setVisibility,
@@ -14,12 +20,11 @@ export default function SideBar({
 }) {
   const baseurl = import.meta.env.BASE_URL;
 
-  function slugToSport(slug: string) {
-    const words = slug.split("-");
-    return words.map((w) => `${w[0].toUpperCase()}${w.slice(1)}`).join(" ");
+  function getSportNames(sportKey: SportKey) {
+    return Object.values(data.sports[sportKey]).map((sport) => sport.team);
   }
   const [selected, setSelected] = useState(-1);
-  const links = Object.keys(data.sports).map(slugToSport);
+  const sportKeys: SportKey[] = Object.keys(data.sports) as SportKey[];
 
   function select(hasLinks: boolean, ix: number) {
     setSelected(hasLinks ? ix : -1);
@@ -76,49 +81,42 @@ export default function SideBar({
               ease: easeInOut,
             }}
           >
-            First Semester Primer
+            Second Semester Primer
           </motion.p>
         </div>
       </section>
       <ul>
-        {links.map((link, ix) => (
-          <li key={link} className={selected == ix ? styles.selected : ""}>
+        {sportKeys.map((sportKey, ix) => (
+          <li key={sportKey} className={selected == ix ? styles.selected : ""}>
             <section
               className={styles.navLinkTitle}
-              onClick={() => select(link != "Cheerdance", ix)}
+              onClick={() => select(hasDropDown(sportKey), ix)}
             >
-              {link == "Cheerdance" ? (
-                <NavLink
-                  to={`/#${link.toLowerCase()}`}
+              {!hasDropDown(sportKey) ?
+                (<NavLink
+                  to={`/#${sportKey}`}
                   onClick={() => setVisibility(false)}
                 >
-                  <p>{link}</p>
-                </NavLink>
-              ) : (
-                <p>{link}</p>
-              )}
-              {link != "Cheerdance" && (
+                  <p>{getSportNames(sportKey)[0]}</p>
+                </NavLink>)
+                : (<p>{getSportNames(sportKey)[0]}</p>)
+              }
+              {hasDropDown(sportKey) && (
                 <img src={baseurl + `/keyboard_arrow_down.svg`} />
               )}
             </section>
-            {link != "Cheerdance" && (
+            {hasDropDown(sportKey) && (
               <ul>
-                <li>
-                  <NavLink
-                    to={`/#mens-${link.split(" ").join("-").toLowerCase()}`}
-                    onClick={() => setVisibility(false)}
-                  >
-                    Men's {link}
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink
-                    to={`/#womens-${link.split(" ").join("-").toLowerCase()}`}
-                    onClick={() => setVisibility(false)}
-                  >
-                    Women's {link}
-                  </NavLink>
-                </li>
+                {Object.entries(data.sports[sportKey]).map(([slug, teamData]) => (
+                  <li>
+                    <NavLink
+                      to={`/#${slug}`}
+                      onClick={() => setVisibility(false)}
+                    >
+                      {teamData.team}
+                    </NavLink>
+                  </li>
+                ))}
               </ul>
             )}
           </li>
