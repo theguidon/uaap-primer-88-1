@@ -65,7 +65,7 @@ export function TeamSectionHalf({
               transition: { ease: "easeInOut", duration: animsDuration },
             },
           }}
-          src={baseurl + `/assets/images/${slug}.png`}
+          src={baseurl + `/assets/images/${slug}.webp`}
           alt=""
           className={`absolute bottom-0 left-1/2 ${alignment == "left" ? "lg:left-2/3" : "lg:left-1/3"} -translate-x-1/2 object-cover h-full z-10 ${slug == "mens-beach-volleyball" && "md:bottom-[-50px]"}`}
         />
@@ -133,11 +133,11 @@ export function TeamSectionHalf({
                 variants={{
                   initial: isMd
                     ? {
-                        translateX: alignment == "right" ? "100%" : "-100%",
-                      }
+                      translateX: alignment == "right" ? "100%" : "-100%",
+                    }
                     : {
-                        translateY: "-100%",
-                      },
+                      translateY: "-100%",
+                    },
                   view: {
                     translateX: "0",
                     translateY: "0",
@@ -147,7 +147,7 @@ export function TeamSectionHalf({
                     },
                   },
                 }}
-                className="uppercase text-[3.75rem] font-display font-bold leading-[85%] mb-2"
+                className="uppercase text-[3.4rem] font-display font-bold leading-[85%] mb-2"
               >
                 {title}
               </motion.h2>
