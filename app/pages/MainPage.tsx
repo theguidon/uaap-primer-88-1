@@ -42,9 +42,9 @@ export default function MainPage() {
       });
     }
 
-    const observer = new IntersectionObserver(callback, options);
+    // const observer = new IntersectionObserver(callback, options);
 
-    sectionIds.forEach((id) => observer.observe(document.body.querySelector(id)));
+    // sectionIds.forEach((id) => observer.observe(document.body.querySelector(id)));
   }, []);
   return (
     <>
@@ -71,9 +71,13 @@ export default function MainPage() {
       <main>
         <Homepage />
         <EditorMessage />
-        {Object.keys(data["sports"]).map((sport) => (
-          <TeamSection key={sport} sport={sport as (keyof (typeof data.sports))} />
-        ))}
+        {Object.keys(data["sports"]).map((sport, ix) => {
+          const align = ix % 2 == 0 ? "right" : "left";
+          return (
+            <TeamSection key={sport} sport={sport as (keyof (typeof data.sports))} start={align} />
+          );
+        }
+        )}
         <Credits />
       </main>
     </>

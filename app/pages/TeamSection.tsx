@@ -4,14 +4,19 @@ import data from "../assets/data/data.json";
 
 export function TeamSection({ sport, start = "left" }: { sport: keyof (typeof data.sports), start: "left" | "right" }) {
   if (Object.values(data.sports[sport]).length == 1) {
-    const sportData = Object.entries(data.sports[sport])[0][1];
-    return (<TeamSectionHalf
-      team={sportData.team}
-      title={sportData.title}
-      blurb={sportData.article.split("\n\n")[0]}
-      alignment={start}
-      slug={sport}
-    />);
+    // @ts-ignore
+    const sportData = Object.values(data.sports[sport])[0];
+    console.log("[", sport, "]", "Sport data:", sportData);
+    return (
+      <div id={sport} style={{ maxHeight: "50vh", minHeight: "50vh" }}>
+        <TeamSectionHalf
+          team={sportData.team}
+          title={sportData.title}
+          blurb={sportData.article.split("\n\n")[0]}
+          alignment={start}
+          slug={sport}
+        />
+      </div>);
   } else {
     return (
       <div id={sport} style={{ minHeight: "100vh" }}>
