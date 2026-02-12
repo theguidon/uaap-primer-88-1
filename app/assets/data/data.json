@@ -76,14 +76,6 @@
         "article": "SHAKING OFF a bruising 3-9 record that stung through Season 87, the Ateneo Men’s Lawn Tennis Team (AMLTT) is locked in on punching a ticket to the Final Four.\n\nLast season, the Blue Eagles finished five games behind the Final Four cutoff as defending champions University of Santo Tomas Male Tennisters swept them twice in 5-0 shutouts en route to their third consecutive title.\n\nAteneo also faced additional roster gaps in its push back into contention following the departure of veterans Steff Gurria and rookie Gian Camingue.\n\nSince then, the Blue Eagles have built around Season 87 standouts and current co-captains JB Cuarto and JD Velez, with freshmen Vito Singson and Juan Pabillore entering the Eagle’s nest.\n\nSingson, a sought-after recruit in junior tennis, joins forces with Pabillore, who is fresh off his 2025 Palarong Pambansa stint. The seven-month grind prepared the rookies for Coach Ricardo Lagac Jr.'s system before Season 88’s opening serve.\n\nWhile the rookies settled in, the Katipunan-based team mined last season's challenges to seek new strategies, focusing on more drills for high-pressure moments. Now, the AMLTT heads into Season 88 ready to climb back into Final Four contention"
       }
     },
-    "baseball": {
-      "baseball": {
-        "team": "Baseball",
-        "title": "Pressure makes diamonds",
-        "byline": "A.J. Antonio",
-        "article": "SWINGING THEIR way back onto the diamond, the Ateneo Baseball Team (ABT) enters Season 88 amid a transitioning period. Despite retooling over the summer, this hungry squad maintains the competitive fuel of the Blue and White.\n\nTeam Captains Angelo “Bop” Bernardo and Joshua de Juras lead the way for the ABT, filling in the holes left by predecessors Alejandro Mendoza and Zeke Laygo.\n\nReturning to the base are veteran hitters Dax Fabella, Matthew San Juan, and Alfy Tueres—who all aim to bring slugging expertise on the field. The ABT also exhibits a dangerous rotation this season, flanked by pitcher Lucas Atendido, who had an impressive Season 87 on the mound.\n\nOn the forefront of Ateneo’s reinforcements are nine new rookies, headlined by Ryu Garcia, Jayden Ponce, and Mikaelo Osorio. This new batch of athletes aims to add athleticism and agility to an experienced and battle-tested bullpen.\n\nHeading into Season 88 with new talent and undeniable hustle, the ABT are ready to face the top teams in their league, possessing the potential to shake up the UAAP baseball scene."
-      }
-    },
     "taekwondo": {
       "mens-taekwondo": {
         "team": "Men's Taekwondo",
@@ -110,6 +102,14 @@
         "title": "Fight for redemption",
         "byline": "Margaux Dela Cruz",
         "article": "EYES SET on reclaiming the podium, the Ateneo Women’s Judo Team (AWJT) enters the new season with determination in every grapple and throw.\n\nThe Blue Eagles are geared up for success, with a roster consisting of returning veterans and promising rookies. Notably, the roster also features veteran and Southeast Asian Games gold medalist Maxine Mababangloob, alongside high school standouts Elyssa Cao and Khristine Anonuevo. Leading the squad this year are captains Robynne Gonzales and Janelle Panes, who are set on ensuring that each member of the team continues to aim for the best.\n\nShaking off the previous year’s woes, the Blue and White’s pre-season run served as a testament to their growth, with Gonzales and Panes bagging two bronze medals in the Philippine Ultimate Judo Championships. Panes also secured gold in the NCR Judo Association Tournament alongside Cao, Rica Escalada, and Bella De Leon, who each earned bronze medals.\n\nWith the guidance of program head Ali Sulit and coaches Robert Divina, Gilbert Ramirez, and Alvin Mendoza, the team carries the lessons of last season, setting their sights on redemption."
+      }
+    },
+    "mlbb": {
+      "mlbb": {
+        "team": "Mobile Legends: Bang Bang",
+        "title": "Usurping Battlefields",
+        "byline": "David Enrico Galvez",
+        "article": "FUELED BY resilience, the Ateneo Blue Eagles strive to rise from the ashes in the UAAP Season 88 Mobile Legends: Bang Bang tournament. Washing off last season’s setbacks, Team Captains Angelo Olvida and Aaron Yuk Hong Sze hold the reins in steering the squad with purpose and undeterred composure.\n\nAfter falling short of a win last season, the rebuilding unit retraced their steps in search for their harmony on the battlefield. Investing heavily in recalibrating in-game communication, the Blue Eagles committed to utilizing more disciplined win conditions.\n\nSupporting the foundation are Middle Laner Zosi Nera Jr. and Gold Laner Sebastian Antolin, alongside new blood Jungler Mathew Reunir, who adds firepower to Ateneo’s growing lineup.\n\nWith their team chemistry steadily taking shape, the Blue and White enters the season grounded—carrying confidence anchored in refined rotations. To further fortify their preparation, the domination mindset is instilled as they surge in the tournament, taking down towers one by one to secure victories en route to the top."
       }
     },
     "valorant": {
@@ -142,6 +142,14 @@
         "title": "A new flight begins",
         "byline": "Sophia Bautista",
         "article": "THE BLUE Eagles soar into the UAAP Season 88 Women’s Softball with fierce spirit and bright promise. After battling through adversity in Season 87, this year’s team blends seasoned leadership with emerging rookies, marking a transitional chapter for the Blue and White.\n\nAt the forefront of the campaign is graduating Captain Ashlee Tuprio, whose leadership provides a steady anchor for the Blue Eagles. Alongside her are Co-Captain Andeng Daquigan and fellow senior Riz Bulatao, whose experiences will help set the tone for a developing squad.\n\nThe team’s veteran core guides a youthful roster through the UAAP scene, while setting standards that will last beyond the season. Notable additions to the unit include Zyrah De Guzman, Katrice Ditchon, Minelli Profeta, Marvs Romano, and Ateneo Women’s Football Team mainstays Angely Alferez, Tootchie Eval, and Aly Gonzales.\n\nUnder Head Coach Joan Locsin, this young but united squad is not only rebuilt—they are reborn. Season 88 promises Blue Eagle discipline and resolve as Ateneo chases brighter days on the diamond."
+      }
+    },
+    "baseball": {
+      "baseball": {
+        "team": "Baseball",
+        "title": "Pressure makes diamonds",
+        "byline": "A.J. Antonio",
+        "article": "SWINGING THEIR way back onto the diamond, the Ateneo Baseball Team (ABT) enters Season 88 amid a transitioning period. Despite retooling over the summer, this hungry squad maintains the competitive fuel of the Blue and White.\n\nTeam Captains Angelo “Bop” Bernardo and Joshua de Juras lead the way for the ABT, filling in the holes left by predecessors Alejandro Mendoza and Zeke Laygo.\n\nReturning to the base are veteran hitters Dax Fabella, Matthew San Juan, and Alfy Tueres—who all aim to bring slugging expertise on the field. The ABT also exhibits a dangerous rotation this season, flanked by pitcher Lucas Atendido, who had an impressive Season 87 on the mound.\n\nOn the forefront of Ateneo’s reinforcements are nine new rookies, headlined by Ryu Garcia, Jayden Ponce, and Mikaelo Osorio. This new batch of athletes aims to add athleticism and agility to an experienced and battle-tested bullpen.\n\nHeading into Season 88 with new talent and undeniable hustle, the ABT are ready to face the top teams in their league, possessing the potential to shake up the UAAP baseball scene."
       }
     }
   }
