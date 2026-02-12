@@ -1,14 +1,16 @@
 import { TeamSectionHalf } from "~/components/TeamSectionHalf";
-import { TeamSectionFull } from "~/components/TeamSectionFull";
 import data from "../assets/data/data.json";
 
-export function TeamSection({ sport }: { sport: keyof (typeof data.sports) }) {
-  if (sport == "cheerdance") {
-    return (<TeamSectionFull
-      team={data.sports[sport]["cheerdance"].team}
-      title={data.sports[sport]["cheerdance"].title}
-      blurb={data.sports[sport]["cheerdance"].article.split("\n\n")[0]}
-      slug="cheerdance"
+
+export function TeamSection({ sport, start = "left" }: { sport: keyof (typeof data.sports), start: "left" | "right" }) {
+  if (Object.values(data.sports[sport]).length == 1) {
+    const sportData = Object.entries(data.sports[sport])[0][1];
+    return (<TeamSectionHalf
+      team={sportData.team}
+      title={sportData.title}
+      blurb={sportData.article.split("\n\n")[0]}
+      alignment={start}
+      slug={sport}
     />);
   } else {
     return (
