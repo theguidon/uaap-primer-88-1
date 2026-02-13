@@ -8,7 +8,7 @@ import { NavLink } from "react-router";
 type SportKey = keyof (typeof data.sports);
 
 function hasDropDown(sport: SportKey) {
-  return (Object.values(data.sports[sport]).length > 1);
+  return (Object.values(data.sports[sport].teams).length > 1);
 }
 
 export default function SideBar({
@@ -20,9 +20,6 @@ export default function SideBar({
 }) {
   const baseurl = import.meta.env.BASE_URL;
 
-  function getSportNames(sportKey: SportKey) {
-    return Object.values(data.sports[sportKey]).map((sport) => sport.team);
-  }
   const [selected, setSelected] = useState(-1);
   const sportKeys: SportKey[] = Object.keys(data.sports) as SportKey[];
 
@@ -97,9 +94,9 @@ export default function SideBar({
                   to={`/#${sportKey}`}
                   onClick={() => setVisibility(false)}
                 >
-                  <p>{getSportNames(sportKey)[0]}</p>
+                  <p>{data.sports[sportKey].name}</p>
                 </NavLink>)
-                : (<p>{getSportNames(sportKey)[0]}</p>)
+                : (<p>{data.sports[sportKey].name}</p>)
               }
               {hasDropDown(sportKey) && (
                 <img src={baseurl + `/keyboard_arrow_down.svg`} />
@@ -107,7 +104,7 @@ export default function SideBar({
             </section>
             {hasDropDown(sportKey) && (
               <ul>
-                {Object.entries(data.sports[sportKey]).map(([slug, teamData]) => (
+                {Object.entries(data.sports[sportKey].teams).map(([slug, teamData]) => (
                   <li>
                     <NavLink
                       to={`/#${slug}`}

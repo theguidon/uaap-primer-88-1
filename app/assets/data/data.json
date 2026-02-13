@@ -42,7 +42,7 @@
     },
     "volleyball": {
       "name": "Volleyball",
-      "team": {
+      "teams": {
         "mens-volleyball": {
           "team": "Men’s Volleyball",
           "title": "Swinging for the fences",
