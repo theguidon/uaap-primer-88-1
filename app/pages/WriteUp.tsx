@@ -18,7 +18,7 @@ export async function clientLoader({ params }: Route.ClientLoaderArgs) {
     return data["editors-message"];
   }
   const sportsData = data.sports[generalSport as keyof typeof data.sports];
-  return sportsData[params.slug as keyof typeof sportsData];
+  return sportsData.teams[params.slug as keyof typeof sportsData.teams];
 }
 const variants: Variants = {
   initial: { translateY: "-100%" },
