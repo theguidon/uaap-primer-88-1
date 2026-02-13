@@ -3,10 +3,9 @@ import data from "../assets/data/data.json";
 
 
 export function TeamSection({ sport, start = "left" }: { sport: keyof (typeof data.sports), start: "left" | "right" }) {
-  if (Object.values(data.sports[sport]).length == 1) {
+  if (Object.values(data.sports[sport].teams).length == 1) {
     // @ts-ignore
-    const sportData = Object.values(data.sports[sport])[0];
-    console.log("[", sport, "]", "Sport data:", sportData);
+    const sportData = Object.values(data.sports[sport].teams)[0];
     return (
       <div id={sport} style={{ maxHeight: "50vh", minHeight: "50vh" }}>
         <TeamSectionHalf
@@ -20,7 +19,7 @@ export function TeamSection({ sport, start = "left" }: { sport: keyof (typeof da
   } else {
     return (
       <div id={sport} style={{ minHeight: "100vh" }}>
-        {Object.entries(data.sports[sport]).map(([key, { team, title, article }], ix) => (
+        {Object.entries(data.sports[sport].teams).map(([key, { team, title, article }], ix) => (
           <TeamSectionHalf
             key={key}
             team={team}

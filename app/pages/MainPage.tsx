@@ -13,7 +13,7 @@ export default function MainPage() {
   const [menuColor, setMenuColor] = useState("#1c41d5");
 
   function getTeamIds() {
-    return Object.values(data.sports).map((sports) => Object.keys(sports)).flat().map((sport) => '#' + sport);
+    return Object.values(data.sports).map((sports) => Object.keys(sports.teams)).flat().map((sport) => '#' + sport);
   }
 
   const sectionIds = [

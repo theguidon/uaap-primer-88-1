@@ -20,7 +20,7 @@ export function Credits() {
           >
             UAAP SEASON 88
             <br />
-            FIRST SEMESTER PRIMER
+            SECOND SEMESTER PRIMER
           </motion.h1>
         </div>
       </div>
