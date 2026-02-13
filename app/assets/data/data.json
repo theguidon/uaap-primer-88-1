@@ -75,17 +75,20 @@
       }
     },
     "lawn-tennis": {
-      "womens-lawn-tennis": {
-        "team": "Women's Lawn Tennis",
-        "title": "Back in business",
-        "byline": "Xavi Tumale",
-        "article": "COMING OFF a challenging UAAP Season 87 campaign, the Ateneo Women’s Lawn Tennis Team enters the fold with a renewed hunger for success and a redefined focus.\n\nNew faces Indi Fandino, Eloh Castolo, and the highly touted recruit Casey Padilla join the squad, ready to give the Blue and White a much-needed boost. With the return of Ateneo ace Althea Ong and Co-captains Althea Martirez and Chelsea Roque, the trio is ready to guide the young Blue Eagles and reinforce the Katipunan-based squad for another season.\n\nAs the Blue Eagles enter a new season, the lessons from last year take center stage as they focus on building consistency and elevating their play.\n\nAlthough the team bids goodbye to veterans Gian Camingue, Steff Guirra, and Aidyll Ignacio, the Blue Eagles’ flight path is clear: to compete, grow, and reestablish themselves as contenders in the UAAP."
-      },
-      "mens-lawn-tennis": {
-        "team": "Men's Lawn Tennis",
-        "title": "Back in contention",
-        "byline": "Seleeya Rumbaoa",
-        "article": "SHAKING OFF a bruising 3-9 record that stung through Season 87, the Ateneo Men’s Lawn Tennis Team (AMLTT) is locked in on punching a ticket to the Final Four.\n\nLast season, the Blue Eagles finished five games behind the Final Four cutoff as defending champions University of Santo Tomas Male Tennisters swept them twice in 5-0 shutouts en route to their third consecutive title.\n\nAteneo also faced additional roster gaps in its push back into contention following the departure of veterans Steff Gurria and rookie Gian Camingue.\n\nSince then, the Blue Eagles have built around Season 87 standouts and current co-captains JB Cuarto and JD Velez, with freshmen Vito Singson and Juan Pabillore entering the Eagle’s nest.\n\nSingson, a sought-after recruit in junior tennis, joins forces with Pabillore, who is fresh off his 2025 Palarong Pambansa stint. The seven-month grind prepared the rookies for Coach Ricardo Lagac Jr.'s system before Season 88’s opening serve.\n\nWhile the rookies settled in, the Katipunan-based team mined last season's challenges to seek new strategies, focusing on more drills for high-pressure moments. Now, the AMLTT heads into Season 88 ready to climb back into Final Four contention"
+      "name": "Lawn Tennis",
+      "teams": {
+        "womens-lawn-tennis": {
+          "team": "Women's Lawn Tennis",
+          "title": "Back in business",
+          "byline": "Xavi Tumale",
+          "article": "COMING OFF a challenging UAAP Season 87 campaign, the Ateneo Women’s Lawn Tennis Team enters the fold with a renewed hunger for success and a redefined focus.\n\nNew faces Indi Fandino, Eloh Castolo, and the highly touted recruit Casey Padilla join the squad, ready to give the Blue and White a much-needed boost. With the return of Ateneo ace Althea Ong and Co-captains Althea Martirez and Chelsea Roque, the trio is ready to guide the young Blue Eagles and reinforce the Katipunan-based squad for another season.\n\nAs the Blue Eagles enter a new season, the lessons from last year take center stage as they focus on building consistency and elevating their play.\n\nAlthough the team bids goodbye to veterans Gian Camingue, Steff Guirra, and Aidyll Ignacio, the Blue Eagles’ flight path is clear: to compete, grow, and reestablish themselves as contenders in the UAAP."
+        },
+        "mens-lawn-tennis": {
+          "team": "Men's Lawn Tennis",
+          "title": "Back in contention",
+          "byline": "Seleeya Rumbaoa",
+          "article": "SHAKING OFF a bruising 3-9 record that stung through Season 87, the Ateneo Men’s Lawn Tennis Team (AMLTT) is locked in on punching a ticket to the Final Four.\n\nLast season, the Blue Eagles finished five games behind the Final Four cutoff as defending champions University of Santo Tomas Male Tennisters swept them twice in 5-0 shutouts en route to their third consecutive title.\n\nAteneo also faced additional roster gaps in its push back into contention following the departure of veterans Steff Gurria and rookie Gian Camingue.\n\nSince then, the Blue Eagles have built around Season 87 standouts and current co-captains JB Cuarto and JD Velez, with freshmen Vito Singson and Juan Pabillore entering the Eagle’s nest.\n\nSingson, a sought-after recruit in junior tennis, joins forces with Pabillore, who is fresh off his 2025 Palarong Pambansa stint. The seven-month grind prepared the rookies for Coach Ricardo Lagac Jr.'s system before Season 88’s opening serve.\n\nWhile the rookies settled in, the Katipunan-based team mined last season's challenges to seek new strategies, focusing on more drills for high-pressure moments. Now, the AMLTT heads into Season 88 ready to climb back into Final Four contention"
+        }
       }
     },
     "taekwondo": {
