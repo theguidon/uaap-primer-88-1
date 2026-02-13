@@ -92,17 +92,20 @@
       }
     },
     "taekwondo": {
-      "mens-taekwondo": {
-        "team": "Men's Taekwondo",
-        "title": "Push to podium",
-        "byline": "Seleeya Rumbaoa",
-        "article": "LOOKING TO push their way to the podium, the Ateneo Men's Taekwondo Team kicks off UAAP Season 88 with a fresh lineup.\n\nLast Season 87, the Blue Eagles came up short in the Men's Kyorugi division with a last-place finish. While the Poomsae teams headed to the finals in three of five categories, they still came away empty-handed, with Joaquin Tuzon placing fourth in Individual Male Poomsae.\n\nLooking to shift the tides this season, the Katipunan-based squad has tapped four recruits. In particular, Michael Cabaluna Jr., Kier Cuyugan, and Randz Gaupo joined the Men's Kyorugi team, while Jerome Castro entered the Poomsae squad.\n\nThe new roster has already shown promise in the preseason, nipping gold at the 2025 Philippine Taekwondo Association Taekwondo Championships and bronze at the 2025 Smart MVP Sports Foundation National Interschool Taekwondo Championships.\n\nWith its lineup set on the mats, Ateneo is determined to seize the chance to return to the map and bring home hardware."
-      },
-      "womens-taekwondo": {
-        "team": "Women's Taekwondo",
-        "title": "Reaching greater heights",
-        "byline": "Margaux Dela Cruz",
-        "article": "AIMING HIGH for Season 88, the Ateneo Women’s Taekwondo Team (AWTT) is undaunted in their mission to step on the podium.\n\nLeading the Kyorugi team are Rigel Dumat-ol and Kamille Calaycay. The roster features returning veterans Kenshin Bonos and Keir Atendido, alongside rookie Stefanie Leones.\n\nAfter climbing from sixth place in Season 86, to fourth in Season 87, the team is determined to build even more momentum this year.\n\nCarrying the same hunger, the Poomsae team is set on pushing past their sixth-place finish in Season 86 and their fourth-place finish from Season 87. Bolstered by a mix of veterans and rookies, the Poomsae team welcomes rookie Elizabeth Borres, who has bagged two bronze medals at the Asian Taekwondo Federation Championships.\n\nGraduating Team Captain Elaine Borres and Co-captain Mariea Komicho lead the team with their eyes set on a return to the top three. With confidence from their pre-season medals in the National Best of the Best Taekwondo Championships and National Interschool Championships, the Poomsae team continues to grow under Coaches Roel Borja Jr. and Vincent Rodriguez.\n\nAs a whole, the AWTT steps into the season ready to showcase their growth and potential for a podium finish."
+      "name": "Taekwondo",
+      "teams": {
+        "mens-taekwondo": {
+          "team": "Men's Taekwondo",
+          "title": "Push to podium",
+          "byline": "Seleeya Rumbaoa",
+          "article": "LOOKING TO push their way to the podium, the Ateneo Men's Taekwondo Team kicks off UAAP Season 88 with a fresh lineup.\n\nLast Season 87, the Blue Eagles came up short in the Men's Kyorugi division with a last-place finish. While the Poomsae teams headed to the finals in three of five categories, they still came away empty-handed, with Joaquin Tuzon placing fourth in Individual Male Poomsae.\n\nLooking to shift the tides this season, the Katipunan-based squad has tapped four recruits. In particular, Michael Cabaluna Jr., Kier Cuyugan, and Randz Gaupo joined the Men's Kyorugi team, while Jerome Castro entered the Poomsae squad.\n\nThe new roster has already shown promise in the preseason, nipping gold at the 2025 Philippine Taekwondo Association Taekwondo Championships and bronze at the 2025 Smart MVP Sports Foundation National Interschool Taekwondo Championships.\n\nWith its lineup set on the mats, Ateneo is determined to seize the chance to return to the map and bring home hardware."
+        },
+        "womens-taekwondo": {
+          "team": "Women's Taekwondo",
+          "title": "Reaching greater heights",
+          "byline": "Margaux Dela Cruz",
+          "article": "AIMING HIGH for Season 88, the Ateneo Women’s Taekwondo Team (AWTT) is undaunted in their mission to step on the podium.\n\nLeading the Kyorugi team are Rigel Dumat-ol and Kamille Calaycay. The roster features returning veterans Kenshin Bonos and Keir Atendido, alongside rookie Stefanie Leones.\n\nAfter climbing from sixth place in Season 86, to fourth in Season 87, the team is determined to build even more momentum this year.\n\nCarrying the same hunger, the Poomsae team is set on pushing past their sixth-place finish in Season 86 and their fourth-place finish from Season 87. Bolstered by a mix of veterans and rookies, the Poomsae team welcomes rookie Elizabeth Borres, who has bagged two bronze medals at the Asian Taekwondo Federation Championships.\n\nGraduating Team Captain Elaine Borres and Co-captain Mariea Komicho lead the team with their eyes set on a return to the top three. With confidence from their pre-season medals in the National Best of the Best Taekwondo Championships and National Interschool Championships, the Poomsae team continues to grow under Coaches Roel Borja Jr. and Vincent Rodriguez.\n\nAs a whole, the AWTT steps into the season ready to showcase their growth and potential for a podium finish."
+        }
       }
     },
     "judo": {
