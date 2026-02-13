@@ -25,16 +25,7 @@ export default function EditorMessage() {
               whileInView={{ y: 0 }}
               transition={{ duration: 0.7, ease: easeInOut }}
             >
-              NEW FLIGHT,
-            </motion.h1>
-          </div>
-          <div>
-            <motion.h1
-              initial={{ y: "100%" }}
-              whileInView={{ y: 0 }}
-              transition={{ duration: 0.7, ease: easeInOut }}
-            >
-              HIGHER HEIGHTS
+              CLEAR SKIES AHEAD
             </motion.h1>
           </div>
         </section>
@@ -51,10 +42,7 @@ export default function EditorMessage() {
             whileInView={{ y: 0 }}
             transition={{ duration: 0.6, ease: easeInOut }}
           >
-            <span className={styles.firstTwo}>ANOTHER YEAR</span> of the
-            University Athletic Association of the Philippines (UAAP) is on the
-            horizon, and the Blue Eagles are poised to bring glory to Loyola
-            Heights once more.
+            <span className={styles.firstTwo}>SOARING ABOVE</span> lofty expectations, the Ateneo Blue Eagles showcased a series of outstanding and historic performance in the first semester of the University Athletic Association of the Philippines' (UAAP) Season 88.
           </motion.p>
         </div>
 
