@@ -126,51 +126,69 @@
       }
     },
     "mlbb": {
-      "mlbb": {
-        "team": "Mobile Legends: Bang Bang",
-        "title": "Usurping Battlefields",
-        "byline": "David Enrico Galvez",
-        "article": "FUELED BY resilience, the Ateneo Blue Eagles strive to rise from the ashes in the UAAP Season 88 Mobile Legends: Bang Bang tournament. Washing off last season’s setbacks, Team Captains Angelo Olvida and Aaron Yuk Hong Sze hold the reins in steering the squad with purpose and undeterred composure.\n\nAfter falling short of a win last season, the rebuilding unit retraced their steps in search for their harmony on the battlefield. Investing heavily in recalibrating in-game communication, the Blue Eagles committed to utilizing more disciplined win conditions.\n\nSupporting the foundation are Middle Laner Zosi Nera Jr. and Gold Laner Sebastian Antolin, alongside new blood Jungler Mathew Reunir, who adds firepower to Ateneo’s growing lineup.\n\nWith their team chemistry steadily taking shape, the Blue and White enters the season grounded—carrying confidence anchored in refined rotations. To further fortify their preparation, the domination mindset is instilled as they surge in the tournament, taking down towers one by one to secure victories en route to the top."
+      "name": "Mobile Legends: Bang Bang",
+      "teams": {
+        "mlbb": {
+          "team": "Mobile Legends: Bang Bang",
+          "title": "Usurping Battlefields",
+          "byline": "David Enrico Galvez",
+          "article": "FUELED BY resilience, the Ateneo Blue Eagles strive to rise from the ashes in the UAAP Season 88 Mobile Legends: Bang Bang tournament. Washing off last season’s setbacks, Team Captains Angelo Olvida and Aaron Yuk Hong Sze hold the reins in steering the squad with purpose and undeterred composure.\n\nAfter falling short of a win last season, the rebuilding unit retraced their steps in search for their harmony on the battlefield. Investing heavily in recalibrating in-game communication, the Blue Eagles committed to utilizing more disciplined win conditions.\n\nSupporting the foundation are Middle Laner Zosi Nera Jr. and Gold Laner Sebastian Antolin, alongside new blood Jungler Mathew Reunir, who adds firepower to Ateneo’s growing lineup.\n\nWith their team chemistry steadily taking shape, the Blue and White enters the season grounded—carrying confidence anchored in refined rotations. To further fortify their preparation, the domination mindset is instilled as they surge in the tournament, taking down towers one by one to secure victories en route to the top."
+        }
       }
     },
     "valorant": {
-      "valorant": {
-        "team": "VALORANT",
-        "title": "Aiming higher",
-        "byline": "Hannah F. Grimaldo",
-        "article": "ENTERING THE new UAAP Season, the Ateneo Valorant Team is locked in on building beyond last season’s success, carrying over its momentum from a hard-fought run. With the first year of UAAP Esports behind them, the Blue Eagles head into Season 88 with a promising and determined roster.\n\nTeam Captain Juancho Garcia sets the pace for the Blue and White, armed with strategic approaches to take on this season’s high-pressure matches. Anchoring the team’s foundation are Joaquin Antonio and Alonso Lopez, both seasoned veterans whose experience steadies the team under pressure.\n\nRounding the roster are Joaquin Tolentino, Michael Ablang, and Hans Yu, each adding flexibility across roles and the team’s overall adaptability. During the offseason, the Ateneo Valorant Team focused on refining team coordination and tightening game meta execution.\n\nWith renewed focus and sharpened aims, the Ateneo Valorant Team enters Season 88 intent on proving that last season’s bronze finish was only the beginning. No longer content with simply reaching the podium, the Blue Eagles look forward to chasing a championship run this season."
+      "name": "Valorant",
+      "teams": {
+        "valorant": {
+          "team": "VALORANT",
+          "title": "Aiming higher",
+          "byline": "Hannah F. Grimaldo",
+          "article": "ENTERING THE new UAAP Season, the Ateneo Valorant Team is locked in on building beyond last season’s success, carrying over its momentum from a hard-fought run. With the first year of UAAP Esports behind them, the Blue Eagles head into Season 88 with a promising and determined roster.\n\nTeam Captain Juancho Garcia sets the pace for the Blue and White, armed with strategic approaches to take on this season’s high-pressure matches. Anchoring the team’s foundation are Joaquin Antonio and Alonso Lopez, both seasoned veterans whose experience steadies the team under pressure.\n\nRounding the roster are Joaquin Tolentino, Michael Ablang, and Hans Yu, each adding flexibility across roles and the team’s overall adaptability. During the offseason, the Ateneo Valorant Team focused on refining team coordination and tightening game meta execution.\n\nWith renewed focus and sharpened aims, the Ateneo Valorant Team enters Season 88 intent on proving that last season’s bronze finish was only the beginning. No longer content with simply reaching the podium, the Blue Eagles look forward to chasing a championship run this season."
+        }
       }
     },
     "nba2k": {
-      "nba2k": {
-        "team": "NBA 2K",
-        "title": "They got next",
-        "byline": "SC Singh",
-        "article": "CHAMPIONSHIPS HAVE  become the standard for the Ateneo NBA 2K Team following a historic repeat in UAAP Season 87. That standard faces an early test as the league introduces a shift from the 1v1 Play Now mode to the more demanding 5v5 Pro-Am format.\n\nWith no returning players from last season’s championship roster, the Blue and White begin their title defense with a clean slate. Head Coach Nite Alparas, also at the helm of eGilas Pilipinas, leads this new chapter and is tasked with molding a team built for five-on-five competition.\n\nAs the final lineup takes shape, the current player pool composed of Jake Madamba, Banjo Dungca, Andrei Co, Miguel Zamudio, Ram Santiago, and Basty Umali competes for roles in a system that values chemistry and execution.\n\nFor the Blue Eagles, chasing a third-straight title will hinge on adaptability, discipline, and trust in the system—principles that have long defined the Blue and White and kept the crown firmly in their hands."
+      "name": "NBA 2K",
+      "teams": {
+        "nba2k": {
+          "team": "NBA 2K",
+          "title": "They got next",
+          "byline": "SC Singh",
+          "article": "CHAMPIONSHIPS HAVE  become the standard for the Ateneo NBA 2K Team following a historic repeat in UAAP Season 87. That standard faces an early test as the league introduces a shift from the 1v1 Play Now mode to the more demanding 5v5 Pro-Am format.\n\nWith no returning players from last season’s championship roster, the Blue and White begin their title defense with a clean slate. Head Coach Nite Alparas, also at the helm of eGilas Pilipinas, leads this new chapter and is tasked with molding a team built for five-on-five competition.\n\nAs the final lineup takes shape, the current player pool composed of Jake Madamba, Banjo Dungca, Andrei Co, Miguel Zamudio, Ram Santiago, and Basty Umali competes for roles in a system that values chemistry and execution.\n\nFor the Blue Eagles, chasing a third-straight title will hinge on adaptability, discipline, and trust in the system—principles that have long defined the Blue and White and kept the crown firmly in their hands."
+        }
       }
     },
     "streetdance": {
-      "streetdance": {
-        "team": "Streetdance",
-        "title": "Taking center stage",
-        "byline": "Sophia Bautista",
-        "article": "THE FLOOR is set, the lights are bright, and the stage is ready as the Company of Ateneo Dancers (CADs) returns to take the spotlight once more.\n\nLast season, the team performed a Michael Jackson-inspired routine that showcased intricate choreography and energy, finishing in fifth place overall. This momentum carried into the offseason, as CADs made waves in the competitive circuit, including a strong showing at the Dance Supremacy Kings and Queens and the World of Dance Summit 2026.\n\nThis year, the roster blends experienced dancers with rising talents, promising energy, tight formations, and dynamic performances. With Jan Imbao and Celina Baltazar as co-captains, the Blue Eagles are aiming for a podium finish by elevating their craft and grooving their way into one of UAAP’s most awaited competitions.\n\nMomentum now meets opportunity as CADs take on another run in the UAAP Season 88 Streetdance competition."
+      "name": "Streetdance",
+      "teams": {
+        "streetdance": {
+          "team": "Streetdance",
+          "title": "Taking center stage",
+          "byline": "Sophia Bautista",
+          "article": "THE FLOOR is set, the lights are bright, and the stage is ready as the Company of Ateneo Dancers (CADs) returns to take the spotlight once more.\n\nLast season, the team performed a Michael Jackson-inspired routine that showcased intricate choreography and energy, finishing in fifth place overall. This momentum carried into the offseason, as CADs made waves in the competitive circuit, including a strong showing at the Dance Supremacy Kings and Queens and the World of Dance Summit 2026.\n\nThis year, the roster blends experienced dancers with rising talents, promising energy, tight formations, and dynamic performances. With Jan Imbao and Celina Baltazar as co-captains, the Blue Eagles are aiming for a podium finish by elevating their craft and grooving their way into one of UAAP’s most awaited competitions.\n\nMomentum now meets opportunity as CADs take on another run in the UAAP Season 88 Streetdance competition."
+        }
       }
     },
     "softball": {
-      "womens-softball": {
-        "team": "Women's Softball",
-        "title": "A new flight begins",
-        "byline": "Sophia Bautista",
-        "article": "THE BLUE Eagles soar into the UAAP Season 88 Women’s Softball with fierce spirit and bright promise. After battling through adversity in Season 87, this year’s team blends seasoned leadership with emerging rookies, marking a transitional chapter for the Blue and White.\n\nAt the forefront of the campaign is graduating Captain Ashlee Tuprio, whose leadership provides a steady anchor for the Blue Eagles. Alongside her are Co-Captain Andeng Daquigan and fellow senior Riz Bulatao, whose experiences will help set the tone for a developing squad.\n\nThe team’s veteran core guides a youthful roster through the UAAP scene, while setting standards that will last beyond the season. Notable additions to the unit include Zyrah De Guzman, Katrice Ditchon, Minelli Profeta, Marvs Romano, and Ateneo Women’s Football Team mainstays Angely Alferez, Tootchie Eval, and Aly Gonzales.\n\nUnder Head Coach Joan Locsin, this young but united squad is not only rebuilt—they are reborn. Season 88 promises Blue Eagle discipline and resolve as Ateneo chases brighter days on the diamond."
+      "name": "Softball",
+      "teams": {
+        "womens-softball": {
+          "team": "Women's Softball",
+          "title": "A new flight begins",
+          "byline": "Sophia Bautista",
+          "article": "THE BLUE Eagles soar into the UAAP Season 88 Women’s Softball with fierce spirit and bright promise. After battling through adversity in Season 87, this year’s team blends seasoned leadership with emerging rookies, marking a transitional chapter for the Blue and White.\n\nAt the forefront of the campaign is graduating Captain Ashlee Tuprio, whose leadership provides a steady anchor for the Blue Eagles. Alongside her are Co-Captain Andeng Daquigan and fellow senior Riz Bulatao, whose experiences will help set the tone for a developing squad.\n\nThe team’s veteran core guides a youthful roster through the UAAP scene, while setting standards that will last beyond the season. Notable additions to the unit include Zyrah De Guzman, Katrice Ditchon, Minelli Profeta, Marvs Romano, and Ateneo Women’s Football Team mainstays Angely Alferez, Tootchie Eval, and Aly Gonzales.\n\nUnder Head Coach Joan Locsin, this young but united squad is not only rebuilt—they are reborn. Season 88 promises Blue Eagle discipline and resolve as Ateneo chases brighter days on the diamond."
+        }
       }
     },
     "baseball": {
-      "baseball": {
-        "team": "Baseball",
-        "title": "Pressure makes diamonds",
-        "byline": "A.J. Antonio",
-        "article": "SWINGING THEIR way back onto the diamond, the Ateneo Baseball Team (ABT) enters Season 88 amid a transitioning period. Despite retooling over the summer, this hungry squad maintains the competitive fuel of the Blue and White.\n\nTeam Captains Angelo “Bop” Bernardo and Joshua de Juras lead the way for the ABT, filling in the holes left by predecessors Alejandro Mendoza and Zeke Laygo.\n\nReturning to the base are veteran hitters Dax Fabella, Matthew San Juan, and Alfy Tueres—who all aim to bring slugging expertise on the field. The ABT also exhibits a dangerous rotation this season, flanked by pitcher Lucas Atendido, who had an impressive Season 87 on the mound.\n\nOn the forefront of Ateneo’s reinforcements are nine new rookies, headlined by Ryu Garcia, Jayden Ponce, and Mikaelo Osorio. This new batch of athletes aims to add athleticism and agility to an experienced and battle-tested bullpen.\n\nHeading into Season 88 with new talent and undeniable hustle, the ABT are ready to face the top teams in their league, possessing the potential to shake up the UAAP baseball scene."
+      "name": "Baseball",
+      "teams": {
+        "baseball": {
+          "team": "Baseball",
+          "title": "Pressure makes diamonds",
+          "byline": "A.J. Antonio",
+          "article": "SWINGING THEIR way back onto the diamond, the Ateneo Baseball Team (ABT) enters Season 88 amid a transitioning period. Despite retooling over the summer, this hungry squad maintains the competitive fuel of the Blue and White.\n\nTeam Captains Angelo “Bop” Bernardo and Joshua de Juras lead the way for the ABT, filling in the holes left by predecessors Alejandro Mendoza and Zeke Laygo.\n\nReturning to the base are veteran hitters Dax Fabella, Matthew San Juan, and Alfy Tueres—who all aim to bring slugging expertise on the field. The ABT also exhibits a dangerous rotation this season, flanked by pitcher Lucas Atendido, who had an impressive Season 87 on the mound.\n\nOn the forefront of Ateneo’s reinforcements are nine new rookies, headlined by Ryu Garcia, Jayden Ponce, and Mikaelo Osorio. This new batch of athletes aims to add athleticism and agility to an experienced and battle-tested bullpen.\n\nHeading into Season 88 with new talent and undeniable hustle, the ABT are ready to face the top teams in their league, possessing the potential to shake up the UAAP baseball scene."
+        }
       }
     }
   }
