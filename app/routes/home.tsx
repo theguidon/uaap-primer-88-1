@@ -5,7 +5,7 @@ import Homepage from "../pages/Homepage";
 import MainPage from "~/pages/MainPage";
 export function meta({ }: Route.MetaArgs) {
   return [
-    { title: "The GUIDON UAAP 88th Season First Semester Primer" },
+    { title: "The GUIDON UAAP 88th Season Second Semester Primer" },
     { name: "description", content: "Welcome to React Router!" },
   ];
 }
