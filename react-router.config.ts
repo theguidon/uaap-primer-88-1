@@ -4,5 +4,6 @@ export default {
   // Config options...
   // Server-side render by default, to enable SPA mode set this to `false`
   ssr: false,
+  basename: "/",
   // basename: "/uaap-88-primer-second-semester",
 } satisfies Config;

@@ -65,7 +65,7 @@ export function TeamSectionHalf({
               transition: { ease: "easeInOut", duration: animsDuration },
             },
           }}
-          src={baseurl + `/assets/images/${slug}.webp`}
+          src={baseurl + `assets/images/${slug}.webp`}
           alt=""
           className={`absolute bottom-0 left-1/2 ${alignment == "left" ? "lg:left-2/3" : "lg:left-1/3"} -translate-x-1/2 object-cover h-full z-10 ${slug == "mens-beach-volleyball" && "md:bottom-[-50px]"}`}
         />

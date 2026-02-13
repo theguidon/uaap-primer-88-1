@@ -49,7 +49,7 @@ export default function EditorMessage() {
         <NavLink to={`/editors-message`}>
           <div className={styles.readMore}>
             <p>Read More</p>
-            <img src={baseurl + `/Arrow up-right.svg`} />
+            <img src={baseurl + `Arrow up-right.svg`} />
           </div>
         </NavLink>
       </section>
@@ -89,7 +89,7 @@ export default function EditorMessage() {
           transition={{ duration: 0.6, ease: easeInOut }}
         >
           <img
-            src={baseurl + `/underphoto_message.svg`}
+            src={baseurl + `underphoto_message.svg`}
             className={styles.underphoto}
           />
         </motion.div>
@@ -104,7 +104,7 @@ export default function EditorMessage() {
           <AnimatePresence>
             <motion.img
               className={styles.runner}
-              src={baseurl + `/editormessage/${images[1]}`}
+              src={baseurl + `editormessage/${images[1]}`}
               initial={{ y: "100%" }}
               whileInView={{ y: 0 }}
               exit={{ y: "100%" }}
@@ -119,7 +119,7 @@ export default function EditorMessage() {
           style={{ overflow: "hidden" }}
         >
           <img
-            src={baseurl + `/overphoto_message.svg`}
+            src={baseurl + `overphoto_message.svg`}
             className={styles.overphoto}
           />
         </motion.div>
