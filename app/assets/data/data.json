@@ -7,17 +7,20 @@
   },
   "sports": {
     "basketball": {
-      "mens-basketball": {
-        "team": "3x3 Men’s Basketball",
-        "title": "Rising Above",
-        "byline": "Xavi Tumale",
-        "article": "FOLLOWING A tough UAAP Season 87 showing, the Ateneo Men’s 3x3 Basketball Team looks to turn the page after their one-win campaign.\n\nWith second-year Head Coach and former Ateneo standout Nico Salva, the Blue Eagles continue their mission of building a more competitive program for the upcoming season. This mission was reflected in last season’s squad, composed of Andre Tan, Danger Tupas, Adam Dela Cruz, and Sam Reyes.\n\nFor Season 88, Ateneo aims to showcase the lessons that they have learned and embrace the growth from last season’s challenges. Repping the court this time around will be Team A mainstays Shawn Tuano, Drew Bongo, Kyle Gamber, and Thirdy Ebdane.\n\nAs 3x3 basketball continues to rise in popularity, the Katipunan-based unit remains determined to reclaim their place at the top of the sport in the UAAP arena. With a renewed focus and sense of teamwork, the Blue Eagles are ready to soar and get buckets this Season 88.\n\nEditor’s Note: The publication has chosen to feature Head Coach Nico Salva in lieu of a team captain, with the finalization of the Men’s 3x3 Basketball roster still in progress prior to the completion of the primer."
-      },
-      "womens-basketball": {
-        "team": "3x3 Women’s Basketball",
-        "title": "The gold standard",
-        "byline": "Mario Quirino Manlutac",
-        "article": "SHOCKING THE UAAP basketball scene with their Cinderella first-place finish in Season 87, the Ateneo Women’s 3x3 Basketball Team sets their sight on a repeat title in Season 88 to prove that their breakthrough was no fluke.\n\nAfter capturing their first-ever gold medal finish in last year’s competition, Head Coach PJ Navarro, alongside confirmed returnees Kai Oani and Lauren Lopez, are back in tow in pursuit of a back-to-back championship.\n\nThe Blue and White enters the season eager to deliver another impressive showing under Head Coach Navarro. As defending champions, the Blue Eagles embrace both the challenge of heightened expectations and the pressures that come with it.\n\nFollowing their narrow exit in the semifinals on the 5-on-5 stage, Ateneo’s perennial 3x3 squad is intent on reasserting their place among the UAAP’s elite.\n\nThat focus now shifts to the 3x3 circuit, where belief forged in gold and resolve strengthened by adversity fuel the Katipunan-based squad’s bid to remain the gold standard of the Women’s division.\n\nEditor’s Note: The publication has chosen to feature Head Coach PJ Navarro in lieu of a team captain, with the finalization of the Women’s 3x3 Basketball roster still in progress prior to the completion of the primer."
+      "name": "Basketball",
+      "teams": {
+        "mens-basketball": {
+          "team": "3x3 Men’s Basketball",
+          "title": "Rising Above",
+          "byline": "Xavi Tumale",
+          "article": "FOLLOWING A tough UAAP Season 87 showing, the Ateneo Men’s 3x3 Basketball Team looks to turn the page after their one-win campaign.\n\nWith second-year Head Coach and former Ateneo standout Nico Salva, the Blue Eagles continue their mission of building a more competitive program for the upcoming season. This mission was reflected in last season’s squad, composed of Andre Tan, Danger Tupas, Adam Dela Cruz, and Sam Reyes.\n\nFor Season 88, Ateneo aims to showcase the lessons that they have learned and embrace the growth from last season’s challenges. Repping the court this time around will be Team A mainstays Shawn Tuano, Drew Bongo, Kyle Gamber, and Thirdy Ebdane.\n\nAs 3x3 basketball continues to rise in popularity, the Katipunan-based unit remains determined to reclaim their place at the top of the sport in the UAAP arena. With a renewed focus and sense of teamwork, the Blue Eagles are ready to soar and get buckets this Season 88.\n\nEditor’s Note: The publication has chosen to feature Head Coach Nico Salva in lieu of a team captain, with the finalization of the Men’s 3x3 Basketball roster still in progress prior to the completion of the primer."
+        },
+        "womens-basketball": {
+          "team": "3x3 Women’s Basketball",
+          "title": "The gold standard",
+          "byline": "Mario Quirino Manlutac",
+          "article": "SHOCKING THE UAAP basketball scene with their Cinderella first-place finish in Season 87, the Ateneo Women’s 3x3 Basketball Team sets their sight on a repeat title in Season 88 to prove that their breakthrough was no fluke.\n\nAfter capturing their first-ever gold medal finish in last year’s competition, Head Coach PJ Navarro, alongside confirmed returnees Kai Oani and Lauren Lopez, are back in tow in pursuit of a back-to-back championship.\n\nThe Blue and White enters the season eager to deliver another impressive showing under Head Coach Navarro. As defending champions, the Blue Eagles embrace both the challenge of heightened expectations and the pressures that come with it.\n\nFollowing their narrow exit in the semifinals on the 5-on-5 stage, Ateneo’s perennial 3x3 squad is intent on reasserting their place among the UAAP’s elite.\n\nThat focus now shifts to the 3x3 circuit, where belief forged in gold and resolve strengthened by adversity fuel the Katipunan-based squad’s bid to remain the gold standard of the Women’s division.\n\nEditor’s Note: The publication has chosen to feature Head Coach PJ Navarro in lieu of a team captain, with the finalization of the Women’s 3x3 Basketball roster still in progress prior to the completion of the primer."
+        }
       }
     },
     "blitz-chess": {
