@@ -2,34 +2,24 @@ import { TeamSectionHalf } from "~/components/TeamSectionHalf";
 import data from "../assets/data/data.json";
 
 
+function getAlignment(start: "left" | "right", ix: number) {
+  if (ix % 2 == 0) { return start; }
+  else { return start == "left" ? "right" : "left" }
+}
 export function TeamSection({ sport, start = "left" }: { sport: keyof (typeof data.sports), start: "left" | "right" }) {
-  if (Object.values(data.sports[sport].teams).length == 1) {
-    // @ts-ignore
-    const sportData = Object.values(data.sports[sport].teams)[0];
-    return (
-      <div id={sport} style={{ maxHeight: "50vh", minHeight: "50vh" }}>
+  return (
+    <div id={sport} style={{ minHeight: "100vh" }}>
+      {Object.entries(data.sports[sport].teams).map(([key, { team, title, article }], ix) => (
         <TeamSectionHalf
-          team={sportData.team}
-          title={sportData.title}
-          blurb={sportData.article.split("\n\n")[0]}
-          alignment={start}
-          slug={sport}
+          key={key}
+          team={team}
+          title={title}
+          blurb={article.split("\n\n")[0]}
+          alignment={getAlignment(start, ix)}
+          slug={key}
         />
-      </div>);
-  } else {
-    return (
-      <div id={sport} style={{ minHeight: "100vh" }}>
-        {Object.entries(data.sports[sport].teams).map(([key, { team, title, article }], ix) => (
-          <TeamSectionHalf
-            key={key}
-            team={team}
-            title={title}
-            blurb={article.split("\n\n")[0]}
-            alignment={ix == 0 ? "left" : "right"}
-            slug={key}
-          />
-        ))}
-      </div>
-    );
-  }
+      ))}
+    </div>
+  );
+}
 }
