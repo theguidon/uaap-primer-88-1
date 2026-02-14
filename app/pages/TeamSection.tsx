@@ -22,4 +22,3 @@ export function TeamSection({ sport, start = "left" }: { sport: keyof (typeof da
     </div>
   );
 }
-}
