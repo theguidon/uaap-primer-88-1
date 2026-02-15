@@ -71,10 +71,13 @@ export default function MainPage() {
       <main>
         <Homepage />
         <EditorMessage />
-        {Object.keys(data["sports"]).map((sport, ix) => {
-          const align = ix % 2 == 0 ? "right" : "left";
+        {(Object.keys(data["sports"]) as (keyof typeof data.sports)[]).map((sport, ix) => {
+          let align: ("left" | "right") = "left";
+          if (Object.values(data.sports[sport].teams).length == 1) {
+            align = ix % 2 == 1 ? "left" : "right";
+          }
           return (
-            <TeamSection key={sport} sport={sport as (keyof (typeof data.sports))} start={align} />
+            <TeamSection key={sport} sport={sport} start={align} />
           );
         }
         )}
