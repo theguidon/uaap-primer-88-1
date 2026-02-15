@@ -15,9 +15,10 @@ export default function MainPage() {
   const teamIds = Object.values(data.sports).flatMap(sport => Object.keys(sport.teams));
 
   const sectionIds = [
+    'home',
     'editor-message',
     'credits'
-  ].concat(teamIds);
+  ];
 
   useEffect(() => {
     const options = {
@@ -27,12 +28,27 @@ export default function MainPage() {
       threshold: 0.7
     };
 
+    const fullSizeOptions = {
+      ...options,
+      rootMargin: "0px",
+      threshold: 0.8
+    };
+
+    function fullsize_callback(entries, observer) {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          if (["credits", "editor-message"].includes(entry.target.id)) {
+            setMenuColor("white");
+          } else {
+            setMenuColor("#1c41d5");
+          }
+        }
+      })
+    }
     function callback(entries, observer) {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          const whiteCond = entry.target.id == "credits" || entry.target.id == "editor-message" || entry.target.classList.contains("right-team");
-          console.debug(entry);
-          if (whiteCond) {
+          if (entry.target.classList.contains("right-team")) {
             setMenuColor("white");
           } else {
             setMenuColor("#1c41d5");
@@ -42,8 +58,10 @@ export default function MainPage() {
     }
 
     const observer = new IntersectionObserver(callback, options);
+    const fullSizeObserver = new IntersectionObserver(fullsize_callback, fullSizeOptions);
 
-    sectionIds.forEach((id) => observer.observe(document.body.querySelector('#' + id)));
+    teamIds.forEach((id) => observer.observe(document.body.querySelector('#' + id)));
+    sectionIds.forEach((id) => fullSizeObserver.observe(document.body.querySelector('#' + id)));
   }, []);
   return (
     <>
