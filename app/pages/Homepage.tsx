@@ -20,7 +20,7 @@ function EnterButton() {
         className={styles.enterButton}
       >
         <p>Enter</p>
-        <img src={baseurl + `/Arrow up-right.svg`} />
+        <img src={baseurl + `Arrow up-right.svg`} />
       </motion.div>
     </a>
   );

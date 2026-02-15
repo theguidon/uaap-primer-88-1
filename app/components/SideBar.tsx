@@ -99,7 +99,7 @@ export default function SideBar({
                 : (<p>{data.sports[sportKey].name}</p>)
               }
               {hasDropDown(sportKey) && (
-                <img src={baseurl + `/keyboard_arrow_down.svg`} />
+                <img src={baseurl + `keyboard_arrow_down.svg`} />
               )}
             </section>
             {hasDropDown(sportKey) && (
