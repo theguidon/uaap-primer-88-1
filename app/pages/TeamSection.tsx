@@ -8,7 +8,7 @@ function getAlignment(start: "left" | "right", ix: number) {
 }
 export function TeamSection({ sport, start = "left" }: { sport: keyof (typeof data.sports), start: "left" | "right" }) {
   return (
-    <div id={sport} style={{ minHeight: "100vh" }}>
+    <div id={sport} style={{ minHeight: "50vh" }}>
       {Object.entries(data.sports[sport].teams).map(([key, { team, title, article }], ix) => (
         <TeamSectionHalf
           key={key}
