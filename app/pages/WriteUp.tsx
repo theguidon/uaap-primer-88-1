@@ -17,7 +17,11 @@ export async function clientLoader({ params }: Route.ClientLoaderArgs) {
     return data["editors-message"];
   }
   const sportsData = data.sports[params.sport as keyof typeof data.sports];
-  return sportsData.teams[params.slug as keyof typeof sportsData.teams];
+  if (!(!params.slug || params.slug in sportsData.teams)) {
+    throw redirect("/");
+  }
+  const teamData = sportsData.teams[params.slug as keyof typeof sportsData.teams];
+  return { slug: params.slug, data: teamData };
 }
 const variants: Variants = {
   initial: { translateY: "-100%" },
@@ -29,12 +33,10 @@ const variants: Variants = {
 
 export default function WriteUp({ params, loaderData }: Route.ComponentProps) {
   const baseurl = import.meta.env.BASE_URL;
-  const { team, title, byline, article } = loaderData;
+  const { team, title, byline, article } = ("data" in loaderData) ? loaderData.data : loaderData;
   const [sidebarVisible, setSideBarVisibility] = useState<boolean>(false);
 
-  const imageName = team.includes("Track and Field")
-    ? "track-and-field.webp"
-    : `${params.slug}.webp`;
+  const imageName = ("slug" in loaderData) ? `${loaderData.slug}.webp` : `${params.slug}.webp`;
 
   return (
     <>
@@ -156,7 +158,7 @@ export default function WriteUp({ params, loaderData }: Route.ComponentProps) {
                 >
                   {params.slug !== "editors-message" &&
                     <img
-                      src={baseurl + `/writeups/${imageName}`}
+                      src={baseurl + `writeups/${imageName}`}
                       style={{
                         width: "100%",
                         height: "100%",
