@@ -16,7 +16,7 @@ export function TeamSection({ sport, start = "left" }: { sport: keyof (typeof da
           title={title}
           blurb={article.split("\n\n")[0]}
           alignment={getAlignment(start, ix)}
-          slug={key}
+          slug={sport !== key ? `${sport}/${key}` : key}
         />
       ))}
     </div>

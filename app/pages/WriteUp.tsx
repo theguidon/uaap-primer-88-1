@@ -11,13 +11,12 @@ import { IoMdMenu } from "react-icons/io";
 import background from "../assets/images/backgrond-writeup.png";
 
 export async function clientLoader({ params }: Route.ClientLoaderArgs) {
-  const generalSport = params.slug.slice(params.slug.indexOf("-") + 1);
-  if (params.slug != "editors-message" && !(generalSport in data.sports))
+  if (params.sport !== "editors-message" && !(params.sport in data.sports))
     throw redirect("/");
-  if (params.slug == "editors-message") {
+  if (params.sport == "editors-message") {
     return data["editors-message"];
   }
-  const sportsData = data.sports[generalSport as keyof typeof data.sports];
+  const sportsData = data.sports[params.sport as keyof typeof data.sports];
   return sportsData.teams[params.slug as keyof typeof sportsData.teams];
 }
 const variants: Variants = {
