@@ -11,7 +11,6 @@ import "swiper/css";
 
 function EnterButton() {
   const baseurl = import.meta.env.BASE_URL;
-  console.debug(baseurl);
   return (
     <a href="#editor-message">
       <motion.div

@@ -12,28 +12,27 @@ export default function MainPage() {
   const [sidebarVisible, setSideBarVisibility] = useState<boolean>(false);
   const [menuColor, setMenuColor] = useState("#1c41d5");
 
-  function getTeamIds() {
-    return Object.values(data.sports).map((sports) => Object.keys(sports.teams)).flat().map((sport) => '#' + sport);
-  }
+  const teamIds = Object.values(data.sports).flatMap(sport => Object.keys(sport.teams));
 
   const sectionIds = [
-    "#editor-message",
-    "#credits",
-  ].concat(getTeamIds());
+    'editor-message',
+    'credits'
+  ].concat(teamIds);
 
   useEffect(() => {
     const options = {
-      root: document.querySelector("#menu-butto"),
-      rootMargin: "0px",
-      scrollMargin: "8px",
-      threshold: 1.0
+      root: document.body,
+      rootMargin: "0px 0px -50% 0px",
+      scrollMargin: "0px",
+      threshold: 0.7
     };
 
     function callback(entries, observer) {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          console.debug(entry.target);
-          if (entry.target.id == "credits" || entry.target.id == "editor-message" || entry.target.id == "cheerdance" || entry.target.id.includes("womens")) {
+          const whiteCond = entry.target.id == "credits" || entry.target.id == "editor-message" || entry.target.classList.contains("right-team");
+          console.debug(entry);
+          if (whiteCond) {
             setMenuColor("white");
           } else {
             setMenuColor("#1c41d5");
@@ -42,9 +41,9 @@ export default function MainPage() {
       });
     }
 
-    // const observer = new IntersectionObserver(callback, options);
+    const observer = new IntersectionObserver(callback, options);
 
-    // sectionIds.forEach((id) => observer.observe(document.body.querySelector(id)));
+    sectionIds.forEach((id) => observer.observe(document.body.querySelector('#' + id)));
   }, []);
   return (
     <>

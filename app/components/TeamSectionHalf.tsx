@@ -28,11 +28,12 @@ export function TeamSectionHalf({
   const animsDuration = 0.75;
   const isMd = useMediaQuery({ query: "(min-width: 48rem)" });
   const gender = slug.split("-")[0];
+  const teamKey = slug.includes('/') ? slug.split('/')[1] : slug;
 
   return (
     <section
-      id={slug} // use this as anchor for navigation sidebar
-      className={`${alignment} snap-start lg:snap-align-none flex flex-col h-dvh relative overflow-hidden ${alignment == "right" ? "md:flex-row" : "md:flex-row-reverse"} md:h-[50dvh]`}
+      id={teamKey} // use this as anchor for navigation sidebar
+      className={`${alignment}-team snap-start lg:snap-align-none flex flex-col h-dvh relative overflow-hidden ${alignment == "right" ? "md:flex-row" : "md:flex-row-reverse"} md:h-[50dvh]`}
     >
       <motion.div
         initial="initial"
