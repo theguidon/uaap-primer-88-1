@@ -104,9 +104,9 @@ export default function EditorMessage() {
           <AnimatePresence>
             <motion.img
               className={styles.runner}
-              src={baseurl + `editormessage/${images[1]}`}
+              src={baseurl + `editormessage/mens-basketball.webp`}
               initial={{ y: "100%" }}
-              whileInView={{ y: 0 }}
+              whileInView={{ y: "5vh" }}
               exit={{ y: "100%" }}
               transition={{ duration: 0.6, ease: easeInOut }}
             />
