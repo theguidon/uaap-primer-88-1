@@ -15,7 +15,7 @@ export default function MobileHome() {
   ];
 
   return (
-    <section className={styles.mainSection}>
+    <section id="home" className={styles.mainSection}>
       <section className={styles.title}>
         <div>
           <motion.img
