@@ -8,12 +8,10 @@ import "swiper/css";
 export default function MobileHome() {
   const baseurl = import.meta.env.BASE_URL;
   const images = [
-    "jbahay.png",
-    "badminton.png",
-    "football.png",
-    "table-tennis.png",
-    "mfootball.png",
-    "volleyball.png",
+    "M Fencing.webp",
+    "M VBall.webp",
+    "W Taekwondo.webp",
+    "W Tennis.webp"
   ];
 
   return (
@@ -21,7 +19,7 @@ export default function MobileHome() {
       <section className={styles.title}>
         <div>
           <motion.img
-            src={baseurl + `/Long_Logo.svg`}
+            src={baseurl + `Long_Logo.svg`}
             initial={{ y: 100 }}
             animate={{ y: 0 }}
             transition={{ duration: 1, ease: "easeInOut" }}
@@ -51,7 +49,7 @@ export default function MobileHome() {
             animate={{ x: 0 }}
             transition={{ duration: 0.8, ease: "easeInOut", delay: 0.2 }}
           >
-            First Semester Primer
+            Second Semester Primer
           </motion.h1>
         </div>
       </section>
@@ -116,17 +114,7 @@ export default function MobileHome() {
         >
           {images.map((image) => (
             <SwiperSlide>
-              {image == "mfootball.png" ? (
-                <img
-                  className="w-full h-auto mt-10"
-                  src={baseurl + `/homepage/${image}`}
-                />
-              ) : (
-                <img
-                  className="w-full h-auto"
-                  src={baseurl + `/homepage/${image}`}
-                />
-              )}
+              <motion.img src={baseurl + `homepage/${image}`} className="h-dvh mx-auto mt-10" />
             </SwiperSlide>
           ))}
         </Swiper>
@@ -144,7 +132,7 @@ export default function MobileHome() {
           }}
         >
           <img
-            src={baseurl + `/underphoto_mobile.svg`}
+            src={baseurl + `underphoto_mobile.svg`}
             style={{
               width: "100%",
               height: "100%",
@@ -168,7 +156,7 @@ export default function MobileHome() {
           }}
         >
           <img
-            src={baseurl + `/overphoto_mobile.svg`}
+            src={baseurl + `overphoto_mobile.svg`}
             style={{
               width: "100vw",
               height: "100%",
