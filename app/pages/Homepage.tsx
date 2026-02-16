@@ -10,7 +10,8 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 
 function EnterButton() {
-  const baseurl = import.meta.env.BASE_URL;
+  let baseurl = import.meta.env.BASE_URL;
+  baseurl = (baseurl == "//") ? "/" : baseurl;
   return (
     <a href="#editor-message">
       <motion.div
