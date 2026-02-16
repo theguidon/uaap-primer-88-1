@@ -114,7 +114,7 @@ export default function MobileHome() {
         >
           {images.map((image) => (
             <SwiperSlide>
-              <motion.img src={baseurl + `homepage/${image}`} className="h-dvh mx-auto mt-10" />
+              <motion.img src={baseurl + `homepage/${image}`} className="h-full mx-auto mt-10" />
             </SwiperSlide>
           ))}
         </Swiper>
