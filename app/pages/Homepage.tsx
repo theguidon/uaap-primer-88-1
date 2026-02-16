@@ -29,12 +29,10 @@ function EnterButton() {
 export default function Homepage() {
   const baseurl = import.meta.env.BASE_URL;
   const images = [
-    "jbahay.png",
-    "badminton.png",
-    "football.png",
-    "table-tennis.png",
-    "mfootball.png",
-    "volleyball.png",
+    "M Fencing.webp",
+    "M VBall.webp",
+    "W Taekwondo.webp",
+    "W Tennis.webp"
   ];
   const isMobile = useMediaQuery({ query: "(max-width: 899px)" });
   if (isMobile) {
@@ -168,32 +166,7 @@ export default function Homepage() {
           >
             {images.map((image) => (
               <SwiperSlide>
-                {image == "jbahay.png" ? (
-                  <motion.img
-                    src={baseurl + `homepage/${image}`}
-                    className="h-dvh mx-auto mt-10 ml-20"
-                  />
-                ) : image == "mfootball.png" ? (
-                  <motion.img
-                    src={baseurl + `homepage/${image}`}
-                    className="h-dvh mx-auto mt-10"
-                  />
-                ) : image == "volleyball.png" ? (
-                  <motion.img
-                    src={baseurl + `homepage/${image}`}
-                    className="h-dvh mx-auto mt-25"
-                  />
-                ) : image == "football.png" ? (
-                  <motion.img
-                    src={baseurl + `homepage/${image}`}
-                    className="h-dvh mx-auto mt-25"
-                  />
-                ) : (
-                  <motion.img
-                    src={baseurl + `homepage/${image}`}
-                    className="h-dvh mx-auto"
-                  />
-                )}
+                <motion.img src={baseurl + `homepage/${image}`} className="h-dvh mx-auto mt-10" />
               </SwiperSlide>
             ))}
           </Swiper>
