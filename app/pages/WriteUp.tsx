@@ -40,7 +40,7 @@ export default function WriteUp({ params, loaderData }: Route.ComponentProps) {
   const { team, title, byline, article } = ("data" in loaderData) ? loaderData.data : loaderData;
   const [sidebarVisible, setSideBarVisibility] = useState<boolean>(false);
 
-  const imageName = ("slug" in loaderData) ? `${loaderData.slug}.webp` : `${params.slug}.webp`;
+  const imageName = ("slug" in loaderData) ? `${loaderData.slug}.webp` : undefined;
 
   return (
     <>
@@ -117,7 +117,7 @@ export default function WriteUp({ params, loaderData }: Route.ComponentProps) {
               </motion.h2>
             </div>
             <div className="overflow-hidden">
-              {params.slug == "editors-message" ? (
+              {!imageName ? (
                 <motion.div
                   variants={variants}
                   className="font-display font-bold text-5xl xs:text-6xl text-white uppercase leading-[85%] sm:text-8xl"
@@ -135,7 +135,7 @@ export default function WriteUp({ params, loaderData }: Route.ComponentProps) {
               )}
             </div>
             <div className="overflow-hidden">
-              {params.slug == "editors-message" ? (
+              {!imageName ? (
                 <motion.h3 variants={variants} className="text-white pt-2 pb-4">
                   By <span className="font-bold">Caitlin Bernal</span> and{" "}
                   <span className="font-bold">Gabriel Renee Quizan</span>
@@ -158,9 +158,9 @@ export default function WriteUp({ params, loaderData }: Route.ComponentProps) {
                       transition: { duration: 0.75, ease: "easeInOut" },
                     },
                   }}
-                  className={`w-full ${params.slug == "editors-message" ? "h-10" : "aspect-[1.5] bg-uaap-blue"}`}
+                  className={`w-full ${!imageName ? "md:h-20 sm:h-12" : "aspect-[1.5] bg-uaap-blue"}`}
                 >
-                  {params.slug !== "editors-message" &&
+                  {imageName &&
                     <img
                       src={baseurl + `writeups/${imageName}`}
                       style={{
@@ -174,7 +174,7 @@ export default function WriteUp({ params, loaderData }: Route.ComponentProps) {
             )}
           </motion.div>
           <div
-            className={`font-body text-uaap-dark-blue ${params.slug == "editors-message" ? "mt-[9rem] sm:mt-[4rem]" : "mt-[4rem]"} mb-[6rem] text-lg sm:text-2xl`}
+            className={`font-body text-uaap-dark-blue ${!imageName ? "mt-[9rem] sm:mt-[4rem]" : "mt-[4rem]"} mb-[6rem] text-lg sm:text-2xl`}
           >
             {article.split("\n\n").map((paragraph, idx) =>
               idx == 0 ? (
