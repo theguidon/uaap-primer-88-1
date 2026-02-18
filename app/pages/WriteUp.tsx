@@ -17,10 +17,14 @@ export async function clientLoader({ params }: Route.ClientLoaderArgs) {
     return data["editors-message"];
   }
   const sportsData = data.sports[params.sport as keyof typeof data.sports];
-  if (!(!params.slug || params.slug in sportsData.teams)) {
+  if (!sportsData) {
     throw redirect("/");
   }
-  const teamData = sportsData.teams[params.slug as keyof typeof sportsData.teams];
+  const teamKey = params.slug ? params.slug : params.sport;
+  const teamData = sportsData.teams[teamKey as keyof typeof sportsData.teams];
+  if (!teamData) {
+    throw redirect("/");
+  }
   return { slug: params.slug, data: teamData };
 }
 const variants: Variants = {
