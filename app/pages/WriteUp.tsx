@@ -25,7 +25,7 @@ export async function clientLoader({ params }: Route.ClientLoaderArgs) {
   if (!teamData) {
     throw redirect("/");
   }
-  return { slug: params.slug, data: teamData };
+  return { slug: teamKey, data: teamData };
 }
 const variants: Variants = {
   initial: { translateY: "-100%" },
