@@ -6,6 +6,16 @@ import { useMediaQuery } from "react-responsive";
 import backgroundLeft from "../assets/images/background-left.png";
 import backgroundRight from "../assets/images/background-right.png";
 
+function splitTeam(team: string): string[] {
+  const splitStrings = ["Men's", "Women's", "3x3", "Mobile Legends:"];
+  for (const split of splitStrings) {
+    if (team.startsWith(split)) {
+      return [split, team.substring(split.length).trim()];
+    }
+  }
+  return [team];
+}
+
 export function TeamSectionHalf({
   team,
   title,
@@ -29,6 +39,7 @@ export function TeamSectionHalf({
   const isMd = useMediaQuery({ query: "(min-width: 48rem)" });
   const gender = slug.split("-")[0];
   const teamKey = slug.includes('/') ? slug.split('/')[1] : slug;
+  const splits = splitTeam(team);
 
   return (
     <section
@@ -72,7 +83,7 @@ export function TeamSectionHalf({
         />
       </motion.div>
       <div
-        className={`overflow-hidden text-white hidden font-display font-bold text-4xl absolute w-min ${alignment == "right" ? "text-right" : "text-left"} top-8 ${alignment == "right" ? "right-0" : "left-0"} mx-8 md:block md:mx-[calc(60dvw-2.5rem)] lg:top-15 xl:mx-[calc(60dvw-6rem)] 2xl:top-20`}
+        className={`overflow-hidden text-white hidden font-display font-bold text-4xl absolute w-max ${alignment == "right" ? "text-right" : "text-left"} top-8 ${alignment == "right" ? "right-0" : "left-0"} mx-8 md:block md:mx-[calc(60dvw-2.5rem)] lg:top-15 xl:mx-[calc(60dvw-6rem)] 2xl:top-20`}
       >
         <motion.h2
           initial={{
@@ -87,14 +98,14 @@ export function TeamSectionHalf({
             translateX: "0",
           }}
         >
-          {team.split(" ").length > 2 ? (
+          {splits.length > 1 ? (
             <>
               {/* puts sports that are two words or more in one line */}
               {/* putting the non breaking space (\u00a0) in json breaks the font (Gotham Condensed) */}
-              {team.split(" ").slice(0, 1)}
+              {splits[0]}
               <br />
               <span className="whitespace-nowrap">
-                {team.split(" ").slice(1).join(" ")}
+                {splits[1]}
               </span>
             </>
           ) : (
