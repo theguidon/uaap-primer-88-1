@@ -57,7 +57,7 @@ export default function WriteUp({ params, loaderData }: Route.ComponentProps) {
             }}
             onClick={() => setSideBarVisibility(true)}
           >
-            <IoMdMenu color="white" size="40" />
+            <IoMdMenu color="white" size="36" />
           </button>
           <NavLink to={`/#${params.slug}`}>
             <motion.button

@@ -79,7 +79,7 @@ export default function MainPage() {
       >
         <IoMdMenu
           color={menuColor}
-          size="40"
+          size="36"
           style={{
             transition: "color 100ms ease-in-out"
           }}
