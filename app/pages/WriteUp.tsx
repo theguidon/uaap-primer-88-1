@@ -9,6 +9,11 @@ import { useState } from "react";
 import SideBar from "~/components/SideBar";
 import { IoMdMenu } from "react-icons/io";
 import background from "../assets/images/backgrond-writeup.png";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, EffectFade } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/effect-fade";
 
 export async function clientLoader({ params }: Route.ClientLoaderArgs) {
   if (params.sport !== "editors-message" && !(params.sport in data.sports))
@@ -34,6 +39,37 @@ const variants: Variants = {
     transition: { duration: 0.75, ease: "easeInOut" },
   },
 };
+
+function TaekwondoSlides({ slug }: { slug: string }) {
+  const baseurl = import.meta.env.BASE_URL;
+  const gender = slug.split('-')[0];
+  return (
+    <Swiper
+      spaceBetween={1}
+      loop={true}
+      centeredSlides={true}
+      autoplay={{
+        delay: 2500,
+        disableOnInteraction: false,
+      }}
+      effect="fade"
+      modules={[Autoplay, EffectFade]}
+    >
+      {["kyorugi", "poomsae"].map((team) => (
+        <SwiperSlide>
+          <img
+            src={baseurl + `writeups/${gender}-${team}.webp`}
+            style={{
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+            }}
+          />
+        </SwiperSlide>
+      ))}
+    </Swiper>
+  );
+}
 
 export default function WriteUp({ params, loaderData }: Route.ComponentProps) {
   const baseurl = import.meta.env.BASE_URL;
@@ -163,14 +199,18 @@ export default function WriteUp({ params, loaderData }: Route.ComponentProps) {
                   className={`w-full ${!imageName ? "md:h-20 sm:h-12" : "aspect-[1.5] bg-uaap-blue"}`}
                 >
                   {imageName &&
-                    <img
-                      src={baseurl + `writeups/${imageName}`}
-                      style={{
-                        width: "100%",
-                        height: "100%",
-                        objectFit: "cover",
-                      }}
-                    />}
+                    (
+                      imageName.includes("taekwondo") ? <TaekwondoSlides slug={loaderData.slug} /> : (
+                        <img
+                          src={baseurl + `writeups/${imageName}`}
+                          style={{
+                            width: "100%",
+                            height: "100%",
+                            objectFit: "cover",
+                          }}
+                        />)
+                    )
+                  }
                 </motion.div>
               </div>
             )}
