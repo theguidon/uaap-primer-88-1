@@ -189,7 +189,7 @@ export default function WriteUp({ params, loaderData }: Route.ComponentProps) {
               ) : (
                 <Fragment key={idx}>
                   <br />
-                  <p>{paragraph}</p>
+                  <p>{paragraph.startsWith("Editor's Note:") ? (<em>{paragraph}</em>) : paragraph}</p>
                 </Fragment>
               )
             )}
