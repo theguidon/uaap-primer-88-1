@@ -7,7 +7,7 @@ import backgroundLeft from "../assets/images/background-left.png";
 import backgroundRight from "../assets/images/background-right.png";
 
 function splitTeam(team: string): string[] {
-  const splitStrings = ["Men's", "Women's", "3x3", "Mobile Legends:"];
+  const splitStrings = ["Men's", "Women's", "3x3 Men's", "3x3 Women's", "Mobile Legends:"];
   for (const split of splitStrings) {
     if (team.startsWith(split)) {
       return [split, team.substring(split.length).trim()];

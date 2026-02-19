@@ -41,6 +41,8 @@ export default function WriteUp({ params, loaderData }: Route.ComponentProps) {
   const [sidebarVisible, setSideBarVisibility] = useState<boolean>(false);
 
   const imageName = ("slug" in loaderData) ? `${loaderData.slug}.webp` : undefined;
+  let firstTwo = article.split(" ").splice(0, 2);
+  firstTwo[1] = firstTwo[1] == "LIGHTNING—the" ? "LIGHTNING" : firstTwo[1];
 
   return (
     <>
@@ -180,9 +182,9 @@ export default function WriteUp({ params, loaderData }: Route.ComponentProps) {
               idx == 0 ? (
                 <p key={idx}>
                   <span className="font-bold uppercase">
-                    {paragraph.split(" ").slice(0, 2).join(" ")}{" "}
+                    {firstTwo.join(" ")}{firstTwo[1] != "LIGHTNING" && " "}
                   </span>
-                  {paragraph.split(" ").slice(2).join(" ")}
+                  {paragraph.slice(firstTwo.join(" ").length)}
                 </p>
               ) : (
                 <Fragment key={idx}>
