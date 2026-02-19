@@ -156,7 +156,7 @@ img.runner {
 
   .underphoto {
     object-fit: cover;
-    object-position: 20% 0;
+    object-position: 20% 5%;
     height: 100dvh;
     width: 100%;
   }
@@ -172,7 +172,7 @@ img.runner {
 
   img.runner {
     height: 100%;
-    object-position: 0 0;
+    object-position: 40% 0;
   }
 
   section.text h1 {
