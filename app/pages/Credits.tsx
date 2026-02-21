@@ -58,13 +58,7 @@ export function Credits() {
           <div>
             <h3 className="uppercase text-xl font-semibold">WRITERS</h3>
             <p className="text-lg">
-              A.J.&nbsp;Antonio, Jules&nbsp;Aranjuez, Gabrielle&nbsp;Binguan,
-              Laurence&nbsp;L.&nbsp;Fernando, David&nbsp;Enrico&nbsp;Galvez,
-              Diego&nbsp;Rafael&nbsp;C.&nbsp;Josue, Matthea&nbsp;P.&nbsp;Lazo,
-              Luis&nbsp;Antonio&nbsp;Licas, Ino&nbsp;Maderazo,
-              Mario&nbsp;Quirino&nbsp;Manlutac, Caleb&nbsp;Oximas,
-              Carmela&nbsp;Therese&nbsp;Papa, RV&nbsp;Quinto, Ani&nbsp;Santos,
-              Ravi&nbsp;G.&nbsp;Tan and Edge&nbsp;Torres
+              A.J.&nbsp;Antonio, Sophia&nbsp;Bautista, Margaux&nbsp;Dela&nbsp;Cruz, Laurence&nbsp;L.&nbsp;Fernando, David&nbsp;Enrico&nbsp;Galvez, Hannah&nbsp;F.&nbsp;Grimaldo, Ino&nbsp;Maderazo, Mario&nbsp;Quirino&nbsp;Manlutac, Carmela&nbsp;Therese&nbsp;Papa, RV&nbsp;Quinto, Seleeya&nbsp;Rumbaoa, SC&nbsp;Singh, and Xavi&nbsp;Tumale
             </p>
           </div>
           <div>
@@ -76,12 +70,7 @@ export function Credits() {
           <div>
             <h3 className="uppercase text-xl font-semibold">PHOTO CREDITS</h3>
             <p className="text-lg">
-              Miguel&nbsp;Abad, Rhian&nbsp;Herrera, Celina&nbsp;Iñgel,
-              Enrico&nbsp;Jocson, Ariana&nbsp;Jurisprudencia,
-              Juls&nbsp;Leonardo, Clarence&nbsp;Masilag, CJ&nbsp;Ochoa,
-              Bea&nbsp;Pador, Earl&nbsp;Rafael, Jillian&nbsp;Santos,
-              Sam&nbsp;Tadeo, Chelsea&nbsp;May&nbsp;Tan, Henri&nbsp;V.&nbsp;To
-              and Ayenne&nbsp;Torres
+              Miguel&nbsp;Abad, Joseph&nbsp;Castillo, RJ&nbsp;Hernandez, Rhian&nbsp;Herrera, Jio&nbsp;Japson, Juls&nbsp;Leonardo, Clarence&nbsp;Masilag, Aidyn&nbsp;Grey&nbsp;Monteras, CJ&nbsp;Ochoa, Bea&nbsp;Pador, Via&nbsp;Panopio, Earl&nbsp;Rafael, Tracy&nbsp;G.&nbsp;Rodriguez, Jillian&nbsp;Santos, Derek&nbsp;Soronio, Sam&nbsp;Tadeo, Chelsea&nbsp;May&nbsp;Tan, Henri&nbsp;V.&nbsp;To, Veida&nbsp;Bongco, Ccai&nbsp;Llamas, and Francis&nbsp;Ong
             </p>
           </div>
           <div>
