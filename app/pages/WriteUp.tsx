@@ -58,6 +58,7 @@ function TaekwondoSlides({ slug }: { slug: string }) {
         <motion.button
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
+          style={{ cursor: "pointer" }}
           onClick={() => { if (swiperRef.current) { swiperRef.current.slidePrev() } }}
           transition={{ ease: "easeInOut", duration: 0.5, delay: 0.75 }}
         >
@@ -87,6 +88,7 @@ function TaekwondoSlides({ slug }: { slug: string }) {
         <motion.button
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
+          style={{ cursor: "pointer" }}
           onClick={() => { if (swiperRef.current) { swiperRef.current.slideNext() } }}
           transition={{ ease: "easeInOut", duration: 0.5, delay: 0.75 }}
         >
