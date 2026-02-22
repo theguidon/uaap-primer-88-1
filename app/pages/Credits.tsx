@@ -70,7 +70,13 @@ export function Credits() {
           <div>
             <h3 className="uppercase text-xl font-semibold">PHOTO CREDITS</h3>
             <p className="text-lg">
-              Miguel&nbsp;Abad, Joseph&nbsp;Castillo, RJ&nbsp;Hernandez, Rhian&nbsp;Herrera, Jio&nbsp;Japson, Juls&nbsp;Leonardo, Clarence&nbsp;Masilag, Aidyn&nbsp;Grey&nbsp;Monteras, CJ&nbsp;Ochoa, Bea&nbsp;Pador, Via&nbsp;Panopio, Earl&nbsp;Rafael, Tracy&nbsp;G.&nbsp;Rodriguez, Jillian&nbsp;Santos, Derek&nbsp;Soronio, Sam&nbsp;Tadeo, Chelsea&nbsp;May&nbsp;Tan, Henri&nbsp;V.&nbsp;To, Veida&nbsp;Bongco, Ccai&nbsp;Llamas, and Francis&nbsp;Ong
+              Miguel&nbsp;Abad, Joseph&nbsp;Castillo, RJ&nbsp;Hernandez, Rhian&nbsp;Herrera, Jio&nbsp;Japson, Juls&nbsp;Leonardo, Clarence&nbsp;Masilag, Aidyn&nbsp;Grey&nbsp;Monteras, CJ&nbsp;Ochoa, Bea&nbsp;Pador, Via&nbsp;Panopio, Earl&nbsp;Rafael, Tracy&nbsp;G.&nbsp;Rodriguez, Jillian&nbsp;Santos, Derek&nbsp;Soronio, Sam&nbsp;Tadeo, Chelsea&nbsp;May&nbsp;Tan, and Henri&nbsp;V.&nbsp;To
+            </p>
+          </div>
+          <div>
+            <h3 className="uppercase text-xl font-semibold">PHOTO COURTESY OF</h3>
+            <p className="text-lg">
+              Veida&nbsp;Bongco, Ccai&nbsp;Llamas, and Francis&nbsp;Ong
             </p>
           </div>
           <div>
