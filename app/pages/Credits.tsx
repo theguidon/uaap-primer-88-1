@@ -35,7 +35,7 @@ export function Credits() {
             <h3 className="uppercase text-xl font-semibold">
               ASSOCIATE EDITOR
             </h3>
-            <p className="text-lg">Nicole&nbsp;Sy</p>
+            <p className="text-lg">Ana&nbsp;Rufa&nbsp;Padua</p>
           </div>
           <div>
             <h3 className="uppercase text-xl font-semibold">MANAGING EDITOR</h3>
@@ -84,7 +84,7 @@ export function Credits() {
           <div>
             <h3 className="uppercase text-xl font-semibold">BRANDING</h3>
             <p className="text-lg">
-              Jizelle&nbsp;Arollado, Gaby&nbsp;Molina, Roxcel&nbsp;Obos and
+              Jizelle&nbsp;Arollado, Gaby&nbsp;Molina, Roxcel&nbsp;Obos, and
               Raphael&nbsp;E.&nbsp;Polintan
             </p>
           </div>
