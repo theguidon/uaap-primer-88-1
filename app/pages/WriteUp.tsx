@@ -5,14 +5,17 @@ import { MdArrowOutward } from "react-icons/md";
 import { IconContext } from "react-icons";
 import { NavLink, redirect } from "react-router";
 import { motion, stagger, type Variants } from "motion/react";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import SideBar from "~/components/SideBar";
 import { IoMdMenu } from "react-icons/io";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import background from "../assets/images/backgrond-writeup.png";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, EffectFade } from "swiper/modules";
+import type { SwiperClass } from "swiper/react";
+import { EffectFade } from "swiper/modules";
 
 import "swiper/css";
+import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 
 export async function clientLoader({ params }: Route.ClientLoaderArgs) {
@@ -43,31 +46,54 @@ const variants: Variants = {
 function TaekwondoSlides({ slug }: { slug: string }) {
   const baseurl = import.meta.env.BASE_URL;
   const gender = slug.split('-')[0];
+  const swiperRef = useRef<SwiperClass>(null);
+
   return (
-    <Swiper
-      spaceBetween={1}
-      loop={true}
-      centeredSlides={true}
-      autoplay={{
-        delay: 2500,
-        disableOnInteraction: false,
-      }}
-      effect="fade"
-      modules={[Autoplay, EffectFade]}
-    >
-      {["kyorugi", "poomsae"].map((team) => (
-        <SwiperSlide>
-          <img
-            src={baseurl + `writeups/${gender}-${team}.webp`}
-            style={{
-              width: "100%",
-              height: "100%",
-              objectFit: "cover",
-            }}
-          />
-        </SwiperSlide>
-      ))}
-    </Swiper>
+    <IconContext.Provider value={{ color: "#c1c1c1", size: "3em" }}>
+      <section
+        style={{
+          display: "flex"
+        }}
+      >
+        <motion.button
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          onClick={() => { if (swiperRef.current) { swiperRef.current.slidePrev() } }}
+          transition={{ ease: "easeInOut", duration: 0.5, delay: 0.75 }}
+        >
+          <FaChevronLeft />
+        </motion.button>
+        <Swiper
+          spaceBetween={0}
+          loop={true}
+          centeredSlides={true}
+          navigation={false}
+          onSwiper={(swiper) => { swiperRef.current = swiper; }}
+          modules={[EffectFade]}
+        >
+          {["kyorugi", "poomsae"].map((team) => (
+            <SwiperSlide>
+              <img
+                src={baseurl + `writeups/${gender}-${team}.webp`}
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                }}
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+        <motion.button
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          onClick={() => { if (swiperRef.current) { swiperRef.current.slideNext() } }}
+          transition={{ ease: "easeInOut", duration: 0.5, delay: 0.75 }}
+        >
+          <FaChevronRight />
+        </motion.button>
+      </section>
+    </IconContext.Provider>
   );
 }
 
@@ -185,7 +211,7 @@ export default function WriteUp({ params, loaderData }: Route.ComponentProps) {
               )}
             </div>
             {(
-              <div className="overflow-hidden">
+              <div className="overflow-y-clip">
                 {/* image placeholder */}
                 <motion.div
                   variants={{
@@ -196,7 +222,14 @@ export default function WriteUp({ params, loaderData }: Route.ComponentProps) {
                       transition: { duration: 0.75, ease: "easeInOut" },
                     },
                   }}
-                  className={`w-full ${!imageName ? "md:h-20 sm:h-12" : "aspect-[1.5] bg-uaap-blue"}`}
+                  style={{
+                    width: (imageName && imageName.includes("taekwondo") ?
+                      "calc(100% + 6em)" : "100%"),
+                    position: "relative",
+                    right: (imageName && imageName.includes("taekwondo") ?
+                      "3em" : 0)
+                  }}
+                  className={`${!imageName ? "md:h-20 sm:h-12 bg-uaap-blue" : "aspect-[1.5]"}`}
                 >
                   {imageName &&
                     (
