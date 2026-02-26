@@ -106,7 +106,7 @@ export default function EditorMessage() {
               className={styles.runner}
               src={baseurl + `editormessage/tennis.webp`}
               initial={{ y: "100%" }}
-              whileInView={{ y: "5vh" }}
+              whileInView={{ y: "0vh" }}
               exit={{ y: "100%" }}
               transition={{ duration: 0.6, ease: easeInOut }}
             />
