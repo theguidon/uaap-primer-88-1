@@ -105,9 +105,8 @@ export default function EditorMessage() {
             <motion.img
               className={styles.runner}
               src={baseurl + `editormessage/tennis.webp`}
-              initial={{ y: "100%" }}
+              initial={{ y: "50vh" }}
               whileInView={{ y: "0vh" }}
-              exit={{ y: "100%" }}
               transition={{ duration: 0.6, ease: easeInOut }}
             />
           </AnimatePresence>
